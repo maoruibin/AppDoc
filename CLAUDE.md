@@ -4,7 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-AppDocV2 is a static documentation website built with VuePress v2. It serves as the documentation portal for several personal applications (inBox 笔记, 仓咚咚, 点亮, 咕咚订阅, 咕咚云图). All content is in Simplified Chinese.
+AppDoc is a static documentation website built with VuePress v2. It serves as the documentation portal for several personal applications (inBox 笔记, 仓咚咚, 点亮, 咕咚订阅, 咕咚云图). All content is in Simplified Chinese.
+
+**Repository**: `git@github.com:maoruibin/AppDoc.git`
+**Live**: https://doc.gudong.site
 
 ## Development Commands
 
@@ -55,6 +58,15 @@ Each app has its own sidebar configuration with sections like:
 - 教程 (Tutorials) - how-to guides
 - 服务协议 (Service Terms) - privacy policy, terms of service
 - 关于 (About) - contact, download links
+
+## Deployment
+
+- **Platform**: Cloudflare Pages (Git integration)
+- **Flow**: `git push` → Cloudflare auto-build → deploy to CDN
+- **Build command**: `npm run docs:build`
+- **Output directory**: `docs/.vuepress/dist`
+- **Custom domain**: doc.gudong.site
+- **No wrangler or CI scripts** — fully managed by Cloudflare Pages Git integration
 
 ## Important Notes
 

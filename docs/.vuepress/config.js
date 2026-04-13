@@ -6,7 +6,7 @@ import taskLists from 'markdown-it-task-lists'
 export default defineUserConfig({
   lang: 'zh-CN',
   title: '咕咚',
-  description: '我的软件使用说明文档',
+  description: '软件使用说明文档',
   head: [
     ['link', { rel: 'icon', href: '/img/favicon-32.png' }]
   ],
@@ -56,10 +56,7 @@ export default defineUserConfig({
           { text: '图片选择', link: '/inbox/image_select', children: [] },
           { text: '历史记录', link: '/inbox/history', children: [] }
         ]},
-        { text: '网页版', collapsible: false, children: [
-          { text: '网页端', link: '/inbox/web', children: [] },
-          { text: '网页同步', link: '/inbox/websync', children: [] }
-        ]},
+  
         { text: '功能', collapsible: false, children: [
           { text: 'Markdown', link: '/inbox/markdown', children: [] },
           { text: '快速操作', link: '/inbox/quick', children: [] },
@@ -139,7 +136,8 @@ export default defineUserConfig({
           { text: 'WebDAV 教程', link: '/light/lesson-webdav', children: [] }
         ]},
         { text: '服务协议', collapsible: false, children: [
-          { text: '隐私政策', link: '/light/private', children: [] }
+          { text: '隐私政策', link: '/light/private', children: [] },
+          { text: '用户协议', link: '/light/agreement', children: [] }
         ]},
         { text: '关于', collapsible: false, children: [
           { text: '为什么', link: '/light/why', children: [] },

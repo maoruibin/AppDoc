@@ -1,11 +1,13 @@
 # AI 服务
-inBox 最新版本中支持了添加用户自己的 AI 服务。这样 inBox 笔记就可以使用用户自定义 AI 服务去处理分析笔记。
+
+inBox 支持多种 AI 服务，包括 DeepSeek、火山引擎、Kimi、OpenAI、百川、混元以及自定义服务（兼容 OpenAI API 格式）。
 
 ## 配置
-inBox 支持标准的 AI 请求配置，这里以配置 Kimi 为例，介绍如何在 inBox 中配置 Kimi 的 AI 的能力，具体可查看[inBox 中配置 Kimi](ai_kimi.md)
+inBox 支持标准的 AI 请求配置，具体配置方法可查看[配置 AI 服务](ai_kimi.md)，以 Kimi 为例介绍了通用配置流程，其他 AI 服务配置方式相同。
 
 ## AI 能力
 目前 inBox 支持的 AI 能力有：
+- 录音稿润色
 - 自动生成文章标题
 - 自动生成笔记批注
 - 自动为笔记生成标签

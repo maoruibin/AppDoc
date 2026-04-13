@@ -11,7 +11,12 @@ inBox笔记是一个本地优先，记录灵感、想法的笔记软件。
 - 随机回顾，支持应用内随机回顾和桌面小组件回顾，温故知新。
 - Markdown 标记支持，支持粗体、无序列表、高亮、下划线、中划线
 
-## 下载地址
+## 其他平台
+目前 inBox 笔记已支持网页端、PC 端，大家可以在 [https://inbox.gudong.site/#/](https://inbox.gudong.site/#/) 这里进行下载。
+
+![](https://gudong.s3.bitiful.net/img/b2bbcb94.png)
+
+## App 下载地址
 [去下载](download.md)
 
 ## 一些其他链接
