@@ -52,7 +52,7 @@ export default defineUserConfig({
         ]},
         { text: '数据', collapsible: false, children: [
           { text: '数据备份', link: '/inbox/data_backup', children: [] },
-          { text: 'WebDAV 云盘', link: '/inbox/data_webdav', children: [] },
+          { text: '数据存储与同步', link: '/inbox/data_storage_guide', children: [] },
           { text: '图片选择', link: '/inbox/image_select', children: [] },
           { text: '历史记录', link: '/inbox/history', children: [] }
         ]},

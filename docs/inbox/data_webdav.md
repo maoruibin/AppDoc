@@ -57,7 +57,9 @@ inBox 采用**原子化同步**方式：每条笔记独立一个文件（`notes/
 使用本地备份还原功能，详情查看 [如何备份还原图谱数据](./data_recovery.md)
 
 ### 图片、视频、录音会同步吗？
-这些文件存储在 inBox 的本地目录（`/Android/data/name.gudong.think/files/Documents/inBox/`）。目前云同步的是笔记数据，媒体文件可通过本地备份方式转移。
+会。云同步时，笔记中的图片、视频、录音等资源会作为附件一起上传到云端，其他设备同步时会自动下载这些资源文件。
+
+资源文件本地存储在 `/Android/data/name.gudong.think/files/Documents/inBox/` 目录下。
 
 ### 备份的数据包含哪些内容？
 - 笔记数据（标题、内容、创建时间等）
