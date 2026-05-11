@@ -16,4 +16,4 @@
 | <img src="https://gudong.s3.bitiful.net/icon/rss_ic_launcher.png" width="28" alt="咕咚订阅"> | [咕咚订阅](/rssplus) | 个性化我的信息源，简洁实用的 RSS 订阅软件 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-rss-release.apk?no-wait=on) |
 | <img src="https://gudong.s3.bitiful.net/icon/pic_ic_launcher.png" width="28" alt="咕咚云图"> | [咕咚云图](/picplus) | 图床上传 APP，生成 Markdown 链接，兼容主流图床与 GitHub/码云 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-pic-release.apk?no-wait=on) |
 | <img src="https://gudong.s3.bitiful.net/icon/dong-time.png" width="28" alt="咚时光"> | [咚时光](/time) | 为宝宝记录每一个珍贵时刻的成长记录软件 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-time-release.apk?no-wait=on) |
-| <img src="https://gudong.s3.bitiful.net/icon/voice_icon_1024.png?no-wait=on" width="28" alt="Voice 录音"> | [咚录音](/voice) | 简单好用的录音工具，支持 AI 智能转写 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-voice-release.apk?no-wait=on) |
+| <img src="https://gudong.s3.bitiful.net/icon/voice_icon_1024.png?no-wait=on" width="28" alt="录音咚"> | [录音咚](/voice) | 简单好用的录音工具，支持 AI 智能转写 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-voice-release.apk?no-wait=on) |

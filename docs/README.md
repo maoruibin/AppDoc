@@ -40,8 +40,8 @@ sidebar: false
     <div class="app-desc">为宝宝记录每一个珍贵时刻的成长记录软件</div>
   </a>
   <a class="app-card" href="/voice/">
-    <img src="https://gudong.s3.bitiful.net/icon/voice_icon_1024.png?no-wait=on" alt="Voice 录音">
-    <div class="app-name">咚录音</div>
+    <img src="https://gudong.s3.bitiful.net/icon/voice_icon_1024.png?no-wait=on" alt="录音咚">
+    <div class="app-name">录音咚</div>
     <div class="app-desc">简单好用的录音工具，支持 AI 智能转写</div>
   </a>
 </div>

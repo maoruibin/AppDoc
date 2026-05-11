@@ -1,6 +1,6 @@
-# Voice 录音
+# 录音咚
 
-<img src="https://gudong.s3.bitiful.net/icon/voice_icon_1024.png?no-wait=on" width="13%" alt="Voice 录音">
+<img src="https://gudong.s3.bitiful.net/icon/voice_icon_1024.png?no-wait=on" width="13%" alt="录音咚">
 
 > 简单好用的录音工具
 
