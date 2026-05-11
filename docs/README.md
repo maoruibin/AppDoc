@@ -34,4 +34,14 @@ sidebar: false
     <div class="app-name">咕咚云图</div>
     <div class="app-desc">图床上传 APP，生成 Markdown 链接，兼容主流图床与 GitHub/码云</div>
   </a>
+  <a class="app-card" href="/time/">
+    <img src="https://gudong.s3.bitiful.net/icon/dong-time.png" alt="咚时光">
+    <div class="app-name">咚时光</div>
+    <div class="app-desc">为宝宝记录每一个珍贵时刻的成长记录软件</div>
+  </a>
+  <a class="app-card" href="/voice/">
+    <img src="https://gudong.s3.bitiful.net/icon/voice_icon_1024.png?no-wait=on" alt="Voice 录音">
+    <div class="app-name">咚录音</div>
+    <div class="app-desc">简单好用的录音工具，支持 AI 智能转写</div>
+  </a>
 </div>

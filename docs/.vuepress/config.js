@@ -28,7 +28,8 @@ export default defineUserConfig({
           { text: '仓咚咚', link: '/cang/' },
           { text: '点亮', link: '/light/' },
           { text: '咕咚订阅', link: '/rssplus/' },
-          { text: '咕咚云图', link: '/picplus/' }
+          { text: '咕咚云图', link: '/picplus/' },
+          { text: '咚时光', link: '/time/' }
         ]
       },
       {
@@ -183,6 +184,37 @@ export default defineUserConfig({
         { text: '关于', collapsible: false, children: [
           { text: '为什么', link: '/picplus/why', children: [] },
           { text: '关于', link: '/picplus/about', children: [] }
+        ]}
+      ],
+      '/time/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '使用指南', link: '/time/guide', children: [] },
+          { text: '账号与登录', link: '/time/account', children: [] },
+          { text: '常见问题', link: '/time/qa', children: [] },
+          { text: '更新日志', link: '/time/changelog', children: [] }
+        ]},
+        { text: '服务协议', collapsible: false, children: [
+          { text: '用户协议', link: '/time/agreement', children: [] },
+          { text: '隐私政策', link: '/time/private', children: [] }
+        ]},
+        { text: '关于', collapsible: false, children: [
+          { text: '联系我们', link: '/time/contact', children: [] }
+        ]}
+      ],
+      '/voice/': [
+        { text: '使用指南', collapsible: false, children: [
+          { text: '快速上手', link: '/voice/guide', children: [] },
+          { text: '功能详解', link: '/voice/features', children: [] },
+          { text: '下载安装', link: '/voice/download', children: [] },
+          { text: '常见问题', link: '/voice/qa', children: [] },
+          { text: '更新日志', link: '/voice/changelog', children: [] }
+        ]},
+        { text: '服务协议', collapsible: false, children: [
+          { text: '用户协议', link: '/voice/agreement', children: [] },
+          { text: '隐私政策', link: '/voice/privacy', children: [] }
+        ]},
+        { text: '关于', collapsible: false, children: [
+          { text: '联系我们', link: '/voice/contact', children: [] }
         ]}
       ]
     }
