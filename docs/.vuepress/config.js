@@ -207,6 +207,7 @@ export default defineUserConfig({
           { text: '功能详解', link: '/voice/features', children: [] },
           { text: '下载安装', link: '/voice/download', children: [] },
           { text: '常见问题', link: '/voice/qa', children: [] },
+          { text: '永久配置', link: '/voice/nls-guide', children: [] },
           { text: '更新日志', link: '/voice/changelog', children: [] }
         ]},
         { text: '服务协议', collapsible: false, children: [
