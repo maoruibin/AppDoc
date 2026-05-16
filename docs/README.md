@@ -15,7 +15,7 @@ sidebar: false
     <div class="app-desc">记录灵感、想法的本地化笔记软件</div>
   </a>
   <a class="app-card" href="/light/">
-    <img src="https://cdn.jsdelivr.net/gh/maoruibin/assets@master/2024/09/17/20240917112408747.png" alt="点亮">
+    <img src="https://gudong.s3.bitiful.net/icon/ic_launcher_light.png" alt="点亮">
     <div class="app-name">点亮</div>
     <div class="app-desc">成为更好的自己，极致简单的习惯打卡软件</div>
   </a>

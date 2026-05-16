@@ -11,7 +11,7 @@
 |  | 应用 | 简介 | 下载 |
 | --- | --- | --- | --- |
 | <img src="https://gudong.s3.bitiful.net/icon/inbox_ic_launcher.png" width="28" alt="inBox"> | [inBox 笔记](/inbox/) | 记录灵感、想法的本地化笔记软件 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-inbox-release.apk) |
-| <img src="https://cdn.jsdelivr.net/gh/maoruibin/assets@master/2024/09/17/20240917112408747.png" width="28" alt="点亮"> | [点亮](/light) | 成为更好的自己，极致简单的习惯打卡软件 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-light-release.apk) |
+| <img src="https://gudong.s3.bitiful.net/icon/ic_launcher_light.png" width="28" alt="点亮"> | [点亮](/light) | 成为更好的自己，极致简单的习惯打卡软件 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-light-release.apk) |
 | <img src="https://gudong.s3.bitiful.net/icon/cang_launcher_icon.png?no-wait=on" width="28" alt="仓咚咚"> | [仓咚咚](/cang) | 让资产一目了然，简单易用的资产管理软件 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-cang-release.apk?no-wait=on) |
 | <img src="https://gudong.s3.bitiful.net/icon/rss_ic_launcher.png" width="28" alt="咕咚订阅"> | [咕咚订阅](/rssplus) | 个性化我的信息源，简洁实用的 RSS 订阅软件 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-rss-release.apk?no-wait=on) |
 | <img src="https://gudong.s3.bitiful.net/icon/pic_ic_launcher.png" width="28" alt="咕咚云图"> | [咕咚云图](/picplus) | 图床上传 APP，生成 Markdown 链接，兼容主流图床与 GitHub/码云 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-pic-release.apk?no-wait=on) |
