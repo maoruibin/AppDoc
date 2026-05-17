@@ -1,11 +1,13 @@
-# 永久版高级配置指南
+# 永久独立版配置指南
 
-永久版是一个完全独立运行的版本，所有云端服务（语音转写、AI 功能）需要使用你自己的密钥。完成配置后，App 的所有功能即可正常使用，无需依赖官方服务器。
+## 为什么需要配置？
 
-整个配置分为两部分：
+永久独立版是一个完全独立运行的版本，所有云端服务（语音转写、AI 功能）均使用你自己配置的密钥，不依赖官方服务器额度。因此在使用前，需要完成以下两项服务的配置：
 
 1. **语音转写**（阿里云 NLS）— 录音转文字功能依赖此服务
 2. **AI 引擎**（DeepSeek / GLM / 自定义）— AI 润色、智能标题等功能依赖此服务
+
+配置完成后，App 的所有功能即可正常使用，所有算力由你自己的账号提供，无额度限制。
 
 预计耗时：约 15 分钟。
 
@@ -30,31 +32,37 @@
 
 <img src="../public/img/voice/NLS-add-ram-user.png" width="80%" alt="创建RAM用户">
 
-填写用户名（如 `voice-nls`），访问方式勾选「OpenAPI 调用访问」，然后点击确定。
-
-**第二步：为子用户授权**
-
-创建完成后，在用户列表中点击刚创建的用户名进入详情页。在「权限管理」页签中点击「新增授权」，搜索并添加 **`AliyunNLSFullAccess`** 权限（智能语音交互的管理权限）。
-
-> 安全提示：只授予 `AliyunNLSFullAccess` 即可，遵循最小权限原则。
-
-**第三步：创建 AccessKey**
-
-在用户详情页的「认证管理」页签下，找到 AccessKey 区域，点击「创建 AccessKey」。
+**第二步：创建 AccessKey**
 
 <img src="../public/img/voice/NLS-config-accesskey.png" width="80%" alt="创建AccessKey">
 
+填写用户名（如 `voice-nls`），访问方式勾选「使用永久 AccessKey 访问」，然后点击确定。
+
 按提示完成验证后，会生成 AccessKey ID 和 AccessKey Secret。
 
-**第四步：复制并保存密钥**
+**第三步：复制并保存密钥**
 
 > AccessKey Secret 仅显示一次，请立即复制保存！
 
 <img src="../public/img/voice/NLS-copy-key.png" width="80%" alt="复制AccessKey">
 
-将 AccessKey ID 和 AccessKey Secret 记录下来，稍后在 App 中配置时使用。
+> 这里可能需要身份验证，短信验证码验证一下
 
-<img src="../public/img/voice/NLS-save-result.png" width="80%" alt="保存AccessKey结果">
+
+**第四步：为子用户授权**
+
+创建完成后，在用户列表中选择新增授权
+
+<img src="../public/img/voice/NLS-config-accesskey-enter.png" width="80%" alt="新增授权">
+
+
+搜索并添加 **`AliyunNLSFullAccess`** 权限（智能语音交互的管理权限）。
+
+<img src="../public/img/voice/NLS-config-access-add.png" width="80%" alt="新增授权">
+
+> 安全提示：只授予 `AliyunNLSFullAccess` 即可，遵循最小权限原则。
+
+
 
 ### 1.3 开通智能语音服务并获取 AppKey
 
@@ -84,6 +92,14 @@
 
 项目创建成功后，在项目列表中可以看到对应的 **AppKey**，将其复制保存。
 
+<img src="../public/img/voice/NLS-project-app.png" width="80%" alt="NLS创建项目表单">
+
+
+
+
+
+
+
 ### 1.4 在 App 中填入 NLS 配置
 
 打开录音咚 App，进入「设置 > 高级配置」，在「语音转写」区域依次填入：
@@ -93,6 +109,8 @@
 | AccessKey ID | 1.2 步中获取的 AccessKey ID |
 | AccessKey Secret | 1.2 步中获取的 AccessKey Secret |
 | AppKey | 1.3 步中获取的项目 AppKey |
+
+<img src="../public/img/voice/NLS-app-config.png" width="80%" alt="语音配置">
 
 三项都配置完成后，该区域会显示「✓ 已配置」。
 

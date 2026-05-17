@@ -210,7 +210,7 @@ export default defineUserConfig({
           { text: '更新日志', link: '/voice/changelog', children: [] }
         ]},
         { text: '功能说明', collapsible: false, children: [
-          { text: '自定义 Api 配置', link: '/voice/nls-guide', children: [] },
+          { text: '永久独立版配置指南', link: '/voice/nls-guide', children: [] },
           { text: '自动同步系统录音指南', link: '/voice/import-guide', children: [] },
         ]},
         { text: '服务协议', collapsible: false, children: [
