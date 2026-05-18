@@ -94,9 +94,11 @@
 
 <img src="../public/img/voice/NLS-project-app.png" width="80%" alt="NLS创建项目表单">
 
+**第四步：开启 录音文件识别（极速版）
 
+完成后，在总览主页还需要开启录音文件识别服务，注意，需要为录音文件识别（极速版）开启商用版本，如下所示：
 
-
+<img src="../public/img/voice/NLS-jisuban.png" width="80%" alt="开启商用版">
 
 
 
