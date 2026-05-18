@@ -1,10 +1,10 @@
-# 录音咚
+# inVoice 语记
 
-<img src="https://gudong.s3.bitiful.net/icon/voice_icon_1024.png?no-wait=on" width="13%" alt="录音咚">
+<img src="https://gudong.s3.bitiful.net/icon/voice_icon_1024.png?no-wait=on" width="13%" alt="inVoice 语记">
 
 > 简单好用的录音工具
 
-录音咚 是一款简洁、稳定的 Android 录音应用。无论你是记录会议、课堂笔记，还是捕捉灵感，录音咚 都能帮你轻松完成高质量的录音，并通过 AI 智能转写让声音变为文字。
+inVoice 语记 是一款简洁、稳定的 Android 录音应用。无论你是记录会议、课堂笔记，还是捕捉灵感，inVoice 语记 都能帮你轻松完成高质量的录音，并通过 AI 智能转写让声音变为文字。
 
 
 <img src="../public/img/voice/index.jpg" width="80%" alt="">

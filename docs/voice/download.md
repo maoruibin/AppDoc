@@ -2,13 +2,13 @@
 
 ## Android 下载
 
-录音咚目前支持 Android 8.0 及以上系统。
+inVoice 语记目前支持 Android 8.0 及以上系统。
 
 ### 直接下载
 
 点击下方链接下载最新版本 APK：
 
-[下载录音咚](https://gudong.s3.bitiful.net/voice/apk/gudong-voice-release.apk)
+[下载 inVoice 语记](https://gudong.s3.bitiful.net/voice/apk/gudong-voice-release.apk)
 
 ### 安装说明
 
