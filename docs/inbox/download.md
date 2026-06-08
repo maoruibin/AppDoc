@@ -21,3 +21,17 @@
 | <img src="../public/img/shengdongdong_icon.png" width="28" alt="声咚咚"> | [声咚咚](/shengdongdong) | 让声音随心所欲，简单易用的全能音频工具箱 | [下载地址](https://www.pgyer.com/app/install/586fe4bb0e736b133c01bd313af47a30) |
 | <img src="../public/img/passbox_icon.png" width="28" alt="密匣"> | [密匣](/passbox) | 极简离线密码管理器，本地存储不联网 | [下载地址](https://www.pgyer.com/app/install/c7feda00ffb8c14ef26768a5dda0819d) |
 | <img src="https://gudong.s3.bitiful.net/icon/dong-time.png" width="28" alt="咚时光"> | [咚时光](/time) | 为宝宝记录每一个珍贵时刻的成长记录软件 | 通过应用市场下载或联系开发者 |
+
+---
+
+## 💬 加入用户交流群
+
+每个 App 都有对应的用户群。如果你想了解最新动态、获取使用帮助、或者给我提产品建议，欢迎加我微信，备注你使用的 **App 名称** 即可进群。
+
+<div align="center">
+  <img src="https://gudong.s3.bitiful.net/asset/gudong_wechat_qr.jpg" width="200" alt="咕咚微信">
+  <br>
+  <strong>微信：mw08032231</strong>
+  <br>
+  <span style="color:#888;font-size:14px;">👆 扫码加我，备注 App 名称进群</span>
+</div>

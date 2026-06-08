@@ -1,12 +1,18 @@
 # 联系我们
 
-你好，朋友:
+你好，朋友：
 
-在使用过程中如果有任何问题或建议，欢迎加我微信跟我联系。
+在使用过程中如果有任何问题或建议，欢迎加我微信联系。
 
-微信号: mw08032231 可备注：App
+<div align="center">
+  <img src="https://gudong.s3.bitiful.net/asset/gudong_wechat_qr.jpg" width="200" alt="咕咚微信">
+  <br>
+  <strong>微信：mw08032231</strong>
+  <br>
+  <span style="color:#888;font-size:14px;">👆 扫码加我，备注 App 名称可进入对应的用户群</span>
+</div>
 
-你可以可以通过下面的方式关注到我：
+你也可以通过下面的方式关注到我：
 
 - 个人博客：[gudong.site](https://gudong.site/)
 - 公众号：咕咚同学
