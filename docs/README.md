@@ -44,4 +44,30 @@ sidebar: false
     <div class="app-name">inVoice 语记</div>
     <div class="app-desc">简单好用的录音工具，支持 AI 智能转写</div>
   </a>
+  <a class="app-card" href="/echo/">
+    <img src="https://gudong.s3.bitiful.net/icon/echo_read_icon.png?no-wait=on" alt="EchoRead">
+    <div class="app-name">EchoRead</div>
+    <div class="app-desc">AI 驱动的个人知识管理，把好内容复刻成脑资产</div>
+  </a>
+  <a class="app-card" href="/audio/">
+    <img src="https://gudong.s3.bitiful.net/icon/sheng_dong_dong.png" alt="声咚咚">
+    <div class="app-name">声咚咚</div>
+    <div class="app-desc">让声音随心所欲，简单易用的全能音频工具箱</div>
+  </a>
+
+  <a class="app-card" href="/niushuo/">
+    <img src="https://gudong.s3.bitiful.net/icon/niushuo_icon.png" alt="小牛说">
+    <div class="app-name">小牛说</div>
+    <div class="app-desc">AI 驱动的语音输入法，打字不用敲，就用小牛说</div>
+  </a>
+  <a class="app-card" href="/tudongdong/">
+    <img src="https://gudong.s3.bitiful.net/icon/tudongdong_icon.png" alt="图咚咚">
+    <div class="app-name">图咚咚</div>
+    <div class="app-desc">简单易用、高颜值的全能本地图片处理工具箱</div>
+  </a>
+  <a class="app-card" href="/passbox/">
+    <img src="https://gudong.s3.bitiful.net/icon/passbox_icon.png" alt="PassBox">
+    <div class="app-name">PassBox</div>
+    <div class="app-desc">极简离线密码管理器，本地存储不联网</div>
+  </a>
 </div>
