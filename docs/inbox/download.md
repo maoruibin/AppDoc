@@ -10,10 +10,10 @@
 
 |  | 应用 | 简介 | 下载 |
 | --- | --- | --- | --- |
-| <img src="https://gudong.s3.bitiful.net/icon/inbox_ic_launcher.png" width="28" alt="inBox"> | [inBox 笔记](/inbox/) | 记录灵感、想法的本地化笔记软件 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-inbox-release.apk) |
-| <img src="https://gudong.s3.bitiful.net/icon/ic_launcher_light.png" width="28" alt="点亮"> | [点亮](/light) | 成为更好的自己，极致简单的习惯打卡软件 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-light-release.apk) |
-| <img src="https://gudong.s3.bitiful.net/icon/cang_launcher_icon.png?no-wait=on" width="28" alt="仓咚咚"> | [仓咚咚](/cang) | 让资产一目了然，简单易用的资产管理软件 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-cang-release.apk?no-wait=on) |
-| <img src="https://gudong.s3.bitiful.net/icon/rss_ic_launcher.png" width="28" alt="咕咚订阅"> | [咕咚订阅](/rssplus) | 个性化我的信息源，简洁实用的 RSS 订阅软件 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-rss-release.apk?no-wait=on) |
-| <img src="https://gudong.s3.bitiful.net/icon/pic_ic_launcher.png" width="28" alt="咕咚云图"> | [咕咚云图](/picplus) | 图床上传 APP，生成 Markdown 链接，兼容主流图床与 GitHub/码云 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-pic-release.apk?no-wait=on) |
-| <img src="https://gudong.s3.bitiful.net/icon/dong-time.png" width="28" alt="咚时光"> | [咚时光](/time) | 为宝宝记录每一个珍贵时刻的成长记录软件 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-time-release.apk?no-wait=on) |
-| <img src="https://gudong.s3.bitiful.net/icon/voice_icon_1024.png?no-wait=on" width="28" alt="inVoice 语记"> | [inVoice 语记](/voice) | 简单好用的录音工具，支持 AI 智能转写 | [下载地址](https://gudong.s3.bitiful.net/apk/gudong-voice-release.apk?no-wait=on) |
+| <img src="https://gudong.s3.bitiful.net/icon/inbox_ic_launcher.png" width="28" alt="inBox"> | [inBox 笔记](/inbox/) | 记录灵感、想法的本地化笔记软件 | [下载地址](https://www.pgyer.com/app/install/bf10bed4febc78298d3897884e0faebf) |
+| <img src="https://gudong.s3.bitiful.net/icon/ic_launcher_light.png" width="28" alt="点亮"> | [点亮](/light) | 成为更好的自己，极致简单的习惯打卡软件 | 通过应用市场下载或联系开发者 |
+| <img src="https://gudong.s3.bitiful.net/icon/cang_launcher_icon.png?no-wait=on" width="28" alt="仓咚咚"> | [仓咚咚](/cang) | 让资产一目了然，简单易用的资产管理软件 | 通过应用市场下载或联系开发者 |
+| <img src="https://gudong.s3.bitiful.net/icon/rss_ic_launcher.png" width="28" alt="咕咚订阅"> | [咕咚订阅](/rssplus) | 个性化我的信息源，简洁实用的 RSS 订阅软件 | 通过应用市场下载或联系开发者 |
+| <img src="https://gudong.s3.bitiful.net/icon/pic_ic_launcher.png" width="28" alt="咕咚云图"> | [咕咚云图](/picplus) | 图床上传 APP，生成 Markdown 链接，兼容主流图床与 GitHub/码云 | 通过应用市场下载或联系开发者 |
+| <img src="https://gudong.s3.bitiful.net/icon/dong-time.png" width="28" alt="咚时光"> | [咚时光](/time) | 为宝宝记录每一个珍贵时刻的成长记录软件 | 通过应用市场下载或联系开发者 |
+| <img src="https://gudong.s3.bitiful.net/icon/voice_icon_1024.png?no-wait=on" width="28" alt="inVoice 语记"> | [inVoice 语记](/voice) | 简单好用的录音工具，支持 AI 智能转写 | 通过应用市场下载或联系开发者 |
