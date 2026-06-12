@@ -10,7 +10,7 @@
 
 |  | 应用 | 简介 | 下载 |
 | --- | --- | --- | --- |
-| <img src="https://gudong.s3.bitiful.net/icon/inbox_ic_launcher.png" width="28" alt="inBox"> | [inBox 笔记](/inbox/) | 记录灵感、想法的本地化笔记软件 | [下载地址](https://www.pgyer.com/app/install/29abfe084964936d8f8be72f6e7f8b02) |
+| <img src="https://gudong.s3.bitiful.net/icon/inbox_ic_launcher.png" width="28" alt="inBox"> | [inBox 笔记](/inbox/) | 记录灵感、想法的本地化笔记软件 | [下载地址](https://www.pgyer.com/app/install/6a195ff51fe902a120fcda1303fb0137) |
 | <img src="https://gudong.s3.bitiful.net/icon/ic_launcher_light.png" width="28" alt="点亮习惯"> | [点亮习惯](/light) | 成为更好的自己，极致简单的习惯打卡软件 | [下载地址](https://www.pgyer.com/app/install/3db7b5b3b01f09c85934fdb19f1da92b) |
 | <img src="https://gudong.s3.bitiful.net/icon/cang_launcher_icon.png?no-wait=on" width="28" alt="仓咚咚"> | [仓咚咚](/cang) | 让资产一目了然，简单易用的资产管理软件 | [下载地址](https://www.pgyer.com/app/install/bf8dbdf68ee1cf0906813d136b1a4d74) |
 | <img src="https://gudong.s3.bitiful.net/icon/rss_ic_launcher.png" width="28" alt="咕咚订阅"> | [咕咚订阅](/rssplus) | 个性化我的信息源，简洁实用的 RSS 订阅软件 | [下载地址](https://www.pgyer.com/app/install/99503fd847173ed64a1522df51d66658) |
