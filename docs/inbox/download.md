@@ -21,6 +21,7 @@
 | <img src="../public/img/shengdongdong_icon.png" width="28" alt="声咚咚"> | [声咚咚](/audio) | 让声音随心所欲，简单易用的全能音频工具箱 | [下载地址](https://www.pgyer.com/app/install/586fe4bb0e736b133c01bd313af47a30) |
 | <img src="https://gudong.s3.bitiful.net/icon/passbox_icon.png" width="28" alt="PassBox"> | [PassBox](/passbox) | 极简离线密码管理器，本地存储不联网 | [下载地址](https://www.pgyer.com/app/install/c7feda00ffb8c14ef26768a5dda0819d) |
 | <img src="https://gudong.s3.bitiful.net/icon/dong-time.png" width="28" alt="咚时光"> | [咚时光](/time) | 为宝宝记录每一个珍贵时刻的成长记录软件 | [下载地址](https://www.pgyer.com/app/install/51403673fc46a16d71dab3c8947a1295) |
+| <img src="https://gudong.s3.bitiful.net/icon/echo_read_icon.png" width="28" alt="EchoRead"> | [EchoRead](/echo) | AI 驱动的个人知识管理，把好内容复刻成脑资产 | [下载地址](https://www.pgyer.com/app/install/92cb6c457e756d2f8cc6545d222562bd) |
 
 ---
 
