@@ -27,11 +27,11 @@ export default defineUserConfig({
           { text: 'inBox 笔记', link: '/inbox/' },
           { text: '仓咚咚', link: '/cang/' },
           { text: '点亮', link: '/light/' },
-          { text: '咕咚订阅', link: '/rssplus/' },
+         { text: '咕咚订阅', link: '/rssplus/' },
           { text: '咕咚云图', link: '/picplus/' },
-          { text: '咚时光', link: '/time/' }
+         // { text: '咚时光', link: '/time/' }  // 已隐藏 — 后续可恢复
         ]
-      },
+     },
       {
         text: '更多',
         children: [
@@ -185,8 +185,8 @@ export default defineUserConfig({
           { text: '为什么', link: '/picplus/why', children: [] },
           { text: '关于', link: '/picplus/about', children: [] }
         ]}
-      ],
-      '/time/': [
+     ],
+      /* '/time/': [  // 已隐藏 — 保留配置，后续可恢复
         { text: '你好', collapsible: false, children: [
           { text: '使用指南', link: '/time/guide', children: [] },
           { text: '账号与登录', link: '/time/account', children: [] },
@@ -200,8 +200,8 @@ export default defineUserConfig({
         { text: '关于', collapsible: false, children: [
           { text: '联系我们', link: '/time/contact', children: [] }
         ]}
-      ],
-      '/voice/': [
+      ], */
+     '/voice/': [
         { text: '使用指南', collapsible: false, children: [
           { text: '快速上手', link: '/voice/guide', children: [] },
           { text: '功能详解', link: '/voice/features', children: [] },
