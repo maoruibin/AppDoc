@@ -68,8 +68,9 @@ export default defineUserConfig({
           { text: '链接', link: '/inbox/link', children: [] },
           { text: '图片服务', link: '/inbox/image_server', children: [] }
         ]},
-        { text: '开放', collapsible: false, children: [
-          { text: 'Kimi 接入', link: '/inbox/ai_kimi', children: [] },
+       { text: '开放', collapsible: false, children: [
+          { text: 'AI Agent 接入', link: '/inbox/agent', children: [] },
+         { text: 'Kimi 接入', link: '/inbox/ai_kimi', children: [] },
           { text: 'DeepSeek', link: '/inbox/deepseek', children: [] },
           { text: 'Web S3 教程', link: '/inbox/lesson-web-s3', children: [] },
           { text: 'S3 存储配置问题排查指南', link: '/inbox/s3-issue', children: [] },

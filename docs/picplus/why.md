@@ -68,4 +68,4 @@ PicPlus 还有很多功能特性，比如
 +   编辑 Markdown 链接标题
 +   等等…
 
-更多特性，欢迎[下载体验 ](http://fir.gudong.site/da9q)，希望它可以帮你更好的写作。
+更多特性，欢迎[下载体验 ](https://www.pgyer.com/app/install/e35e31620ac6476c1e442e6ef72694af)，希望它可以帮你更好的写作。
