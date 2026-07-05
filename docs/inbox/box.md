@@ -57,7 +57,7 @@ inBox 的设计初衷是"低门槛记录灵感"，所以默认不强求分类，
 在盒子面板长按某个盒子（或点击编辑），可以重命名。重命名后：
 
 - inBox App 内：所有该盒子下的笔记会同步更新归属名
-- [Obsidian 插件](plugin_obsidian.md) / [思源插件](plugin_siyuan.md)：下次同步时，本地对应的文件夹会自动重命名，笔记 frontmatter 里的 `box` 字段也会更新
+- [Obsidian 插件](obsidian.md) / [思源插件](siyuan.md)：下次同步时，本地对应的文件夹会自动重命名，笔记 frontmatter 里的 `box` 字段也会更新
 
 ### 删除盒子
 
@@ -76,7 +76,7 @@ inBox 的设计初衷是"低门槛记录灵感"，所以默认不强求分类，
 
 笔记的盒子归属存在 atomicNote 的 `content.box_id` 字段（稳定 ID，跟盒子名解耦，盒子改名不影响归属）。
 
-如果你使用 [Obsidian 插件](plugin_obsidian.md) 或 [思源插件](plugin_siyuan.md)，盒子会自动映射为本地文件夹：
+如果你使用 [Obsidian 插件](obsidian.md) 或 [思源插件](siyuan.md)，盒子会自动映射为本地文件夹：
 
 - 有盒子的笔记 → 同步到 `<盒子名>/` 子文件夹
 - 无盒子的笔记 → 同步到根目录

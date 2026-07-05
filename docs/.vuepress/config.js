@@ -90,7 +90,7 @@ export default defineUserConfig({
           { text: '数据推送', link: '/inbox/data_push', children: [] }
         ]},
         { text: '插件', collapsible: false, children: [
-          { text: 'Obsidian 同步插件', link: '/inbox/plugin_obsidian', children: [] },
+          { text: 'Obsidian 同步插件', link: '/inbox/obsidian', children: [] },
           { text: '思源同步插件', link: '/inbox/siyuan', children: [] }
         ]},
         { text: '关于', collapsible: false, children: [
