@@ -75,9 +75,8 @@ export default defineUserConfig({
           { text: 'Web S3 教程', link: '/inbox/lesson-web-s3', children: [] },
           { text: 'S3 存储配置问题排查指南', link: '/inbox/s3-issue', children: [] },
           { text: 'Memos', link: '/inbox/memos', children: [] },
-          { text: '思源', link: '/inbox/siyuan', children: [] },
           { text: 'API', link: '/inbox/api', children: [] },
-          
+
           { text: 'Scheme', link: '/inbox/scheme', children: [] }
         ]},
         { text: '教程', collapsible: false, children: [
@@ -92,7 +91,7 @@ export default defineUserConfig({
         ]},
         { text: '插件', collapsible: false, children: [
           { text: 'Obsidian 同步插件', link: '/inbox/plugin_obsidian', children: [] },
-          { text: '思源同步插件', link: '/inbox/plugin_siyuan', children: [] }
+          { text: '思源同步插件', link: '/inbox/siyuan', children: [] }
         ]},
         { text: '关于', collapsible: false, children: [
           { text: '缘起', link: '/inbox/reason', children: [] },
