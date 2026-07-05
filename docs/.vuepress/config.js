@@ -90,6 +90,10 @@ export default defineUserConfig({
           { text: 'WebDAV 教程', link: '/inbox/lesson-webdav', children: [] },
           { text: '数据推送', link: '/inbox/data_push', children: [] }
         ]},
+        { text: '插件', collapsible: false, children: [
+          { text: 'Obsidian 同步插件', link: '/inbox/plugin_obsidian', children: [] },
+          { text: '思源同步插件', link: '/inbox/plugin_siyuan', children: [] }
+        ]},
         { text: '关于', collapsible: false, children: [
           { text: '缘起', link: '/inbox/reason', children: [] },
           { text: '下载地址', link: '/inbox/download', children: [] },

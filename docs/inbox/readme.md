@@ -24,6 +24,7 @@ inBox笔记是一个本地优先，记录灵感、想法的笔记软件。
 - [更新日志](changelog.md)
 - [Markdown 支持](markdown.md)
 - 导出教程 [导出到思源](export_siyuan.md) | [导出到 Obsidian](export_obsidian.md)
+- 桌面端同步插件 [Obsidian](plugin_obsidian.md) | [思源笔记](plugin_siyuan.md)
 - [本地数据备份还原](data_recovery.md)
 - [常见问题](qa.md)
 - [inBox笔记可以用来做什么?](experience.md)
