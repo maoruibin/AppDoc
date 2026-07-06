@@ -81,8 +81,6 @@ export default defineUserConfig({
         ]},
         { text: '教程', collapsible: false, children: [
           { text: 'Web S3 教程', link: '/inbox/lesson-web-s3', children: [] },
-          { text: '导出到 Obsidian', link: '/inbox/export_obsidian', children: [] },
-          { text: '导出到思源', link: '/inbox/export_siyuan', children: [] },
           { text: '数据恢复', link: '/inbox/data_recovery', children: [] },
           { text: '导入数据', link: '/inbox/lesson-import', children: [] },
           { text: '时间笔记教程', link: '/inbox/lesson-timenote', children: [] },

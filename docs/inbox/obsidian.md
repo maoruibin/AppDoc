@@ -6,10 +6,10 @@
 
 ## 它能做什么
 
-- **双向同步**：inBox 云端 ↔ Obsidian vault
-  - 云端 → Obsidian：下载笔记，渲染为带 frontmatter 的 Markdown
-  - Obsidian → 云端：在 Obsidian 里改了笔记内容或标题，下次同步上传覆盖云端；删了本地文件，云端对应笔记标记软删除
-  - **不支持新建**：新笔记请在 inBox App 创建
+- **单向同步（云端 → Obsidian）**：只下载不上传
+  - inBox App 是收集端，Obsidian 是工作台
+  - 在 Obsidian 里编辑/删除文档不会回传到云端
+  - 不支持在 Obsidian 里新建笔记（新笔记请在 inBox App 创建）
 - **多存储后端**：WebDAV / S3 兼容存储（Bitiful、腾讯云 COS、阿里云 OSS 等）
 - **增量同步**：基于 ETag + mtime，未变化的笔记直接跳过
 - **资源同步**：图片、视频、录音、附件,落到 vault 内的 `assets/` 目录
@@ -23,7 +23,7 @@
 | | inBox App 的"导出到 Obsidian" | 本插件(obsidian-inbox-sync) |
 | --- | --- | --- |
 | 工作方式 | inBox 调 Obsidian Local REST API 推 | Obsidian 插件主动从云端拉 |
-| 同步方向 | 单向(inBox → Obsidian) | 双向(修改/软删除都同步) |
+| 同步方向 | 单向(inBox → Obsidian) | 单向(云端 → Obsidian,只读副本) |
 | 数据来源 | inBox 本地数据 | inBox 云端数据(WebDAV/S3) |
 | 资源同步 | 不支持 | 支持(图片/录音/附件) |
 | 盒子分文件夹 | 不支持 | 支持 |
@@ -34,7 +34,7 @@
 简单说：
 
 - **App 内置**：每发一条笔记推一条到 Obsidian,适合只想"随手备份到 Obsidian"的用户
-- **本插件**：把 Obsidian 当作 inBox 的桌面端,能完整拉历史、能双向同步,适合"在 Obsidian 里管理 inBox 笔记"的用户
+- **本插件**：把 Obsidian 当作 inBox 的只读工作台,能完整拉历史、能按盒子分文件夹,适合"在 Obsidian 里管理 inBox 笔记"的用户
 
 ## 安装
 
@@ -148,52 +148,27 @@ tags:
 - `tags`：自动从正文 `#tag` 提取的标签
 - `parent`：如果是批注笔记,会指向父笔记的文件名引用
 
-## 双向同步说明
+## 删除语义
 
-### 上传触发条件
+- 在 inBox App 删除笔记 → 云端 `flags.is_removed=true` → 插件下次同步时移除 Obsidian 对应文件
+- 在 Obsidian 里删文件 → **不影响云端**(单向同步,Obsidian 是只读副本)
 
-每次同步结束时扫描本地变更：
+## 为什么是单向同步？
 
-| 场景 | 行为 |
-| --- | --- |
-| 笔记的 `file.mtime > lastLocalMtime` 基线 | 上传修改 |
-| 本地文件不存在(已删除/移出 inBox 文件夹)但 metadata 有记录 | 上传软删除(`is_removed=true`) |
-| 笔记本次同步刚被下载/写入 | 不上传(基线已重置为新 mtime) |
+inBox 的定位是**收集箱**,所有笔记/批注/盒子都在 App 端创建。Obsidian 这边当作**只读工作台**:能完整拉历史、按盒子分文件夹、查标签,但不把 Obsidian 里的编辑/删除回传到云端。
 
-### 冲突处理(LWW,云端优先)
+之前版本试过双向同步(本地修改上传、本地删除软删云端),实际使用中暴露两个问题:
 
-如果同一笔记在云端和本地都改了：
+1. **基线机制脆弱**:`vault.modify` 写 frontmatter 会改 mtime,必须维护 `lastLocalMtime` 基线避免无限循环。一旦基线错乱(同步中断、手动改文件、跨设备),就会误判本地有改动而反复上传
+2. **WebDAV 缓存导致脏数据**:坚果云等 WebDAV 服务会缓存旧版本,双向同步时上传的 `is_removed=true` 会被缓存,导致其他端拉到错误的软删除状态,笔记"删了又复活"
 
-1. 下载阶段先发生 → 本地修改被覆盖
-2. 基线重置为覆盖后的 mtime
-3. 上传阶段比对发现无变化 → 不上传
-
-结果：云端版本胜出,本地修改丢失。这是有意为之的简单策略,避免双向合并的复杂性。
-
-### 软删除语义
-
-- Obsidian 里删除同步笔记的 `.md` 文件 → 云端对应笔记 `flags.is_removed = true`(不物理删除文件)
-- 跟 inBox App 的删除行为一致,App 端下次同步看到 `is_removed` 会做对应清理
-
-### 不支持的场景
-
-- **新建笔记**：在 Obsidian 中新建的 `.md` 文件没有 `inbox_id` frontmatter,不会被上传。同步只针对云端已有的笔记
-- **资源上传**：本地新增的图片/录音不会推到云端,仅云端→本地方向同步资源
-- **盒子归属变更**：移动笔记到不同盒子文件夹不会上传新的 `box_id`(保留 original 的 box_id)
-
-## 关键字段说明
-
-`lastLocalMtime`(存在 `.inbox-sync-meta.json`)：每条笔记上次同步完成后的本地文件 mtime 基线。
-
-`vault.modify` 写 frontmatter 会改 mtime,所以必须用这个基线而不是 `lastSyncTime`,否则会无限循环(自己写自己读,永远以为本地有改动)。
+权衡之后回归单向:inBox 是收集端,Obsidian 是工作台,职责分离更清晰,也避免双向同步的复杂性 + 误删风险。
 
 ## 已知限制
 
-- 不支持在 Obsidian 新建笔记(无 `inbox_id` 不会被同步)
+- 不支持在 Obsidian 新建笔记(无 `inbox_id` 不会被同步,新笔记请在 inBox App 创建)
+- 不支持回传:在 Obsidian 里编辑/删除文档不会影响云端(单向同步)
 - 盒子的创建/重命名/删除需在 inBox App 完成(插件只读 boxes.json)
-- 资源回传：在 Obsidian 里新增的图片不会上传到云端
-- 用户在本地改父笔记末尾的批注块不会同步到云端(上传时会自动剥离)
-- 冲突处理为 LWW,可能丢一边修改
 - 移动端 Obsidian 有 CORS 限制,WebDAV/S3 直连可能失败,桌面端优先
 
 ## 反馈与问题
