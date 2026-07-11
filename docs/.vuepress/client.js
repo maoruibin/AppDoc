@@ -14,6 +14,9 @@ const logoMap = {
 const defaultLogo = '/img/gudong-doc-logo.svg'
 
 function updateLogo(path) {
+  // SSR 阶段没有 document,直接跳过,等客户端 hydration 后再执行
+  if (typeof document === 'undefined') return
+
   const matched = Object.keys(logoMap).find((prefix) => path.startsWith(prefix))
   const logoUrl = matched ? logoMap[matched] : defaultLogo
 
