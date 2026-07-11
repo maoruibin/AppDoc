@@ -3,8 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "gen:apps": "python3 docs/.vuepress/generate_apps_json.py",
     "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "docs:build": "python3 docs/.vuepress/generate_apps_json.py && vuepress build docs"
   },
   "devDependencies": {
     "@vuepress/bundler-vite": "^2.0.0-rc.26",

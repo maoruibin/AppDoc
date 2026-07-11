@@ -1,7 +1,6 @@
 import { defineClientConfig } from '@vuepress/client'
 import { watch, nextTick } from 'vue'
 import { useRoute } from 'vue-router'
-import AppDownloadTable from './components/AppDownloadTable.vue'
 
 const logoMap = {
   '/inbox/': 'https://gudong.s3.bitiful.net/icon/inbox_ic_launcher.png',
@@ -27,9 +26,6 @@ function updateLogo(path) {
 }
 
 export default defineClientConfig({
-  components: {
-    AppDownloadTable,
-  },
   setup() {
     const route = useRoute()
 
