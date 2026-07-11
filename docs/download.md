@@ -9,7 +9,7 @@
 它们只专注于将一个功能做到极致，如果您认同独立开发者的精神，并追求简洁、纯粹、高效的工具，请放心下载，与我同行。
 
 <ClientOnly>
-  <AppDownloadTable />
+  <app-download-table />
 </ClientOnly>
 
 ---
