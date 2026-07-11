@@ -30,4 +30,4 @@
 
 ## 下载地址
 
-[去下载](../inbox/download.md)
+[去下载](/download)

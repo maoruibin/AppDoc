@@ -27,4 +27,4 @@
 - [PRO版本特权](pro_version.md) 
 
 ## 下载
-[去下载](../inbox/download.md)
+[去下载](/download)

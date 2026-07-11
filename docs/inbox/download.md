@@ -1,42 +1,12 @@
 # 下载地址
 
-<img src="../public/img/gudongapps.jpg" width="100%" alt="">
+> 本页面已迁移至全局下载页：**[前往下载地址](/download)**
 
-> 用代码塑造生活：咕咚同学的数字实验室
+<script>
+// 自动跳转到新的全局下载页
+if (typeof window !== 'undefined') {
+  window.location.replace('/download')
+}
+</script>
 
-感谢您的驻足！这里展示的应用，是我利用业余时间独立开发和维护的。它们诞生于解决我个人生活中遇到的实际问题，因此，我保证所有应用永无后台、永无广告。
-
-它们只专注于将一个功能做到极致，如果您认同独立开发者的精神，并追求简洁、纯粹、高效的工具，请放心下载，与我同行。
-
-|  | 应用 | 简介 | 下载 |
-| --- | --- | --- | --- |
-| <img src="https://gudong.s3.bitiful.net/icon/inbox_ic_launcher.png" width="28" alt="inBox"> | [inBox 笔记](/inbox/) | 记录灵感、想法的本地化笔记软件（手机端） | [下载地址](https://www.pgyer.com/inbox) |
-| <img src="https://gudong.s3.bitiful.net/icon/inbox_ic_launcher.png" width="28" alt="inBox"> | [inBox 笔记（桌面版）](/inbox/) | Windows / macOS / Linux 桌面端，含网页版 | [前往下载](https://inbox.gudong.site/#/) |
-| <img src="https://gudong.s3.bitiful.net/icon/ic_launcher_light.png" width="28" alt="点亮习惯"> | [点亮习惯](/light) | 成为更好的自己，极致简单的习惯打卡软件 | [下载地址](https://www.pgyer.com/dianliang) |
-| <img src="https://gudong.s3.bitiful.net/icon/cang_launcher_icon.png?no-wait=on" width="28" alt="仓咚咚"> | [仓咚咚](/cang) | 让资产一目了然，简单易用的资产管理软件 | [下载地址](https://www.pgyer.com/cangdongdong) |
-| <img src="https://gudong.s3.bitiful.net/icon/rss_ic_launcher.png" width="28" alt="咕咚订阅"> | [咕咚订阅](/rssplus) | 个性化我的信息源，简洁实用的 RSS 订阅软件 | [下载地址](https://www.pgyer.com/rssplus-android) |
-| <img src="https://gudong.s3.bitiful.net/icon/pic_ic_launcher.png" width="28" alt="咕咚云图"> | [咕咚云图](/picplus) | 图床上传 APP，生成 Markdown 链接，兼容主流图床与 GitHub/码云 | [下载地址](https://www.pgyer.com/picplus-android) |
-| <img src="https://gudong.s3.bitiful.net/icon/voice_icon_1024.png?no-wait=on" width="28" alt="inVoice"> | [inVoice 语记](/voice) | 简单好用的录音工具，支持 AI 智能转写 | [下载地址](https://www.pgyer.com/invoiceyuji) |
-| <img src="https://gudong.s3.bitiful.net/icon/passbox_icon.png" width="28" alt="PassBox"> | [PassBox](/passbox) | 极简离线密码管理器，本地存储不联网 | [下载地址](https://www.pgyer.com/passbox-android) |
-
-<!-- 已隐藏 — 后续可恢复
-| <img src="../public/img/niushuo_icon.png" width="28" alt="小牛说"> | [小牛说](/niushuo) | AI 驱动的语音输入法，打字不用敲，就用小牛说 | [下载地址](https://www.pgyer.com/xiaoniushuo) |
-| <img src="../public/img/tudongdong_icon.png" width="28" alt="图咚咚"> | [图咚咚](/tudongdong) | 简单易用、高颜值的全能本地图片处理工具箱 | [下载地址](https://www.pgyer.com/picdong-android) |
-| <img src="../public/img/shengdongdong_icon.png" width="28" alt="声咚咚"> | [声咚咚](/audio) | 让声音随心所欲，简单易用的全能音频工具箱 | [下载地址](https://www.pgyer.com/shengdongdong) |
-| <img src="https://gudong.s3.bitiful.net/icon/dong-time.png" width="28" alt="咚时光"> | [咚时光](/time) | 为宝宝记录每一个珍贵时刻的成长记录软件 | [下载地址](https://www.pgyer.com/dongshiguang) |
-| <img src="https://gudong.s3.bitiful.net/icon/echo_read_icon.png" width="28" alt="EchoRead"> | [EchoRead](/echo) | AI 驱动的个人知识管理，把好内容复刻成脑资产 | [下载地址](https://www.pgyer.com/echoread) |
--->
-
----
-
-## 💬 加入用户交流群
-
-每个 App 都有对应的用户群。如果你想了解最新动态、获取使用帮助、或者给我提产品建议，欢迎加我微信，备注你使用的 **App 名称** 即可进群。
-
-<div align="center">
-  <img src="https://gudong.s3.bitiful.net/asset/gudong_wechat_qr.jpg" width="200" alt="咕咚微信">
-  <br>
-  <strong>微信：mw08032231</strong>
-  <br>
-  <span style="color:#888;font-size:14px;">👆 扫码加我，备注 App 名称进群</span>
-</div>
+如未自动跳转，请 [点击这里前往下载页](/download)。

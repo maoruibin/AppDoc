@@ -1,0 +1,126 @@
+# 咕咚全应用元数据 — 下载页/首页的唯一数据源
+# 维护规则:
+#   1. download 字段用蒲公英下载主页(pgyer.com/{shortcut}),永久不变,发版后无需更新
+#      (不用 install 直链 pgyer.com/app/install/{buildKey},那个每次上传都变)
+#   2. 新增 app 加一条,设 visible/sort
+#   3. 修改后运行:cd AppDoc/docs/.vuepress && python3 generate_apps_json.py
+#   4. visible=false 的不在下载页展示(未上线/隐藏)
+
+# ===== 已上线(visible: true) =====
+- name: inBox 笔记
+  package: name.gudong.think
+  icon: https://gudong.s3.bitiful.net/icon/inbox_ic_launcher.png
+  desc: 记录灵感、想法的本地化笔记软件
+  download: https://www.pgyer.com/inbox
+  doc: /inbox/
+  visible: true
+  sort: 1
+
+- name: inVoice 语记
+  package: name.gudong.voice
+  icon: https://gudong.s3.bitiful.net/icon/voice_icon_1024.png?no-wait=on
+  desc: 简单好用的录音工具，支持 AI 智能转写
+  download: https://www.pgyer.com/invoiceyuji
+  doc: /voice/
+  visible: true
+  sort: 2
+
+- name: 点亮习惯
+  package: name.gudong.habit
+  icon: https://gudong.s3.bitiful.net/icon/ic_launcher_light.png
+  desc: 成为更好的自己，极致简单的习惯打卡软件
+  download: https://www.pgyer.com/dianliang
+  doc: /light/
+  visible: true
+  sort: 3
+
+- name: 仓咚咚
+  package: name.gudong.assets
+  icon: https://gudong.s3.bitiful.net/icon/cang_launcher_icon.png?no-wait=on
+  desc: 让资产一目了然，简单易用的资产管理软件
+  download: https://www.pgyer.com/cangdongdong
+  doc: /cang/
+  visible: true
+  sort: 4
+
+- name: 咕咚订阅
+  package: name.gudong.rss
+  icon: https://gudong.s3.bitiful.net/icon/rss_ic_launcher.png
+  desc: 个性化我的信息源，简洁实用的 RSS 订阅软件
+  download: https://www.pgyer.com/rssplus-android
+  doc: /rssplus/
+  visible: true
+  sort: 5
+
+- name: 咕咚云图
+  package: name.gudong.pic
+  icon: https://gudong.s3.bitiful.net/icon/pic_ic_launcher.png
+  desc: 图床上传 APP，生成 Markdown 链接，兼容主流图床与 GitHub/码云
+  download: https://www.pgyer.com/picplus-android
+  doc: /picplus/
+  visible: true
+  sort: 6
+
+- name: PassBox
+  package: name.gudong.passbox
+  icon: https://gudong.s3.bitiful.net/icon/passbox_icon.png?no-wait=on
+  desc: 极简离线密码管理器，本地存储不联网
+  download: https://www.pgyer.com/passbox-android
+  doc: /passbox/
+  visible: true
+  sort: 7
+
+# ===== 未上线/隐藏(visible: false) =====
+- name: inBox 笔记（桌面版）
+  package: name.gudong.think
+  icon: https://gudong.s3.bitiful.net/icon/inbox_ic_launcher.png
+  desc: Windows / macOS / Linux 桌面端，含网页版
+  download: https://inbox.gudong.site/#/
+  doc: /inbox/
+  visible: false
+  sort: 101
+
+- name: 小牛说
+  package: name.gudong.inputvc
+  icon: /img/niushuo_icon.png
+  desc: AI 驱动的语音输入法，打字不用敲，就用小牛说
+  download: https://www.pgyer.com/xiaoniushuo
+  doc: /niushuo/
+  visible: false
+  sort: 102
+
+- name: 图咚咚
+  package: name.gudong.pictoon
+  icon: /img/tudongdong_icon.png
+  desc: 简单易用、高颜值的全能本地图片处理工具箱
+  download: https://www.pgyer.com/picdong-android
+  doc: /tudongdong/
+  visible: false
+  sort: 103
+
+- name: 声咚咚
+  package: name.gudong.audio
+  icon: /img/shengdongdong_icon.png
+  desc: 让声音随心所欲，简单易用的全能音频工具箱
+  download: https://www.pgyer.com/shengdongdong
+  doc: /audio/
+  visible: false
+  sort: 104
+
+- name: 咚时光
+  package: name.gudong.time
+  icon: https://gudong.s3.bitiful.net/icon/dong-time.png
+  desc: 为宝宝记录每一个珍贵时刻的成长记录软件
+  download: https://www.pgyer.com/dongshiguang
+  doc: /time/
+  visible: false
+  sort: 105
+
+- name: EchoRead
+  package: name.gudong.content
+  icon: https://gudong.s3.bitiful.net/icon/echo_read_icon.png
+  desc: AI 驱动的个人知识管理，把好内容复刻成脑资产
+  download: https://www.pgyer.com/echoread
+  doc: /echo/
+  visible: false
+  sort: 106

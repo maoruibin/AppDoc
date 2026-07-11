@@ -20,7 +20,7 @@ export default defineUserConfig({
     navbar: [
       { text: '首页', link: '/' },
       { text: '知识卡片', link: 'https://card.gudong.site/' },
-      { text: '下载地址', link: '/inbox/download' },
+      { text: '下载地址', link: '/download' },
       {
         text: '作品集合',
         children: [
@@ -93,7 +93,7 @@ export default defineUserConfig({
         ]},
         { text: '关于', collapsible: false, children: [
           { text: '缘起', link: '/inbox/reason', children: [] },
-          { text: '下载地址', link: '/inbox/download', children: [] },
+          { text: '下载地址', link: '/download', children: [] },
           { text: '更新日志', link: '/inbox/changelog', children: [] },
           { text: '联系我们', link: '/inbox/contact', children: [] }
         ]},

@@ -26,7 +26,7 @@ EchoRead 是一款 AI 驱动的个人知识管理工具，专为创作者和研�
 
 ## 下载地址
 
-[去下载](../inbox/download.md)
+[去下载](/download)
 
 ## 一些其他链接
 

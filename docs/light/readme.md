@@ -22,4 +22,4 @@
 - [联系我们](https://doc.gudong.site/light/contact.html)
 
 ##  下载地址
-[去下载](../inbox/download.md)
+[去下载](/download)
