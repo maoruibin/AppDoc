@@ -25,10 +25,12 @@ export default defineUserConfig({
         text: '作品集合',
         children: [
           { text: 'inBox 笔记', link: '/inbox/' },
-          { text: '仓咚咚', link: '/cang/' },
+          { text: 'inVoice 语记', link: '/voice/' },
           { text: '点亮', link: '/light/' },
-         { text: '咕咚订阅', link: '/rssplus/' },
+          { text: '仓咚咚', link: '/cang/' },
+          { text: '咕咚订阅', link: '/rssplus/' },
           { text: '咕咚云图', link: '/picplus/' },
+          { text: 'PassBox', link: '/passbox/' },
          // { text: '咚时光', link: '/time/' }  // 已隐藏 — 后续可恢复
         ]
      },
