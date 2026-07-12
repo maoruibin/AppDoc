@@ -224,6 +224,21 @@ export default defineUserConfig({
         { text: '关于', collapsible: false, children: [
           { text: '联系我们', link: '/voice/contact', children: [] }
         ]}
+      ],
+      '/passbox/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '介绍', link: '/passbox/', children: [] },
+          { text: '使用指南', link: '/passbox/guide', children: [] },
+          { text: '常见问题', link: '/passbox/qa', children: [] },
+          { text: '更新日志', link: '/passbox/changelog', children: [] }
+        ]},
+        { text: '功能', collapsible: false, children: [
+          { text: 'PRO 专业版', link: '/passbox/pro_version', children: [] }
+        ]},
+        { text: '服务协议', collapsible: false, children: [
+          { text: '用户协议', link: '/passbox/agreement', children: [] },
+          { text: '隐私政策', link: '/passbox/private', children: [] }
+        ]}
       ]
     }
   }),
