@@ -19,7 +19,7 @@
 
 ## 相关链接
 - [快速上手](guide.md)
-- [去下载](download.md)
+- [去下载](/download)
 - [更新日志](changelog.md)
 - [常见问题](qa.md)
 - [数据安全说明](data_security.md)

@@ -15,7 +15,7 @@
 > Tip: 同步到 memos 为 inBox PRO 功能，普通用户可以免费发布 7 个笔记进行同步体验。
 
 
-1、下载 inBox 笔记，[去下载](./download.md)
+1、下载 inBox 笔记，[去下载](/download)
 
 2、打开 inBox 笔记，点击首页右上角菜单 > 选择 数据云中心 > 选择云类型 >  Memos 服务 
 

@@ -27,6 +27,6 @@ Lsky Pro 图床支持通过 API 上传图片，只要在 App 中进行配置，�
 
 
 ## 其他
-- PicPlus 下载地址：[去下载](download.md)
+- PicPlus 下载地址：[去下载](/download)
 - Lsky-Pro 地址：[https://www.lsky.pro/](https://www.lsky.pro/)
 

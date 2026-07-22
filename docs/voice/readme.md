@@ -22,7 +22,7 @@ inVoice 语记 是一款简洁、稳定的 Android 录音应用。无论你是�
 
 - [快速上手](guide.md)
 - [功能详解](features.md)
-- [下载安装](download.md)
+- [下载安装](/download)
 - [更新日志](changelog.md)
 - [常见问题](qa.md)
 - [用户协议](agreement.md)
@@ -31,4 +31,4 @@ inVoice 语记 是一款简洁、稳定的 Android 录音应用。无论你是�
 
 ## 下载
 
-[去下载](download.md)
+[去下载](/download)
