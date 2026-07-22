@@ -2,7 +2,7 @@
 """
 从 apps.yml 生成:
   1. public/apps.json — 备用数据源
-  2. docs/download.md 的表格区域 — 纯 Markdown 表格,SSR 直出,不依赖客户端 JS
+  2. docs/download.md 的卡片网格区域 — HTML 卡片,SSR 直出,不依赖客户端 JS
 
 维护 apps.yml 后运行:python3 generate_apps_json.py
 """
@@ -61,28 +61,34 @@ def gen_apps_json(apps):
 
 
 def gen_download_table(apps):
-    """生成 download.md 的表格区域并替换到 <!-- APPS_TABLE_START/END --> 标记之间。"""
+    """生成 download.md 的卡片网格区域并替换到 <!-- APPS_TABLE_START/END --> 标记之间。"""
+    import html
+
     visible = sorted(
         [a for a in apps if a.get("visible")],
         key=lambda a: a.get("sort", 999),
     )
 
-    lines = [
-        "<!-- 此表格由 generate_apps_json.py 自动生成，请勿手动编辑 -->",
-        "|  | 应用 | 简介 | 下载 |",
-        "| --- | --- | --- | --- |",
-    ]
+    lines = ["<!-- 此卡片网格由 generate_apps_json.py 自动生成，请勿手动编辑 -->", '<div class="app-dl-grid">']
     for a in visible:
         icon = a.get("icon", "")
-        # 本地路径转绝对路径(组件里靠 base 拼接,Markdown 里直接用 / 开头)
         name = a.get("name", "")
         desc = a.get("desc", "")
         doc = a.get("doc", "")
         download = a.get("download", "")
+        safe_name = html.escape(str(name))
+        safe_desc = html.escape(str(desc))
         lines.append(
-            f'| <img src="{icon}" width="28" alt="{name}"> '
-            f"| [{name}]({doc}) | {desc} | [下载主页]({download}) |"
+            f'<a class="app-dl-card" href="{download}">'
+            f'<img class="app-dl-icon" src="{icon}" alt="{safe_name}">'
+            f'<div class="app-dl-info">'
+            f'<div class="app-dl-name">{safe_name}</div>'
+            f'<div class="app-dl-desc">{safe_desc}</div>'
+            f"</div>"
+            f'<span class="app-dl-btn">下载主页</span>'
+            f"</a>"
         )
+    lines.append("</div>")
 
     table_block = "\n".join(lines)
 
