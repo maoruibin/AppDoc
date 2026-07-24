@@ -2,6 +2,10 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
+## AI 日志与验证规范（必读）
+
+本项目属于 ReProject。AI 修改代码前必须先读并遵守 [`../docs/ai-logging-verification.md`](../docs/ai-logging-verification.md)。写代码时同步补关键日志，交付前说明使用了哪些日志、命令、构建结果或页面验证完成闭环。
+
 ## Project Overview
 
 AppDoc is a static documentation website built with VuePress v2. It serves as the documentation portal for several personal applications (inBox 笔记, 仓咚咚, 点亮, 咕咚订阅, 咕咚云图). All content is in Simplified Chinese.

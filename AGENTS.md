@@ -3,6 +3,10 @@
 > doc.gudong.site 的源码仓库。VuePress 2 静态文档站，记录咕咚所有 App 的使用说明。
 > 部署在 Cloudflare Pages，git push 到 main 自动触发构建部署。
 
+## AI 日志与验证规范（必读）
+
+本项目属于 ReProject。AI 修改代码前必须先读并遵守 [`../docs/ai-logging-verification.md`](../docs/ai-logging-verification.md)。写代码时同步补关键日志，交付前说明使用了哪些日志、命令、构建结果或页面验证完成闭环。
+
 ## 快速上手
 
 - 本地预览：npm run docs:dev（端口 8080，占用时 --port 5173）
