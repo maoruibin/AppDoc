@@ -66,6 +66,7 @@ export default defineUserConfig({
           { text: '标签', link: '/inbox/tag', children: [] },
           { text: '盒子', link: '/inbox/box', children: [] },
           { text: '时间笔记', link: '/inbox/time_note', children: [] },
+          { text: '微信记笔记', link: '/inbox/wechat_note', children: [] },
           { text: '热力图', link: '/inbox/heatmap', children: [] },
           { text: '链接', link: '/inbox/link', children: [] },
           { text: '图片服务', link: '/inbox/image_server', children: [] }
