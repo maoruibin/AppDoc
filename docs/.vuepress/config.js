@@ -31,6 +31,13 @@ export default defineUserConfig({
           { text: '咕咚订阅', link: '/rssplus/' },
           { text: '咕咚云图', link: '/picplus/' },
           { text: 'PassBox', link: '/passbox/' },
+          { text: '听咚咚', link: '/music/' },
+          { text: '小牛说', link: '/niushuo/' },
+          { text: '图咚咚', link: '/tudongdong/' },
+          { text: '声咚咚', link: '/audio/' },
+          { text: 'EchoRead', link: '/echo/' },
+          { text: '梦咚咚', link: '/dream/' },
+          { text: '图诗', link: '/picpoem/' },
          // { text: '咚时光', link: '/time/' }  // 已隐藏 — 后续可恢复
         ]
      },
@@ -62,6 +69,7 @@ export default defineUserConfig({
   
         { text: '功能', collapsible: false, children: [
           { text: 'Markdown', link: '/inbox/markdown', children: [] },
+          { text: '语音笔记', link: '/inbox/voice-note', children: [] },
           { text: '快速操作', link: '/inbox/quick', children: [] },
           { text: '标签', link: '/inbox/tag', children: [] },
           { text: '盒子', link: '/inbox/box', children: [] },
@@ -139,6 +147,7 @@ export default defineUserConfig({
           { text: 'WebDAV 云盘', link: '/light/data_webdav', children: [] }
         ]},
         { text: '教程', collapsible: false, children: [
+          { text: '功能指南', link: '/light/guide', children: [] },
           { text: 'WebDAV 教程', link: '/light/lesson-webdav', children: [] }
         ]},
         { text: '服务协议', collapsible: false, children: [
@@ -152,7 +161,10 @@ export default defineUserConfig({
         ]}
       ],
       '/rssplus/': [
-        { text: '你好', collapsible: false, children: [
+        { text: '使用指南', collapsible: false, children: [
+          { text: '使用指南', link: '/rssplus/guide', children: [] },
+          { text: '功能详解', link: '/rssplus/features', children: [] },
+          { text: 'WebDAV 云备份教程', link: '/rssplus/lesson-webdav', children: [] },
           { text: '常见问题', link: '/rssplus/qa', children: [] }
         ]},
         { text: '服务协议', collapsible: false, children: [
@@ -180,7 +192,8 @@ export default defineUserConfig({
         { text: '使用', collapsible: false, children: [
           { text: 'WebDAV 使用', link: '/picplus/webdav', children: [] },
           { text: '推荐配置', link: '/picplus/recommend', children: [] },
-          { text: '使用方式', link: '/picplus/way', children: [] }
+          { text: '使用方式', link: '/picplus/way', children: [] },
+          { text: '水印使用指南', link: '/picplus/watermark-guide', children: [] }
         ]},
         { text: '服务协议', collapsible: false, children: [
           { text: '隐私政策', link: '/picplus/private', children: [] },
@@ -194,6 +207,9 @@ export default defineUserConfig({
       /* '/time/': [  // 已隐藏 — 保留配置，后续可恢复
         { text: '你好', collapsible: false, children: [
           { text: '使用指南', link: '/time/guide', children: [] },
+          { text: '功能详解', link: '/time/features', children: [] },
+          { text: '云同步指南', link: '/time/sync-guide', children: [] },
+          { text: '家庭组', link: '/time/family', children: [] },
           { text: '账号与登录', link: '/time/account', children: [] },
           { text: '常见问题', link: '/time/qa', children: [] },
           { text: '更新日志', link: '/time/changelog', children: [] }
@@ -239,6 +255,155 @@ export default defineUserConfig({
         { text: '服务协议', collapsible: false, children: [
           { text: '用户协议', link: '/passbox/agreement', children: [] },
           { text: '隐私政策', link: '/passbox/private', children: [] }
+        ]}
+      ],
+      '/music/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '介绍', link: '/music/', children: [] },
+          { text: '快速上手', link: '/music/guide', children: [] },
+          { text: '常见问题', link: '/music/qa', children: [] },
+          { text: '更新日志', link: '/music/changelog', children: [] }
+        ]},
+        { text: '功能', collapsible: false, children: [
+          { text: '功能详解', link: '/music/features', children: [] }
+        ]},
+        { text: '服务协议', collapsible: false, children: [
+          { text: '用户协议', link: '/music/agreement', children: [] },
+          { text: '隐私政策', link: '/music/private', children: [] }
+        ]},
+        { text: '关于', collapsible: false, children: [
+          { text: '为什么', link: '/music/why', children: [] },
+          { text: '联系我们', link: '/music/contact', children: [] }
+        ]}
+      ],
+      '/niushuo/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '介绍', link: '/niushuo/', children: [] },
+          { text: '快速上手', link: '/niushuo/guide', children: [] },
+          { text: '常见问题', link: '/niushuo/qa', children: [] },
+          { text: '更新日志', link: '/niushuo/changelog', children: [] }
+        ]},
+        { text: '功能', collapsible: false, children: [
+          { text: '功能详解', link: '/niushuo/features', children: [] }
+        ]},
+        { text: '服务协议', collapsible: false, children: [
+          { text: '用户协议', link: '/niushuo/agreement', children: [] },
+          { text: '隐私政策', link: '/niushuo/private', children: [] }
+        ]},
+        { text: '关于', collapsible: false, children: [
+          { text: '为什么', link: '/niushuo/why', children: [] },
+          { text: '联系我们', link: '/niushuo/contact', children: [] }
+        ]}
+      ],
+      '/tudongdong/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '介绍', link: '/tudongdong/', children: [] },
+          { text: '快速上手', link: '/tudongdong/guide', children: [] },
+          { text: '常见问题', link: '/tudongdong/qa', children: [] },
+          { text: '更新日志', link: '/tudongdong/changelog', children: [] }
+        ]},
+        { text: '功能', collapsible: false, children: [
+          { text: '功能详解', link: '/tudongdong/features', children: [] }
+        ]},
+        { text: '服务协议', collapsible: false, children: [
+          { text: '用户协议', link: '/tudongdong/agreement', children: [] },
+          { text: '隐私政策', link: '/tudongdong/private', children: [] }
+        ]},
+        { text: '关于', collapsible: false, children: [
+          { text: '为什么', link: '/tudongdong/why', children: [] },
+          { text: '联系我们', link: '/tudongdong/contact', children: [] }
+        ]}
+      ],
+      '/dream/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '介绍', link: '/dream/', children: [] },
+          { text: '快速上手', link: '/dream/guide', children: [] },
+          { text: '常见问题', link: '/dream/qa', children: [] },
+          { text: '更新日志', link: '/dream/changelog', children: [] }
+        ]},
+        { text: '功能', collapsible: false, children: [
+          { text: '功能详解', link: '/dream/features', children: [] }
+        ]},
+        { text: '服务协议', collapsible: false, children: [
+          { text: '用户协议', link: '/dream/agreement', children: [] },
+          { text: '隐私政策', link: '/dream/private', children: [] }
+        ]},
+        { text: '关于', collapsible: false, children: [
+          { text: '为什么', link: '/dream/why', children: [] },
+          { text: '联系我们', link: '/dream/contact', children: [] }
+        ]}
+      ],
+      '/picpoem/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '介绍', link: '/picpoem/', children: [] },
+          { text: '快速上手', link: '/picpoem/guide', children: [] },
+          { text: '常见问题', link: '/picpoem/qa', children: [] },
+          { text: '更新日志', link: '/picpoem/changelog', children: [] }
+        ]},
+        { text: '功能', collapsible: false, children: [
+          { text: '功能详解', link: '/picpoem/features', children: [] }
+        ]},
+        { text: '服务协议', collapsible: false, children: [
+          { text: '用户协议', link: '/picpoem/agreement', children: [] },
+          { text: '隐私政策', link: '/picpoem/private', children: [] }
+        ]},
+        { text: '关于', collapsible: false, children: [
+          { text: '为什么', link: '/picpoem/why', children: [] },
+          { text: '联系我们', link: '/picpoem/contact', children: [] }
+        ]}
+      ],
+      '/douyin/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '介绍', link: '/douyin/', children: [] },
+          { text: '快速上手', link: '/douyin/guide', children: [] },
+          { text: '常见问题', link: '/douyin/qa', children: [] },
+          { text: '更新日志', link: '/douyin/changelog', children: [] }
+        ]},
+        { text: '功能', collapsible: false, children: [
+          { text: '功能详解', link: '/douyin/features', children: [] }
+        ]},
+        { text: '服务协议', collapsible: false, children: [
+          { text: '用户协议', link: '/douyin/agreement', children: [] },
+          { text: '隐私政策', link: '/douyin/private', children: [] }
+        ]},
+        { text: '关于', collapsible: false, children: [
+          { text: '为什么', link: '/douyin/why', children: [] },
+          { text: '联系我们', link: '/douyin/contact', children: [] }
+        ]}
+      ],
+      '/echo/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '介绍', link: '/echo/', children: [] },
+          { text: '快速上手', link: '/echo/guide', children: [] },
+          { text: '常见问题', link: '/echo/qa', children: [] },
+          { text: '更新日志', link: '/echo/changelog', children: [] }
+        ]},
+        { text: '功能', collapsible: false, children: [
+          { text: '功能详解', link: '/echo/features', children: [] }
+        ]},
+        { text: '服务协议', collapsible: false, children: [
+          { text: '用户协议', link: '/echo/agreement', children: [] },
+          { text: '隐私政策', link: '/echo/private', children: [] }
+        ]},
+        { text: '关于', collapsible: false, children: [
+          { text: '为什么', link: '/echo/why', children: [] },
+          { text: '联系我们', link: '/echo/contact', children: [] }
+        ]}
+      ],
+      '/audio/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '介绍', link: '/audio/', children: [] },
+          { text: '快速上手', link: '/audio/guide', children: [] },
+          { text: '常见问题', link: '/audio/qa', children: [] },
+          { text: '更新日志', link: '/audio/changelog', children: [] }
+        ]},
+        { text: '服务协议', collapsible: false, children: [
+          { text: '用户协议', link: '/audio/agreement', children: [] },
+          { text: '隐私政策', link: '/audio/private', children: [] }
+        ]},
+        { text: '关于', collapsible: false, children: [
+          { text: '为什么', link: '/audio/why', children: [] },
+          { text: '联系我们', link: '/audio/contact', children: [] }
         ]}
       ]
     }

@@ -26,6 +26,7 @@
 - 支持自动复制链接
 - 支持设置 Markdown 格式的图片标题
 - 支持数据导出、导入，自动备份本地数据
+- 支持上传时自动添加水印（文字水印 / 图片水印，PRO 专属），详见[水印使用指南](https://doc.gudong.site/picplus/watermark-guide.html)
 
 更多介绍查看：https://www.yuque.com/gudong-osksb/twgz5k/bfdihv
 

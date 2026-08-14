@@ -70,6 +70,42 @@
   visible: true
   sort: 7
 
+- name: 小牛说
+  package: name.gudong.inputvc
+  icon: /img/niushuo_icon.png
+  desc: AI 驱动的语音输入法，打字不用敲，就用小牛说
+  download: https://www.pgyer.com/xiaoniushuo
+  doc: /niushuo/
+  visible: true
+  sort: 8
+
+- name: 声咚咚
+  package: name.gudong.audio
+  icon: /img/shengdongdong_icon.png
+  desc: 让声音随心所欲，简单易用的全能音频工具箱
+  download: https://www.pgyer.com/shengdongdong
+  doc: /audio/
+  visible: true
+  sort: 9
+
+- name: 图咚咚
+  package: name.gudong.pictoon
+  icon: /img/tudongdong_icon.png
+  desc: 简单易用、高颜值的全能本地图片处理工具箱
+  download: https://www.pgyer.com/picdong-android
+  doc: /tudongdong/
+  visible: true
+  sort: 10
+
+- name: EchoRead
+  package: name.gudong.content
+  icon: https://gudong.s3.bitiful.net/icon/echo_read_icon.png
+  desc: AI 驱动的个人知识管理，把好内容复刻成脑资产
+  download: https://www.pgyer.com/echoread
+  doc: /echo/
+  visible: true
+  sort: 11
+
 # ===== 未上线/隐藏(visible: false) =====
 - name: inBox 笔记（桌面版）
   package: name.gudong.think
@@ -80,33 +116,6 @@
   visible: false
   sort: 101
 
-- name: 小牛说
-  package: name.gudong.inputvc
-  icon: /img/niushuo_icon.png
-  desc: AI 驱动的语音输入法，打字不用敲，就用小牛说
-  download: https://www.pgyer.com/xiaoniushuo
-  doc: /niushuo/
-  visible: false
-  sort: 102
-
-- name: 图咚咚
-  package: name.gudong.pictoon
-  icon: /img/tudongdong_icon.png
-  desc: 简单易用、高颜值的全能本地图片处理工具箱
-  download: https://www.pgyer.com/picdong-android
-  doc: /tudongdong/
-  visible: false
-  sort: 103
-
-- name: 声咚咚
-  package: name.gudong.audio
-  icon: /img/shengdongdong_icon.png
-  desc: 让声音随心所欲，简单易用的全能音频工具箱
-  download: https://www.pgyer.com/shengdongdong
-  doc: /audio/
-  visible: false
-  sort: 104
-
 - name: 咚时光
   package: name.gudong.time
   icon: https://gudong.s3.bitiful.net/icon/dong-time.png
@@ -115,12 +124,3 @@
   doc: /time/
   visible: false
   sort: 105
-
-- name: EchoRead
-  package: name.gudong.content
-  icon: https://gudong.s3.bitiful.net/icon/echo_read_icon.png
-  desc: AI 驱动的个人知识管理，把好内容复刻成脑资产
-  download: https://www.pgyer.com/echoread
-  doc: /echo/
-  visible: false
-  sort: 106
