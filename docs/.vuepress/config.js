@@ -38,6 +38,7 @@ export default defineUserConfig({
           { text: 'EchoRead', link: '/echo/' },
           { text: '梦咚咚', link: '/dream/' },
           { text: '图诗', link: '/picpoem/' },
+          { text: '脉咚咚', link: '/mai/' },
          // { text: '咚时光', link: '/time/' }  // 已隐藏 — 后续可恢复
         ]
      },
@@ -331,6 +332,12 @@ export default defineUserConfig({
         { text: '关于', collapsible: false, children: [
           { text: '为什么', link: '/dream/why', children: [] },
           { text: '联系我们', link: '/dream/contact', children: [] }
+        ]}
+      ],
+      '/mai/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '介绍', link: '/mai/', children: [] },
+          { text: '更新日志', link: '/mai/changelog', children: [] }
         ]}
       ],
       '/picpoem/': [
