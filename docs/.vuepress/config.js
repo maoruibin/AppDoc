@@ -39,7 +39,9 @@ export default defineUserConfig({
           { text: '梦咚咚', link: '/dream/' },
           { text: '图诗', link: '/picpoem/' },
           { text: '脉咚咚', link: '/mai/' },
-         // { text: '咚时光', link: '/time/' }  // 已隐藏 — 后续可恢复
+          { text: '咚时光', link: '/time/' },
+          { text: '量咚咚', link: '/measure/' },
+          { text: '麻雀 MD', link: 'https://blog.gudong.site/sparrow/' },
         ]
      },
       {
@@ -205,7 +207,7 @@ export default defineUserConfig({
           { text: '关于', link: '/picplus/about', children: [] }
         ]}
      ],
-      /* '/time/': [  // 已隐藏 — 保留配置，后续可恢复
+      '/time/': [
         { text: '你好', collapsible: false, children: [
           { text: '使用指南', link: '/time/guide', children: [] },
           { text: '功能详解', link: '/time/features', children: [] },
@@ -222,7 +224,12 @@ export default defineUserConfig({
         { text: '关于', collapsible: false, children: [
           { text: '联系我们', link: '/time/contact', children: [] }
         ]}
-      ], */
+      ],
+      '/measure/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '更新日志', link: '/measure/changelog', children: [] }
+        ]}
+      ],
      '/voice/': [
         { text: '使用指南', collapsible: false, children: [
           { text: '快速上手', link: '/voice/guide', children: [] },
