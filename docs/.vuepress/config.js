@@ -340,6 +340,11 @@ export default defineUserConfig({
           { text: '更新日志', link: '/mai/changelog', children: [] }
         ]}
       ],
+      '/health/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '更新日志', link: '/health/changelog', children: [] }
+        ]}
+      ],
       '/picpoem/': [
         { text: '你好', collapsible: false, children: [
           { text: '介绍', link: '/picpoem/', children: [] },
