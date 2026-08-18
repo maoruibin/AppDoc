@@ -40,12 +40,12 @@ sidebar: false
    <div class="app-desc">为宝宝记录每一个珍贵时刻的成长记录软件</div>
  </a>
  <a class="app-card" href="/music/">
-   <img src="https://gudong.s3.bitiful.net/icon/music_ic_launcher.png?no-wait=on" alt="听咚咚">
+   <img src="https://gudong.s3.bitiful.net/icon/tingdongdong-icon.png?no-wait=on" alt="听咚咚">
    <div class="app-name">听咚咚</div>
    <div class="app-desc">简洁优雅的本地音乐播放器</div>
  </a>
  <a class="app-card" href="/measure/">
-   <img src="https://gudong.s3.bitiful.net/icon/measure_icon_1019.png?no-wait=on" alt="量咚咚">
+   <img src="https://gudong.s3.bitiful.net/icon/measure-icon.png?no-wait=on" alt="量咚咚">
    <div class="app-name">量咚咚</div>
    <div class="app-desc">尺子、水平仪、指南针、量角器、分贝仪、取色器一App全搞定</div>
  </a>
@@ -61,7 +61,7 @@ sidebar: false
    <div class="app-desc">AI 驱动的个人知识管理，把好内容复刻成脑资产</div>
  </a>
  <a class="app-card" href="/audio/">
-   <img src="https://gudong.s3.bitiful.net/icon/sheng_dong_dong.png" alt="声咚咚">
+   <img src="https://gudong.s3.bitiful.net/icon/shengdongdong_icon.png?no-wait=on" alt="声咚咚">
    <div class="app-name">声咚咚</div>
    <div class="app-desc">让声音随心所欲，简单易用的全能音频工具箱</div>
  </a>
