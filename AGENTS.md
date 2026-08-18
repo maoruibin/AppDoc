@@ -35,6 +35,7 @@
 | niushuo/ | 小牛说 | 隐藏 | 7856141f76eee28f17ae19b6b091ef1f |
 | tudongdong/ | 图咚咚 | 隐藏 | 449fe465df1eb30c8aebc0e989b4a41d |
 | dream/ | 梦咚咚 | 隐藏 | — |
+| sparrow/ | 麻雀 MD | 隐藏 | 8eccd5f8faad960923b3d3c8bc9f646f |
 | picpoem/ | 诗图 | 未注册 | — |
 | douyin/ | 抖音保存 | 不注册（工具类） | — |
 

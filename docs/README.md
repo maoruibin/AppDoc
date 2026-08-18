@@ -79,7 +79,7 @@ sidebar: false
    <div class="app-desc">简单易用、高颜值的全能本地图片处理工具箱</div>
  </a>
  -->
- <a class="app-card" href="https://blog.gudong.site/sparrow/">
+ <a class="app-card" href="/sparrow/">
    <img src="https://gudong.s3.bitiful.net/icon/maquemd_icon.png?no-wait=on" alt="麻雀 MD">
    <div class="app-name">麻雀 MD</div>
    <div class="app-desc">轻量 Markdown 阅读器，秒开、无账号、无联网权限</div>

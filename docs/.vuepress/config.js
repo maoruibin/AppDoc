@@ -41,7 +41,7 @@ export default defineUserConfig({
           { text: '脉咚咚', link: '/mai/' },
           { text: '咚时光', link: '/time/' },
           { text: '量咚咚', link: '/measure/' },
-          { text: '麻雀 MD', link: 'https://blog.gudong.site/sparrow/' },
+          { text: '麻雀 MD', link: '/sparrow/' },
         ]
      },
       {
@@ -228,6 +228,14 @@ export default defineUserConfig({
       '/measure/': [
         { text: '你好', collapsible: false, children: [
           { text: '更新日志', link: '/measure/changelog', children: [] }
+        ]}
+      ],
+      '/sparrow/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '介绍', link: '/sparrow/', children: [] },
+          { text: '更新日志', link: '/sparrow/changelog', children: [] },
+          { text: '用户协议', link: '/sparrow/agreement', children: [] },
+          { text: '隐私政策', link: '/sparrow/private', children: [] }
         ]}
       ],
      '/voice/': [
