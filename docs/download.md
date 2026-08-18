@@ -103,6 +103,10 @@
 <a class="app-dl-card" href="https://www.pgyer.com/shengdongdong"><img class="app-dl-icon" src="/img/shengdongdong_icon.png" alt="声咚咚"><div class="app-dl-info"><div class="app-dl-name">声咚咚</div><div class="app-dl-desc">让声音随心所欲，简单易用的全能音频工具箱</div></div><span class="app-dl-btn">下载主页</span></a>
 <a class="app-dl-card" href="https://www.pgyer.com/picdong-android"><img class="app-dl-icon" src="/img/tudongdong_icon.png" alt="图咚咚"><div class="app-dl-info"><div class="app-dl-name">图咚咚</div><div class="app-dl-desc">简单易用、高颜值的全能本地图片处理工具箱</div></div><span class="app-dl-btn">下载主页</span></a>
 <a class="app-dl-card" href="https://www.pgyer.com/echoread"><img class="app-dl-icon" src="https://gudong.s3.bitiful.net/icon/echo_read_icon.png" alt="EchoRead"><div class="app-dl-info"><div class="app-dl-name">EchoRead</div><div class="app-dl-desc">AI 驱动的个人知识管理，把好内容复刻成脑资产</div></div><span class="app-dl-btn">下载主页</span></a>
+<a class="app-dl-card" href="https://www.pgyer.com/dongshiguang"><img class="app-dl-icon" src="https://gudong.s3.bitiful.net/icon/dong-time.png" alt="咚时光"><div class="app-dl-info"><div class="app-dl-name">咚时光</div><div class="app-dl-desc">为宝宝记录每一个珍贵时刻的成长记录软件</div></div><span class="app-dl-btn">下载主页</span></a>
+<a class="app-dl-card" href="https://www.pgyer.com/tingdongdong-android"><img class="app-dl-icon" src="/img/tingdongdong_icon.png" alt="听咚咚"><div class="app-dl-info"><div class="app-dl-name">听咚咚</div><div class="app-dl-desc">简洁优雅的本地音乐播放器，歌单、歌词、资料库一应俱全</div></div><span class="app-dl-btn">下载主页</span></a>
+<a class="app-dl-card" href="https://www.pgyer.com/liangdongdong"><img class="app-dl-icon" src="/img/measure_icon.png" alt="量咚咚"><div class="app-dl-info"><div class="app-dl-name">量咚咚</div><div class="app-dl-desc">尺子、水平仪、指南针、量角器、分贝仪、取色器，一App全搞定</div></div><span class="app-dl-btn">下载主页</span></a>
+<a class="app-dl-card" href="https://www.pgyer.com/maquemd-android"><img class="app-dl-icon" src="/img/maquemd_icon.png" alt="麻雀 MD"><div class="app-dl-info"><div class="app-dl-name">麻雀 MD</div><div class="app-dl-desc">轻量 Markdown 阅读器，秒开、无账号、无联网权限，桌面版 Sparrow 同步开源</div></div><span class="app-dl-btn">下载主页</span></a>
 </div>
 <!-- APPS_TABLE_END -->
 

@@ -110,6 +110,46 @@
     "sort": 11
   },
   {
+    "name": "咚时光",
+    "package": "name.gudong.time",
+    "icon": "https://gudong.s3.bitiful.net/icon/dong-time.png",
+    "desc": "为宝宝记录每一个珍贵时刻的成长记录软件",
+    "download": "https://www.pgyer.com/dongshiguang",
+    "doc": "/time/",
+    "visible": true,
+    "sort": 12
+  },
+  {
+    "name": "听咚咚",
+    "package": "name.gudong.music",
+    "icon": "/img/tingdongdong_icon.png",
+    "desc": "简洁优雅的本地音乐播放器，歌单、歌词、资料库一应俱全",
+    "download": "https://www.pgyer.com/tingdongdong-android",
+    "doc": "/music/",
+    "visible": true,
+    "sort": 13
+  },
+  {
+    "name": "量咚咚",
+    "package": "name.gudong.measure",
+    "icon": "/img/measure_icon.png",
+    "desc": "尺子、水平仪、指南针、量角器、分贝仪、取色器，一App全搞定",
+    "download": "https://www.pgyer.com/liangdongdong",
+    "doc": "/measure/",
+    "visible": true,
+    "sort": 14
+  },
+  {
+    "name": "麻雀 MD",
+    "package": "com.gudong.sparrow",
+    "icon": "/img/maquemd_icon.png",
+    "desc": "轻量 Markdown 阅读器，秒开、无账号、无联网权限，桌面版 Sparrow 同步开源",
+    "download": "https://www.pgyer.com/maquemd-android",
+    "doc": "https://blog.gudong.site/sparrow/",
+    "visible": true,
+    "sort": 15
+  },
+  {
     "name": "inBox 笔记（桌面版）",
     "package": "name.gudong.think",
     "icon": "https://gudong.s3.bitiful.net/icon/inbox_ic_launcher.png",
@@ -118,15 +158,5 @@
     "doc": "/inbox/",
     "visible": false,
     "sort": 101
-  },
-  {
-    "name": "咚时光",
-    "package": "name.gudong.time",
-    "icon": "https://gudong.s3.bitiful.net/icon/dong-time.png",
-    "desc": "为宝宝记录每一个珍贵时刻的成长记录软件",
-    "download": "https://www.pgyer.com/dongshiguang",
-    "doc": "/time/",
-    "visible": false,
-    "sort": 105
   }
 ]
