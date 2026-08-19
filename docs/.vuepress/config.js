@@ -227,7 +227,8 @@ export default defineUserConfig({
       ],
       '/measure/': [
         { text: '你好', collapsible: false, children: [
-          { text: '更新日志', link: '/measure/changelog', children: [] }
+          { text: '更新日志', link: '/measure/changelog', children: [] },
+          { text: '隐私政策', link: '/measure/private', children: [] }
         ]}
       ],
       '/sparrow/': [
@@ -352,12 +353,20 @@ export default defineUserConfig({
       '/mai/': [
         { text: '你好', collapsible: false, children: [
           { text: '介绍', link: '/mai/', children: [] },
-          { text: '更新日志', link: '/mai/changelog', children: [] }
+          { text: '更新日志', link: '/mai/changelog', children: [] },
+          { text: '隐私政策', link: '/mai/private', children: [] }
         ]}
       ],
       '/health/': [
         { text: '你好', collapsible: false, children: [
-          { text: '更新日志', link: '/health/changelog', children: [] }
+          { text: '更新日志', link: '/health/changelog', children: [] },
+          { text: '隐私政策', link: '/health/private', children: [] }
+        ]}
+      ],
+      '/dongalbum/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '更新日志', link: '/dongalbum/changelog', children: [] },
+          { text: '隐私政策', link: '/dongalbum/private', children: [] }
         ]}
       ],
       '/picpoem/': [
