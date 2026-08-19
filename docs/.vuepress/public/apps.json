@@ -76,7 +76,7 @@
     "desc": "AI 驱动的语音输入法，打字不用敲，就用小牛说",
     "download": "https://www.pgyer.com/xiaoniushuo",
     "doc": "/niushuo/",
-    "visible": true,
+    "visible": false,
     "sort": 8
   },
   {
@@ -86,7 +86,7 @@
     "desc": "让声音随心所欲，简单易用的全能音频工具箱",
     "download": "https://www.pgyer.com/shengdongdong",
     "doc": "/audio/",
-    "visible": true,
+    "visible": false,
     "sort": 9
   },
   {
@@ -96,7 +96,7 @@
     "desc": "简单易用、高颜值的全能本地图片处理工具箱",
     "download": "https://www.pgyer.com/picdong-android",
     "doc": "/tudongdong/",
-    "visible": true,
+    "visible": false,
     "sort": 10
   },
   {
@@ -106,7 +106,7 @@
     "desc": "AI 驱动的个人知识管理，把好内容复刻成脑资产",
     "download": "https://www.pgyer.com/echoread",
     "doc": "/echo/",
-    "visible": true,
+    "visible": false,
     "sort": 11
   },
   {
