@@ -144,7 +144,7 @@
     "package": "com.gudong.sparrow",
     "icon": "https://gudong.s3.bitiful.net/icon/maquemd_icon.png?no-wait=on",
     "desc": "轻量 Markdown 阅读器，秒开、无账号、无联网权限，桌面版 Sparrow 同步开源",
-    "download": "https://www.pgyer.com/maquemd-android",
+    "download": "https://blog.gudong.site/sparrow/",
     "doc": "https://blog.gudong.site/sparrow/",
     "visible": true,
     "sort": 15
