@@ -365,6 +365,7 @@ export default defineUserConfig({
       ],
       '/dongalbum/': [
         { text: '你好', collapsible: false, children: [
+          { text: '介绍', link: '/dongalbum/', children: [] },
           { text: '更新日志', link: '/dongalbum/changelog', children: [] },
           { text: '隐私政策', link: '/dongalbum/private', children: [] }
         ]}
