@@ -142,6 +142,15 @@
   visible: true
   sort: 15
 
+- name: 脉咚咚
+  package: name.gudong.mai
+  icon: https://gudong.s3.bitiful.net/icon/mai-icon.png
+  desc: 3 秒记一个人的人脉记忆管家，别让你的人脉变凉
+  download: https://www.pgyer.com/maidongdong
+  doc: /mai/
+  visible: true
+  sort: 16
+
 # ===== 未上线/隐藏(visible: false) =====
 - name: inBox 笔记（桌面版）
   package: name.gudong.think
