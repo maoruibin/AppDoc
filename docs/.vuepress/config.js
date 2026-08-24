@@ -20,7 +20,8 @@ export default defineUserConfig({
     navbar: [
       { text: '首页', link: '/' },
       { text: '知识卡片', link: 'https://card.gudong.site/' },
-      { text: '下载地址', link: '/download' },
+      // iOS 上架审核期间临时隐藏（3.1.1 / 2.3.10），过审后恢复
+      // { text: '下载地址', link: '/download' },
       {
         text: '作品集合',
         children: [
@@ -48,7 +49,8 @@ export default defineUserConfig({
         text: '更多',
         children: [
           { text: '联系我们', link: '/inbox/contact' },
-          { text: '购买 PRO', link: '/inbox/pay' },
+          // iOS 上架审核期间临时隐藏（3.1.1），过审后恢复
+          // { text: '购买 PRO', link: '/inbox/pay' },
           { text: '我的博客', link: 'https://blog.gudong.site/' }
         ]
       }
@@ -60,8 +62,9 @@ export default defineUserConfig({
           { text: '使用指南', link: '/inbox/guide', children: [] },
           { text: '更新日志', link: '/inbox/changelog', children: [] },
           { text: '开发计划', link: '/inbox/dev_plan', children: [] },
-          { text: '购买 PRO', link: '/inbox/pay', children: [] },
-          { text: '捐赠', link: '/inbox/donate', children: [] }
+          // iOS 上架审核期间临时隐藏（3.1.1），过审后恢复
+          // { text: '购买 PRO', link: '/inbox/pay', children: [] },
+          // { text: '捐赠', link: '/inbox/donate', children: [] }
         ]},
         { text: '数据', collapsible: false, children: [
           { text: '数据备份', link: '/inbox/data_backup', children: [] },
