@@ -3,7 +3,6 @@ Markdown 是一种非常简单而受欢迎的文本格式，它使用简单的�
 
 inBox 在 1.6.50 版本开始，将会支持 Markdown 模式，只需要**在偏好设置中手动进行开启**，如下所示：
 
-> Tip：该功能为 PRO 功能，需要升级 PRO 后使用。
 
 <img src="../public/img/md-switch.jpg" width="60%" alt="">
 
