@@ -110,7 +110,8 @@ export default defineUserConfig({
         ]},
         { text: '关于', collapsible: false, children: [
           { text: '缘起', link: '/inbox/reason', children: [] },
-          { text: '下载地址', link: '/download', children: [] },
+          // iOS 上架审核期间临时隐藏（2.3.10），过审后恢复
+          // { text: '下载地址', link: '/download', children: [] },
           { text: '更新日志', link: '/inbox/changelog', children: [] },
           { text: '联系我们', link: '/inbox/contact', children: [] }
         ]},
