@@ -1,124 +1,130 @@
-# AGENTS.md - AppDoc 文档站
+# AGENTS.md（AppDoc 文档站）
 
-> doc.gudong.site 的源码仓库。VuePress 2 静态文档站，记录咕咚所有 App 的使用说明。
-> 部署在 Cloudflare Pages，git push 到 main 自动触发构建部署。
+> 本文件是每次会话的常驻上下文：**项目快照 + 目录地图 + 开发规矩**。易变信息用指针（"以 X 为准"），不抄数值。
+> **最后核实：2026-08-30（对照 main `cee290d` 实际代码）**
 
-## AI 日志与验证规范（必读）
+上级规范必读，本文只写 AppDoc 特化，不重复其内容：
 
-本项目属于 ReProject。AI 修改代码前必须先读并遵守 [`../docs/ai-logging-verification.md`](../docs/ai-logging-verification.md)。写代码时同步补关键日志，交付前说明使用了哪些日志、命令、构建结果或页面验证完成闭环。
+- [`../AGENTS.md`](../AGENTS.md) —— 生态总纲：日志 / 提交纪律 / intent 总规范 / 设计规范
+- [`../docs/ai-logging-verification.md`](../docs/ai-logging-verification.md) —— AI 日志与验证规范
 
-## 快速上手
+## 0. 项目快照
 
-- 本地预览：npm run docs:dev（端口 8080，占用时 --port 5173）
-- 构建生产：npm run docs:build（产物在 docs/.vuepress/dist）
-- 安装依赖必须加 --legacy-peer-deps
-- Node >= 18，建议 20
+**一句话**：咕咚全系 App 的使用文档站（doc.gudong.site），纯内容仓库——Markdown + VuePress 配置，无业务代码；每个 App 一个目录，改完 push 即自动上线。
 
-详细开发命令见 README.md，技术架构见 CLAUDE.md。
+| 维度 | 值 |
+|---|---|
+| 技术栈 | VuePress 2（rc 版，以 `package.json` 为准）+ webpack bundler + 默认主题 + sass，配置集中在 `docs/.vuepress/config.js` |
+| 仓库 / 线上 | `github.com/maoruibin/AppDoc` / https://doc.gudong.site |
+| 部署 | Cloudflare Pages Git 集成：push 到 main 自动构建部署；**无 CI、无 wrangler** |
+| 环境 | Node >= 18（建议 20）；`npm install` 必须加 `--legacy-peer-deps` |
+| 测试 / lint | 无测试框架、无 lint，验证 = 本地 `docs:dev` 预览 + 构建通过 |
+| 语言 | 所有内容简体中文 |
 
-## App 清单
+## 1. 目录地图（先查地图再动手）
 
-每个 App 对应 docs/ 下一个目录，URL 路径就是目录名。
-
-| 目录 | App 名 | 状态 | 蒲公英 key |
-|:---|:---|:---|:---|
-| inbox/ | inBox 笔记 | 上线 | 6a195ff51fe902a120fcda1303fb0137 |
-| light/ | 点亮 | 上线 | 3db7b5b3b01f09c85934fdb19f1da92b |
-| cang/ | 仓咚咚 | 上线 | bf8dbdf68ee1cf0906813d136b1a4d74 |
-| rssplus/ | 咕咚订阅 | 上线 | 99503fd847173ed64a1522df51d66658 |
-| picplus/ | 咕咚云图 | 上线 | e35e31620ac6476c1e442e6ef72694af |
-| voice/ | inVoice 语记 | 上线 | f1476b43a1f8980eadc61f88681bc6ed |
-| passbox/ | PassBox | 上线 | c7feda00ffb8c14ef26768a5dda0819d |
-| time/ | 咚时光 | 隐藏 | 51403673fc46a16d71dab3c8947a1295 |
-| echo/ | EchoRead | 隐藏 | 92cb6c457e756d2f8cc6545d222562bd |
-| audio/ | 声咚咚 | 隐藏 | 586fe4bb0e736b133c01bd313af47a30 |
-| niushuo/ | 小牛说 | 隐藏 | 7856141f76eee28f17ae19b6b091ef1f |
-| tudongdong/ | 图咚咚 | 隐藏 | 449fe465df1eb30c8aebc0e989b4a41d |
-| dream/ | 梦咚咚 | 隐藏 | — |
-| sparrow/ | 麻雀 MD | 隐藏 | 8eccd5f8faad960923b3d3c8bc9f646f |
-| picpoem/ | 诗图 | 未注册 | — |
-| douyin/ | 抖音保存 | 不注册（工具类） | — |
-
-蒲公英完整链接格式：https://www.pgyer.com/app/install/<key>
-
-## 入口管理
-
-控制 App 展示的有三个文件，改入口时三个都要同步检查：
-
-1. 主页卡片 - docs/README.md
-   - frontmatter 里 home: true，内容是 .app-grid 下的一堆 a.app-card 元素
-   - 隐藏/恢复：用 HTML 注释 <!-- 已隐藏，后续可恢复 ... --> 包裹
-
-2. 导航栏 + 侧边栏 - docs/.vuepress/config.js
-   - navbar 数组：顶部导航「作品集合」下拉菜单
-   - sidebar 对象：按路径前缀配置各 App 的侧边栏菜单
-   - 隐藏 navbar 单行：注释成 // { text: '咚时光', link: '/time/' }
-   - 隐藏 sidebar 整块：用块注释 /* '/time/': [ ... ] */
-
-3. 下载页表格 - docs/inbox/download.md
-   - Markdown 表格，每行一个 App（图标 + 名称 + 简介 + 下载链接）
-   - 隐藏/恢复：用 <!-- 已隐藏，后续可恢复 ... --> 包裹对应行
-
-### 隐藏/恢复规范
-
-统一用注释方式隐藏，不要删除内容，方便后续恢复：
-
-- 搜索「已隐藏」能快速定位所有隐藏点
-- 恢复时去掉注释标记即可
-
-## 图标与资源
-
-- App 图标存放在冰封云 S3：https://gudong.s3.bitiful.net/icon/<图标名>
-- 部分图标在本地 docs/public/img/ 下（如 niushuo_icon.png、tudongdong_icon.png）
-- S3 图片可加 ?no-wait=on 参数避免加载等待
-
-## 文档写作 SOP（基于代码补文档）
-
-每个 App 文档应包含**核心 5 件套** + **协议 3 件套**，基于项目代码（README/AGENTS.md/源码）提炼，纯文字、不含图片。
-
-### 标准文档清单
-
-| 文件 | 定位 | 必备 |
-|:---|:---|:---:|
-| `readme.md` | 介绍页（侧边栏首页）：标题 + icon + 一句话定位 + 核心功能列表 + 下载链接 | ✅ |
-| `guide.md` | 快速上手：界面概览 → 基础操作（有序列表分步骤）→ 进阶操作 | ✅ |
-| `features.md` | 功能详解：按模块分章节，用表格列参数、用列表讲特性 | ✅ |
-| `qa.md` | 常见问题：8-12 个 Q&A，覆盖数据/权限/使用/故障 | ✅ |
-| `why.md` | 缘起：产品定位和设计理念 | ✅ |
-| `contact.md` | 联系我们：公众号/博客/邮箱 | ✅ |
-| `changelog.md` | 更新日志 | ✅ |
-| `agreement.md` | 服务协议（参考已有项目，替换 App 名） | ✅ |
-| `private.md` | 隐私政策（参考已有项目，针对特性改写） | ✅ |
-
-### 写作范式（参照 voice/ 为最佳实践）
-
-**guide.md** 结构：
 ```
-# 快速上手
-## 界面概览（主界面分哪几个区域，用有序列表）
-## 基础操作
-### 操作一（1. 2. 3. 分步骤）
-### 操作二
-## 进阶操作
+docs/
+├── README.md                    首页（home: true，手写 .app-grid 卡片，非脚本生成）
+├── download.md                  ★ 全局下载页；卡片网格区域由脚本从 apps.yml 生成，勿手改生成区
+├── .vuepress/
+│   ├── config.js                ★ 全站配置：navbar（作品集合下拉）/ sidebar（按 App 路径前缀）/ bundler
+│   ├── apps.yml                 ★ 全应用元数据唯一源：包名/icon/蒲公英链接/visible/sort
+│   ├── generate_apps_json.py    读 apps.yml → 生成 .vuepress/public/apps.json + download.md 卡片区
+│   ├── client.js                按路径前缀切换导航栏 logo（logoMap）
+│   ├── styles/index.scss        全站自定义样式
+│   └── public/                  apps.json（生成产物）+ 少量静态资源
+├── public/img/                  站内静态图片（引用路径 /img/...）
+├── inbox/                       ★ 最大文档目录（40+ 页：指南/数据备份/WebDAV/S3/各端同步）
+├── inbox/download.md            旧下载页，现仅剩跳转 /download 的重定向脚本
+├── voice/ ...                   每个 App 一个目录，URL 路径 = 目录名（清单见下表）
+└── software/                    软件列表（Obsidian 等非自研软件说明）
 ```
 
-**features.md** 结构：
-```
-# 功能详解
-## 功能模块一
-### 子功能（用 | 参数 | 选项 | 默认值 | 表格列参数）
-### 子功能（用 - 列表讲特性）
-## 功能模块二
-```
+### App 文档目录清单（对照 docs/ 实际子目录，2026-08-30）
 
-### 写作要求
-- 基于代码真实功能，不编造
+| 目录 | App | 包名（apps.yml） | 文档完整度 |
+|---|---|---|---|
+| `inbox/` | inBox 笔记 | `name.gudong.think` | 全套 + 大量专题页 |
+| `voice/` | inVoice 语记 | `name.gudong.voice` | 全套（**写作范式最佳实践**） |
+| `light/` | 点亮 | `name.gudong.habit` | 全套 |
+| `cang/` | 仓咚咚 | `name.gudong.assets` | 全套 + data_security / pro_version |
+| `rssplus/` | 咕咚订阅 | `name.gudong.rss` | 全套 |
+| `picplus/` | 咕咚云图 | `name.gudong.pic` | 全套 + 图床教程多篇 |
+| `passbox/` | PassBox 密匣 | `name.gudong.passbox` | 全套 + pro_version |
+| `time/` | 咚时光 | `name.gudong.time` | 全套 + family / sync-guide |
+| `music/` | 听咚咚 | `name.gudong.music` | 全套 |
+| `measure/` | 量咚咚 | `name.gudong.measure` | 仅 changelog + private（待补全） |
+| `mai/` | 脉咚咚 | `name.gudong.mai` | 仅 README + changelog + private |
+| `echo/` | EchoRead | `name.gudong.content` | 全套 |
+| `audio/` | 声咚咚 | `name.gudong.audio` | 全套 |
+| `niushuo/` | 小牛说 | `name.gudong.inputvc` | 全套 |
+| `tudongdong/` | 图咚咚 | `name.gudong.pictoon` | 全套（图咚咚文档权威目录） |
+| `dream/` | 梦咚咚 | —（apps.yml 未登记） | 全套 |
+| `picpoem/` | 诗图 | —（apps.yml 未登记） | 全套 |
+| `douyin/` | 抖音保存 | —（工具类不注册） | 全套 |
+| `sparrow/` | 麻雀 MD | `com.gudong.sparrow` | 仅 README + changelog + 协议 |
+| `dongalbum/` | 随机相册 | —（apps.yml 未登记） | 仅 README + changelog + private |
+| `health/` | 康咚咚 | —（apps.yml 未登记） | 仅 changelog + private |
+| `imagetools/` | （图咚咚旧目录残留） | — | 仅一份滞后于 `tudongdong/` 的 changelog，**勿在此更新，待清理** |
+
+> 上线/隐藏状态（visible）、下载链接、排序**以 `docs/.vuepress/apps.yml` 为准**，不抄进本文。
+
+## 2. 开发约定（项目特有）
+
+### 元数据唯一源：apps.yml
+
+- 新增 App、改下载链接 / icon / 展示与否：**只改 `apps.yml`**，然后跑生成脚本（`docs:build` 也会自动先跑）
+- `download` 字段用蒲公英**主页**链接 `pgyer.com/{shortcut}`（永久不变）；**不用** `pgyer.com/app/install/{key}` 直链——每次上传都会变
+- `visible: false` 的 App 不进下载页（未上线 / 隐藏期）
+
+### 入口管理（改入口时逐项检查）
+
+| 入口 | 文件 | 说明 |
+|---|---|---|
+| 下载页卡片 | `apps.yml` | 脚本生成，别手改 `download.md` 生成区 |
+| 首页卡片 | `docs/README.md` | 手写 `.app-grid` / `a.app-card`，与 apps.yml 需人工保持一致 |
+| 导航 + 侧边栏 | `docs/.vuepress/config.js` | navbar「作品集合」下拉 + sidebar 按路径前缀分 App 配置 |
+
+- **隐藏/恢复统一用注释**（HTML 注释 `<!-- 已隐藏 ... -->` 或 JS 注释），不删内容；搜「已隐藏」可定位所有隐藏点
+- 当前临时状态（易变，以 config.js 注释为准）：iOS 审核期间 navbar 的「下载地址」「购买 PRO」被临时注释，过审后恢复
+
+### 文档写作 SOP（基于代码补文档，不编造）
+
+每个 App 文档目标形态 = **核心 5 件套 + 协议 3 件套**（结构参照 `voice/` 最佳实践）：
+
+| 文件 | 定位 |
+|---|---|
+| `readme.md` / `guide.md` / `features.md` / `qa.md` / `why.md` | 介绍页（icon + 一句话 + 功能列表 + 下载）/ 快速上手（界面概览→基础操作分步骤→进阶）/ 功能详解（表格列参数）/ 8-12 个 Q&A / 缘起 |
+| `contact.md` / `changelog.md` | 联系我们 / 更新日志 |
+| `agreement.md` / `private.md` | 服务协议 / 隐私政策；`private.md` 参照 `music/private.md`，公司名统一「北京小茅屋科技有限公司」 |
+
 - 纯文字，不放图片占位符（软著审核和文档站都不需要）
-- 新建 App 文档时：`private.md` 参照 `music/private.md`，公司名统一「北京小茅屋科技有限公司」
-- readme.md 引用的页面必须真实存在，避免死链
+- `readme.md` 引用的页面必须真实存在，避免死链
+- 内容以各项目仓库代码（README / AGENTS.md / 源码）为准，不凭空写
 
-## 约定
+### 资源
 
-- 所有内容简体中文
-- 新增 App 文档：在 docs/ 下建目录，在 config.js 配置 sidebar，在 README.md 和 download.md 加入口
-- Git push 到 main 即触发 Cloudflare Pages 自动部署，无需手动操作
+- App 图标存冰封云 S3：`https://gudong.s3.bitiful.net/icon/<名称>`，可加 `?no-wait=on` 加速
+- 部分老图在 `docs/public/img/` 与 jsdelivr CDN
+
+## 3. 常用命令
+
+```bash
+npm install --legacy-peer-deps        # 必须 legacy-peer-deps
+npm run docs:dev                      # 本地预览 http://localhost:8080
+vuepress dev docs --port 5173        # 8080 被占用时
+python3 docs/.vuepress/generate_apps_json.py   # 改 apps.yml 后单独重生成（含 download.md）
+npm run docs:build                    # 自动先跑生成脚本再构建，产物 docs/.vuepress/dist
+```
+
+## 4. 部署（无发版概念）
+
+- 流程：本地改 md / 配置 → commit → **push 到 main** → Cloudflare Pages 自动构建（`npm run docs:build`）并部署到 doc.gudong.site
+- 无 `.github/workflows`、无 wrangler、无服务器运维；本地一般不需要手动 build，预览用 `docs:dev`
+- 按上级规范默认只本地 commit 不 push；文档何时上线由咕咚决定
+
+## 5. 维护本文
+
+- 新增/删除 App 文档目录、改部署方式后，更新第 1 节清单与「最后核实」日期
+- 上线状态、下载链接等易变数值一律指向 `apps.yml`，不在本文维护
