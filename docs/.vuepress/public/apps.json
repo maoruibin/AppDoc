@@ -171,11 +171,11 @@
   },
   {
     "name": "写下",
-    "package": "name.gudong.rijian",
-    "icon": "https://gudong.s3.bitiful.net/icon/rijian_icon.png",
+    "package": "name.gudong.xiexia",
+    "icon": "https://gudong.s3.bitiful.net/icon/xiexia_icon.png",
     "desc": "本地优先、一天一页的私人日记，打开就是今天，写下就有过去",
-    "download": "https://doc.gudong.site/rijian/",
-    "doc": "/rijian/",
+    "download": "https://doc.gudong.site/xiexia/",
+    "doc": "/xiexia/",
     "visible": false,
     "sort": 102
   }

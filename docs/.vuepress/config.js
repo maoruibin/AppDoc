@@ -43,7 +43,7 @@ export default defineUserConfig({
           { text: '咚时光', link: '/time/' },
           { text: '量咚咚', link: '/measure/' },
           { text: '麻雀 MD', link: '/sparrow/' },
-          { text: '写下', link: '/rijian/' },
+          { text: '写下', link: '/xiexia/' },
         ]
      },
       {
@@ -448,23 +448,23 @@ export default defineUserConfig({
           { text: '联系我们', link: '/audio/contact', children: [] }
         ]}
       ],
-      '/rijian/': [
+      '/xiexia/: [
         { text: '你好', collapsible: false, children: [
-          { text: '介绍', link: '/rijian/', children: [] },
-          { text: '快速上手', link: '/rijian/guide', children: [] },
-          { text: '常见问题', link: '/rijian/qa', children: [] },
-          { text: '更新日志', link: '/rijian/changelog', children: [] }
+          { text: '介绍', link: '/xiexia/', children: [] },
+          { text: '快速上手', link: '/xiexia/guide', children: [] },
+          { text: '常见问题', link: '/xiexia/qa', children: [] },
+          { text: '更新日志', link: '/xiexia/changelog', children: [] }
         ]},
         { text: '功能', collapsible: false, children: [
-          { text: '功能详解', link: '/rijian/features', children: [] }
+          { text: '功能详解', link: '/xiexia/features', children: [] }
         ]},
         { text: '服务协议', collapsible: false, children: [
-          { text: '用户协议', link: '/rijian/agreement', children: [] },
-          { text: '隐私政策', link: '/rijian/private', children: [] }
+          { text: '用户协议', link: '/xiexia/agreement', children: [] },
+          { text: '隐私政策', link: '/xiexia/private', children: [] }
         ]},
         { text: '关于', collapsible: false, children: [
-          { text: '为什么', link: '/rijian/why', children: [] },
-          { text: '联系我们', link: '/rijian/contact', children: [] }
+          { text: '为什么', link: '/xiexia/why', children: [] },
+          { text: '联系我们', link: '/xiexia/contact', children: [] }
         ]}
       ]
     }

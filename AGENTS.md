@@ -1,7 +1,7 @@
 # AGENTS.md（AppDoc 文档站）
 
 > 本文件是每次会话的常驻上下文：**项目快照 + 目录地图 + 开发规矩**。易变信息用指针（"以 X 为准"），不抄数值。
-> **最后核实：2026-09-03（新增写下 `rijian/` 全套文档）**
+> **最后核实：2026-09-03（新增写下 `xiexia/` 全套文档（id 由 rijian 改为 xiexia））**
 
 上级规范必读，本文只写 AppDoc 特化，不重复其内容：
 
@@ -65,7 +65,7 @@ docs/
 | `douyin/` | 抖音保存 | —（工具类不注册） | 全套 |
 | `sparrow/` | 麻雀 MD | `com.gudong.sparrow` | 仅 README + changelog + 协议 |
 | `dongalbum/` | 随机相册 | —（apps.yml 未登记） | 仅 README + changelog + private |
-| `rijian/` | 写下 | `name.gudong.rijian` | 全套（内测，visible: false 待发版放开） |
+| `xiexia/` | 写下 | `name.gudong.xiexia` | 全套（内测，visible: false 待发版放开） |
 | `health/` | 康咚咚 | —（apps.yml 未登记） | 仅 changelog + private |
 | `imagetools/` | （图咚咚旧目录残留） | — | 仅一份滞后于 `tudongdong/` 的 changelog，**勿在此更新，待清理** |
 
