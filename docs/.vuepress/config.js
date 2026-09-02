@@ -448,7 +448,7 @@ export default defineUserConfig({
           { text: '联系我们', link: '/audio/contact', children: [] }
         ]}
       ],
-      '/xiexia/: [
+      '/xiexia/': [
         { text: '你好', collapsible: false, children: [
           { text: '介绍', link: '/xiexia/', children: [] },
           { text: '快速上手', link: '/xiexia/guide', children: [] },
