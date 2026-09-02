@@ -43,6 +43,7 @@ export default defineUserConfig({
           { text: '咚时光', link: '/time/' },
           { text: '量咚咚', link: '/measure/' },
           { text: '麻雀 MD', link: '/sparrow/' },
+          { text: '写下', link: '/rijian/' },
         ]
      },
       {
@@ -445,6 +446,25 @@ export default defineUserConfig({
         { text: '关于', collapsible: false, children: [
           { text: '为什么', link: '/audio/why', children: [] },
           { text: '联系我们', link: '/audio/contact', children: [] }
+        ]}
+      ],
+      '/rijian/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '介绍', link: '/rijian/', children: [] },
+          { text: '快速上手', link: '/rijian/guide', children: [] },
+          { text: '常见问题', link: '/rijian/qa', children: [] },
+          { text: '更新日志', link: '/rijian/changelog', children: [] }
+        ]},
+        { text: '功能', collapsible: false, children: [
+          { text: '功能详解', link: '/rijian/features', children: [] }
+        ]},
+        { text: '服务协议', collapsible: false, children: [
+          { text: '用户协议', link: '/rijian/agreement', children: [] },
+          { text: '隐私政策', link: '/rijian/private', children: [] }
+        ]},
+        { text: '关于', collapsible: false, children: [
+          { text: '为什么', link: '/rijian/why', children: [] },
+          { text: '联系我们', link: '/rijian/contact', children: [] }
         ]}
       ]
     }

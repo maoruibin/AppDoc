@@ -89,4 +89,12 @@ sidebar: false
     <div class="app-name">PassBox</div>
     <div class="app-desc">极简离线密码管理器，本地存储不联网</div>
   </a>
+
+  <!-- 已隐藏 — 写下内测中，正式发布后恢复
+ <a class="app-card" href="/rijian/">
+   <img src="https://gudong.s3.bitiful.net/icon/rijian_icon.png" alt="写下">
+   <div class="app-name">写下</div>
+   <div class="app-desc">本地优先、一天一页的私人日记，打开就是今天</div>
+ </a>
+ -->
 </div>

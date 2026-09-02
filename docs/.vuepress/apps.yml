@@ -160,3 +160,13 @@
   doc: /inbox/
   visible: false
   sort: 101
+
+# 写下:内测中,发版后补 download(蒲公英主页链接)与 icon 上传,改 visible: true
+- name: 写下
+  package: name.gudong.rijian
+  icon: https://gudong.s3.bitiful.net/icon/rijian_icon.png
+  desc: 本地优先、一天一页的私人日记，打开就是今天，写下就有过去
+  download: https://doc.gudong.site/rijian/
+  doc: /rijian/
+  visible: false
+  sort: 102
