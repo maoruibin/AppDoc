@@ -371,8 +371,20 @@ export default defineUserConfig({
       '/dongalbum/': [
         { text: '你好', collapsible: false, children: [
           { text: '介绍', link: '/dongalbum/', children: [] },
-          { text: '更新日志', link: '/dongalbum/changelog', children: [] },
+          { text: '快速上手', link: '/dongalbum/guide', children: [] },
+          { text: '常见问题', link: '/dongalbum/qa', children: [] },
+          { text: '更新日志', link: '/dongalbum/changelog', children: [] }
+        ]},
+        { text: '功能', collapsible: false, children: [
+          { text: '功能详解', link: '/dongalbum/features', children: [] }
+        ]},
+        { text: '服务协议', collapsible: false, children: [
+          { text: '用户协议', link: '/dongalbum/agreement', children: [] },
           { text: '隐私政策', link: '/dongalbum/private', children: [] }
+        ]},
+        { text: '关于', collapsible: false, children: [
+          { text: '为什么', link: '/dongalbum/why', children: [] },
+          { text: '联系我们', link: '/dongalbum/contact', children: [] }
         ]}
       ],
       '/picpoem/': [
