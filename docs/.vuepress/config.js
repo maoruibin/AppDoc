@@ -44,6 +44,7 @@ export default defineUserConfig({
           { text: '量咚咚', link: '/measure/' },
           { text: '麻雀 MD', link: '/sparrow/' },
           { text: '写下', link: '/xiexia/' },
+          { text: '读咚咚', link: '/reader/' },
         ]
      },
       {
@@ -234,6 +235,12 @@ export default defineUserConfig({
         { text: '你好', collapsible: false, children: [
           { text: '更新日志', link: '/measure/changelog', children: [] },
           { text: '隐私政策', link: '/measure/private', children: [] }
+        ]}
+      ],
+      '/reader/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '介绍', link: '/reader/', children: [] },
+          { text: '更新日志', link: '/reader/changelog', children: [] }
         ]}
       ],
       '/sparrow/': [
