@@ -44,7 +44,7 @@ export default defineUserConfig({
           { text: '量咚咚', link: '/measure/' },
           { text: '麻雀 MD', link: '/sparrow/' },
           { text: '写下', link: '/xiexia/' },
-          { text: '读咚咚', link: '/reader/' },
+          { text: '书咚咚', link: '/reader/' },
         ]
      },
       {
