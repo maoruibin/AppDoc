@@ -178,5 +178,15 @@
     "doc": "/xiexia/",
     "visible": false,
     "sort": 102
+  },
+  {
+    "name": "书咚咚",
+    "package": "name.gudong.reader",
+    "icon": "https://gudong.s3.bitiful.net/icon/reader_icon_1024.png",
+    "desc": "本地优先的 EPUB 阅读器，划线笔记与书摘分享，安静读书",
+    "download": "https://www.pgyer.com/dudongdong",
+    "doc": "/reader/",
+    "visible": true,
+    "sort": 17
   }
 ]

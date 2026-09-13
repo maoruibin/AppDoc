@@ -238,9 +238,17 @@ export default defineUserConfig({
         ]}
       ],
       '/reader/': [
-        { text: '你好', collapsible: false, children: [
+        { text: '使用指南', collapsible: false, children: [
           { text: '介绍', link: '/reader/', children: [] },
+          { text: '使用指南', link: '/reader/guide', children: [] },
+          { text: '功能详解', link: '/reader/features', children: [] },
+          { text: '常见问题', link: '/reader/qa', children: [] },
           { text: '更新日志', link: '/reader/changelog', children: [] }
+        ]},
+        { text: '关于', collapsible: false, children: [
+          { text: '联系我们', link: '/reader/contact', children: [] },
+          { text: '用户协议', link: '/reader/agreement', children: [] },
+          { text: '隐私政策', link: '/reader/private', children: [] }
         ]}
       ],
       '/sparrow/': [

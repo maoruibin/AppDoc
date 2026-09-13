@@ -84,6 +84,11 @@ sidebar: false
    <div class="app-name">麻雀 MD</div>
    <div class="app-desc">轻量 Markdown 阅读器，秒开、无账号、无联网权限</div>
  </a>
+ <a class="app-card" href="/reader/">
+   <img src="https://gudong.s3.bitiful.net/icon/reader_icon_1024.png" alt="书咚咚">
+   <div class="app-name">书咚咚</div>
+   <div class="app-desc">本地优先的 EPUB 阅读器，划线笔记与书摘分享，安静读书</div>
+ </a>
  <a class="app-card" href="/passbox/">
     <img src="https://gudong.s3.bitiful.net/icon/passbox_icon.png" alt="PassBox">
     <div class="app-name">PassBox</div>
