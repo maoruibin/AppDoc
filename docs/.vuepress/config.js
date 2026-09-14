@@ -20,8 +20,7 @@ export default defineUserConfig({
     navbar: [
       { text: '首页', link: '/' },
       { text: '知识卡片', link: 'https://card.gudong.site/' },
-      // iOS 上架审核期间临时隐藏（3.1.1 / 2.3.10），过审后恢复
-      // { text: '下载地址', link: '/download' },
+      { text: '下载地址', link: '/download' },
       {
         text: '作品集合',
         children: [
