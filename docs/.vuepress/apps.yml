@@ -43,15 +43,6 @@
   visible: true
   sort: 4
 
-- name: 咕咚订阅
-  package: name.gudong.rss
-  icon: https://gudong.s3.bitiful.net/icon/rss_ic_launcher.png
-  desc: 个性化我的信息源，简洁实用的 RSS 订阅软件
-  download: https://www.pgyer.com/rssplus-android
-  doc: /rssplus/
-  visible: true
-  sort: 5
-
 - name: 咕咚云图
   package: name.gudong.pic
   icon: https://gudong.s3.bitiful.net/icon/pic_ic_launcher.png
@@ -148,7 +139,7 @@
   desc: 3 秒记一个人的人脉记忆管家，别让你的人脉变凉
   download: https://www.pgyer.com/maidongdong
   doc: /mai/
-  visible: true
+  visible: false
   sort: 16
 
 # ===== 未上线/隐藏(visible: false) =====
@@ -177,5 +168,5 @@
   desc: 本地优先的 EPUB 阅读器，划线笔记与书摘分享，安静读书
   download: https://www.pgyer.com/dudongdong
   doc: /reader/
-  visible: true
+  visible: false
   sort: 17
