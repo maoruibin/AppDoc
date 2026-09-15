@@ -102,6 +102,7 @@
 <a class="app-dl-card" href="https://www.pgyer.com/tingdongdong-android"><img class="app-dl-icon" src="https://gudong.s3.bitiful.net/icon/music_ic_launcher.png?no-wait=on" alt="听咚咚"><div class="app-dl-info"><div class="app-dl-name">听咚咚</div><div class="app-dl-desc">简洁优雅的本地音乐播放器，歌单、歌词、资料库一应俱全</div></div><span class="app-dl-btn">下载主页</span></a>
 <a class="app-dl-card" href="https://www.pgyer.com/liangdongdong"><img class="app-dl-icon" src="https://gudong.s3.bitiful.net/icon/measure_icon_1019.png?no-wait=on" alt="量咚咚"><div class="app-dl-info"><div class="app-dl-name">量咚咚</div><div class="app-dl-desc">尺子、水平仪、指南针、量角器、分贝仪、取色器，一App全搞定</div></div><span class="app-dl-btn">下载主页</span></a>
 <a class="app-dl-card" href="https://blog.gudong.site/sparrow/"><img class="app-dl-icon" src="https://gudong.s3.bitiful.net/icon/maquemd_icon.png?no-wait=on" alt="麻雀 MD"><div class="app-dl-info"><div class="app-dl-name">麻雀 MD</div><div class="app-dl-desc">轻量 Markdown 阅读器，秒开、无账号、无联网权限，桌面版 Sparrow 同步开源</div></div><span class="app-dl-btn">下载主页</span></a>
+<a class="app-dl-card" href="https://www.pgyer.com/suijixiangce"><img class="app-dl-icon" src="https://gudong.s3.bitiful.net/icon/album_icon_1017.png?no-wait=on" alt="随机相册"><div class="app-dl-info"><div class="app-dl-name">随机相册</div><div class="app-dl-desc">本地随机相册，随机重温你的照片与视频</div></div><span class="app-dl-btn">下载主页</span></a>
 </div>
 <!-- APPS_TABLE_END -->
 

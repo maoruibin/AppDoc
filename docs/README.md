@@ -49,6 +49,11 @@ sidebar: false
    <div class="app-name">量咚咚</div>
    <div class="app-desc">尺子、水平仪、指南针、量角器、分贝仪、取色器一App全搞定</div>
  </a>
+ <a class="app-card" href="/dongalbum/">
+   <img src="https://gudong.s3.bitiful.net/icon/album_icon_1017.png?no-wait=on" alt="随机相册">
+   <div class="app-name">随机相册</div>
+   <div class="app-desc">本地随机相册，随机重温你的照片与视频</div>
+ </a>
  <a class="app-card" href="/voice/">
     <img src="https://gudong.s3.bitiful.net/icon/voice_icon_1024.png?no-wait=on" alt="inVoice 语记">
     <div class="app-name">inVoice 语记</div>

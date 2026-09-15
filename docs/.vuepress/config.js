@@ -42,6 +42,7 @@ export default defineUserConfig({
           { text: '咚时光', link: '/time/' },
           { text: '量咚咚', link: '/measure/' },
           { text: '麻雀 MD', link: '/sparrow/' },
+          { text: '随机相册', link: '/dongalbum/' },
           { text: '写下', link: '/xiexia/' },
           { text: '书咚咚', link: '/reader/' },
         ]
