@@ -1,7 +1,7 @@
 # AGENTS.md（AppDoc 文档站）
 
 > 本文件是每次会话的常驻上下文：**项目快照 + 目录地图 + 开发规矩**。易变信息用指针（"以 X 为准"），不抄数值。
-> **最后核实：2026-09-03（新增写下 `xiexia/` 全套文档（id 由 rijian 改为 xiexia））**
+> **最后核实：2026-09-20（首页 .app-grid 卡片区改为脚本从 apps.yml 生成；图咚咚/打码咚/写下发布）**
 
 上级规范必读，本文只写 AppDoc 特化，不重复其内容：
 
@@ -25,7 +25,7 @@
 
 ```
 docs/
-├── README.md                    首页（home: true，手写 .app-grid 卡片，非脚本生成）
+├── README.md                    首页（home: true，.app-grid 卡片区由脚本从 apps.yml 生成，标记外勿放内容）
 ├── download.md                  ★ 全局下载页；卡片网格区域由脚本从 apps.yml 生成，勿手改生成区
 ├── .vuepress/
 │   ├── config.js                ★ 全站配置：navbar（作品集合下拉）/ sidebar（按 App 路径前缀）/ bundler
@@ -84,7 +84,7 @@ docs/
 | 入口 | 文件 | 说明 |
 |---|---|---|
 | 下载页卡片 | `apps.yml` | 脚本生成，别手改 `download.md` 生成区 |
-| 首页卡片 | `docs/README.md` | 手写 `.app-grid` / `a.app-card`，与 apps.yml 需人工保持一致 |
+| 首页卡片 | `docs/README.md` | `.app-grid` 卡片区由 `generate_apps_json.py` 从 apps.yml 生成（APPS_GRID 标记内），显隐看 visible、排序看 sort |
 | 导航 + 侧边栏 | `docs/.vuepress/config.js` | navbar「作品集合」下拉 + sidebar 按路径前缀分 App 配置 |
 
 - **隐藏/恢复统一用注释**（HTML 注释 `<!-- 已隐藏 ... -->` 或 JS 注释），不删内容；搜「已隐藏」可定位所有隐藏点
