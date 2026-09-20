@@ -45,6 +45,7 @@ export default defineUserConfig({
           { text: '随机相册', link: '/dongalbum/' },
           { text: '写下', link: '/xiexia/' },
           { text: '书咚咚', link: '/reader/' },
+          { text: '打码咚', link: '/mosaic/' },
         ]
      },
       {
@@ -249,6 +250,12 @@ export default defineUserConfig({
           { text: '联系我们', link: '/reader/contact', children: [] },
           { text: '用户协议', link: '/reader/agreement', children: [] },
           { text: '隐私政策', link: '/reader/private', children: [] }
+        ]}
+      ],
+      '/mosaic/': [
+        { text: '你好', collapsible: false, children: [
+          { text: '介绍', link: '/mosaic/', children: [] },
+          { text: '更新日志', link: '/mosaic/changelog', children: [] }
         ]}
       ],
       '/sparrow/': [

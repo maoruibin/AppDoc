@@ -86,7 +86,7 @@
     "desc": "简单易用、高颜值的全能本地图片处理工具箱",
     "download": "https://www.pgyer.com/picdong-android",
     "doc": "/tudongdong/",
-    "visible": false,
+    "visible": true,
     "sort": 10
   },
   {
@@ -158,6 +158,16 @@
     "doc": "/dongalbum/",
     "visible": true,
     "sort": 16
+  },
+  {
+    "name": "打码咚",
+    "package": "name.gudong.mosaic",
+    "icon": "https://gudong.s3.bitiful.net/icon/damadong_icon.png",
+    "desc": "拖框即打码的截图隐私工具，免费无广告",
+    "download": "https://www.pgyer.com/damadong",
+    "doc": "/mosaic/",
+    "visible": true,
+    "sort": 17
   },
   {
     "name": "inBox 笔记（桌面版）",
