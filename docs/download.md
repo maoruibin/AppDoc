@@ -105,6 +105,7 @@
 <a class="app-dl-card" href="https://blog.gudong.site/sparrow/"><img class="app-dl-icon" src="https://gudong.s3.bitiful.net/icon/maquemd_icon.png?no-wait=on" alt="麻雀 MD"><div class="app-dl-info"><div class="app-dl-name">麻雀 MD</div><div class="app-dl-desc">轻量 Markdown 阅读器，秒开、无账号、无联网权限，桌面版 Sparrow 同步开源</div></div><span class="app-dl-btn">下载主页</span></a>
 <a class="app-dl-card" href="https://www.pgyer.com/suijixiangce"><img class="app-dl-icon" src="https://gudong.s3.bitiful.net/icon/album_icon_1017.png?no-wait=on" alt="随机相册"><div class="app-dl-info"><div class="app-dl-name">随机相册</div><div class="app-dl-desc">本地随机相册，随机重温你的照片与视频</div></div><span class="app-dl-btn">下载主页</span></a>
 <a class="app-dl-card" href="https://www.pgyer.com/damadong"><img class="app-dl-icon" src="https://gudong.s3.bitiful.net/icon/damadong_icon.png" alt="打码咚"><div class="app-dl-info"><div class="app-dl-name">打码咚</div><div class="app-dl-desc">拖框即打码的截图隐私工具，免费无广告</div></div><span class="app-dl-btn">下载主页</span></a>
+<a class="app-dl-card" href="https://doc.gudong.site/xiexia/"><img class="app-dl-icon" src="https://gudong.s3.bitiful.net/icon/xiexia_icon.png" alt="写下"><div class="app-dl-info"><div class="app-dl-name">写下</div><div class="app-dl-desc">本地优先、一天一页的私人日记，打开就是今天，写下就有过去</div></div><span class="app-dl-btn">下载主页</span></a>
 </div>
 <!-- APPS_TABLE_END -->
 

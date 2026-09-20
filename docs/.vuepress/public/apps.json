@@ -186,7 +186,7 @@
     "desc": "本地优先、一天一页的私人日记，打开就是今天，写下就有过去",
     "download": "https://doc.gudong.site/xiexia/",
     "doc": "/xiexia/",
-    "visible": false,
+    "visible": true,
     "sort": 102
   },
   {

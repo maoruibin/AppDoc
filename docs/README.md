@@ -92,7 +92,7 @@ sidebar: false
    <div class="app-name">书咚咚</div>
    <div class="app-desc">本地优先的 EPUB 阅读器，划线笔记与书摘分享，安静读书</div>
  </a>
- <a class="app-card" href="/passbox/">
+  <a class="app-card" href="/passbox/">
     <img src="https://gudong.s3.bitiful.net/icon/passbox_icon.png" alt="PassBox">
     <div class="app-name">PassBox</div>
     <div class="app-desc">极简离线密码管理器，本地存储不联网</div>
@@ -102,12 +102,9 @@ sidebar: false
    <div class="app-name">打码咚</div>
    <div class="app-desc">拖框即打码的截图隐私工具，免费无广告</div>
  </a>
-
-  <!-- 已隐藏 — 写下内测中，正式发布后恢复
  <a class="app-card" href="/xiexia/">
    <img src="https://gudong.s3.bitiful.net/icon/xiexia_icon.png" alt="写下">
    <div class="app-name">写下</div>
    <div class="app-desc">本地优先、一天一页的私人日记，打开就是今天</div>
  </a>
- -->
 </div>
