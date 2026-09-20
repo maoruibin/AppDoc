@@ -24,11 +24,13 @@ sidebar: false
     <div class="app-name">仓咚咚</div>
     <div class="app-desc">让资产一目了然，简单易用的资产管理软件</div>
   </a>
+  <!-- 已停更 — 咕咚订阅 2026-09 起停止更新
   <a class="app-card" href="/rssplus/">
     <img src="https://gudong.s3.bitiful.net/icon/rss_ic_launcher.png" alt="咕咚订阅">
     <div class="app-name">咕咚订阅</div>
     <div class="app-desc">个性化我的信息源，简洁实用的 RSS 订阅软件</div>
   </a>
+  -->
   <a class="app-card" href="/picplus/">
     <img src="https://gudong.s3.bitiful.net/icon/pic_ic_launcher.png" alt="咕咚云图">
     <div class="app-name">咕咚云图</div>
@@ -87,11 +89,13 @@ sidebar: false
    <div class="app-name">麻雀 MD</div>
    <div class="app-desc">轻量 Markdown 阅读器，秒开、无账号、无联网权限</div>
  </a>
+ <!-- 已隐藏 — 书咚咚未发布，apps.yml visible: false
  <a class="app-card" href="/reader/">
    <img src="https://gudong.s3.bitiful.net/icon/reader_icon_1024.png" alt="书咚咚">
    <div class="app-name">书咚咚</div>
    <div class="app-desc">本地优先的 EPUB 阅读器，划线笔记与书摘分享，安静读书</div>
  </a>
+ -->
   <a class="app-card" href="/passbox/">
     <img src="https://gudong.s3.bitiful.net/icon/passbox_icon.png" alt="PassBox">
     <div class="app-name">PassBox</div>
