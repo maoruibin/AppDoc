@@ -94,7 +94,7 @@
   desc: 本地优先的稍后阅读与文章精读工具——好文章存进手机，删文了也还在
   download: https://www.pgyer.com/content
   doc: /content/
-  visible: false
+  visible: true
   sort: 11
 
 - name: 咚时光
