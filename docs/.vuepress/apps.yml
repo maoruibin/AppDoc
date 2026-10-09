@@ -90,9 +90,9 @@
 
 - name: 好内容
   package: name.gudong.content
-  icon: ''
+  icon: https://gudong.s3.bitiful.net/icon/content_icon_1011.png
   desc: 本地优先的稍后阅读与文章精读工具——好文章存进手机，删文了也还在
-  download: https://www.pgyer.com/echoread
+  download: https://www.pgyer.com/content
   doc: /content/
   visible: false
   sort: 11
