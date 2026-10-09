@@ -56,7 +56,7 @@ docs/
 | `music/` | 听咚咚 | `name.gudong.music` | 全套 |
 | `measure/` | 量咚咚 | `name.gudong.measure` | 仅 changelog + private（待补全） |
 | `mai/` | 脉咚咚 | `name.gudong.mai` | 仅 README + changelog + private |
-| `echo/` | EchoRead | `name.gudong.content` | 全套 |
+| `content/` | 好内容 | `name.gudong.content` | 全套（前身 EchoRead 文档已删除，2026-10-09 品牌退役统一为好内容） |
 | `audio/` | 声咚咚 | `name.gudong.audio` | 全套 |
 | `niushuo/` | 小牛说 | `name.gudong.inputvc` | 全套 |
 | `tudongdong/` | 图咚咚 | `name.gudong.pictoon` | 全套（图咚咚文档权威目录） |

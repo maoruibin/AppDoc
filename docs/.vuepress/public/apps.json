@@ -90,12 +90,12 @@
     "sort": 10
   },
   {
-    "name": "EchoRead",
+    "name": "好内容",
     "package": "name.gudong.content",
-    "icon": "https://gudong.s3.bitiful.net/icon/echo_read_icon.png",
-    "desc": "AI 驱动的个人知识管理，把好内容复刻成脑资产",
+    "icon": "",
+    "desc": "本地优先的稍后阅读与文章精读工具——好文章存进手机，删文了也还在",
     "download": "https://www.pgyer.com/echoread",
-    "doc": "/echo/",
+    "doc": "/content/",
     "visible": false,
     "sort": 11
   },

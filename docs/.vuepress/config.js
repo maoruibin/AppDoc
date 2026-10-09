@@ -35,7 +35,7 @@ export default defineUserConfig({
           { text: '小牛说', link: '/niushuo/' },
           { text: '图咚咚', link: '/tudongdong/' },
           { text: '声咚咚', link: '/audio/' },
-          { text: 'EchoRead', link: '/echo/' },
+          { text: '好内容', link: '/content/' },
           { text: '梦咚咚', link: '/dream/' },
           { text: '图诗', link: '/picpoem/' },
           { text: '脉咚咚', link: '/mai/' },
@@ -447,23 +447,23 @@ export default defineUserConfig({
           { text: '联系我们', link: '/douyin/contact', children: [] }
         ]}
       ],
-      '/echo/': [
+      '/content/': [
         { text: '你好', collapsible: false, children: [
-          { text: '介绍', link: '/echo/', children: [] },
-          { text: '快速上手', link: '/echo/guide', children: [] },
-          { text: '常见问题', link: '/echo/qa', children: [] },
-          { text: '更新日志', link: '/echo/changelog', children: [] }
+          { text: '介绍', link: '/content/', children: [] },
+          { text: '快速上手', link: '/content/guide', children: [] },
+          { text: '常见问题', link: '/content/qa', children: [] },
+          { text: '更新日志', link: '/content/changelog', children: [] }
         ]},
         { text: '功能', collapsible: false, children: [
-          { text: '功能详解', link: '/echo/features', children: [] }
+          { text: '功能详解', link: '/content/features', children: [] }
         ]},
         { text: '服务协议', collapsible: false, children: [
-          { text: '用户协议', link: '/echo/agreement', children: [] },
-          { text: '隐私政策', link: '/echo/private', children: [] }
+          { text: '用户协议', link: '/content/agreement', children: [] },
+          { text: '隐私政策', link: '/content/private', children: [] }
         ]},
         { text: '关于', collapsible: false, children: [
-          { text: '为什么', link: '/echo/why', children: [] },
-          { text: '联系我们', link: '/echo/contact', children: [] }
+          { text: '为什么', link: '/content/why', children: [] },
+          { text: '联系我们', link: '/content/contact', children: [] }
         ]}
       ],
       '/audio/': [
