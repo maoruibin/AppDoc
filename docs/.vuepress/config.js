@@ -490,7 +490,8 @@ export default defineUserConfig({
           { text: '更新日志', link: '/xiexia/changelog', children: [] }
         ]},
         { text: '功能', collapsible: false, children: [
-          { text: '功能详解', link: '/xiexia/features', children: [] }
+          { text: '功能详解', link: '/xiexia/features', children: [] },
+          { text: '云同步配置', link: '/xiexia/sync-guide', children: [] }
         ]},
         { text: '服务协议', collapsible: false, children: [
           { text: '用户协议', link: '/xiexia/agreement', children: [] },
