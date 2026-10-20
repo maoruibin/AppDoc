@@ -207,12 +207,44 @@
 
 /* --- 卡片（宽松） --- */
 .gh-item {
+  position: relative;
   display: block;
 }
 
-/* 下载快捷入口: 仅紧凑模式显示 */
+/* 下载快捷入口: 宽松模式 hover 卡片时在右上角浮现; 紧凑模式隐藏 */
 .gh-dl {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 34px;
+  height: 34px;
+  border: 1px solid #e7e5e4;
+  border-radius: 10px;
+  background: #fff;
+  color: #78716c;
+  opacity: 0;
+  z-index: 2;
+  transition: color .15s ease, border-color .15s ease, background .15s ease, opacity .15s ease;
+}
+
+.gh-item:hover .gh-dl,
+.gh-item:focus-within .gh-dl {
+  opacity: 1;
+}
+
+.gh-dl:hover {
+  color: #fff;
+  border-color: #1c1917;
+  background: #1c1917;
+}
+
+@media (hover: none) {
+  .gh-dl {
+    opacity: 1;
+  }
 }
 
 .gh-card {
@@ -292,52 +324,18 @@
   gap: 10px;
 }
 
-.gh-compact .gh-item {
-  display: flex;
-  align-items: stretch;
-}
-
 .gh-compact .gh-card {
   flex-direction: row;
   align-items: center;
   gap: 12px;
   padding: 12px 14px;
-  border-radius: 12px 0 0 12px;
+  border-radius: 12px;
   min-width: 0;
 }
 
-/* 下载快捷按钮: 与卡片拼成一行, hover 卡片行时浮现 */
+/* 紧凑模式不放下载入口 */
 .gh-compact .gh-dl {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  width: 40px;
-  border: 1px solid #e7e5e4;
-  border-left: none;
-  border-radius: 0 12px 12px 0;
-  background: #fff;
-  color: #78716c;
-  opacity: 0;
-  transition: color .15s ease, border-color .15s ease, background .15s ease, opacity .15s ease;
-}
-
-.gh-compact .gh-item:hover .gh-dl,
-.gh-compact .gh-item:focus-within .gh-dl {
-  opacity: 1;
-}
-
-.gh-compact .gh-dl:hover {
-  color: #fff;
-  border-color: #1c1917;
-  background: #1c1917;
-}
-
-/* 触屏设备无 hover, 常显 */
-@media (hover: none) {
-  .gh-compact .gh-dl {
-    opacity: 1;
-  }
+  display: none;
 }
 
 @media (max-width: 640px) {
