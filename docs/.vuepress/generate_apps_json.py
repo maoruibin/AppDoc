@@ -128,14 +128,27 @@ def gen_home_grid(apps):
         safe_name = html.escape(str(a.get("name", "")))
         safe_desc = html.escape(str(a.get("desc", "")))
         badge = f'<span class="gh-badge">{html.escape(str(a["badge"]))}</span>' if a.get("badge") else ""
+        # 下载快捷入口: 紧凑模式由 CSS 显示; a 内不可嵌 a, 作为兄弟节点放在 .gh-item 包裹层里
+        dl_btn = ""
+        if a.get("download"):
+            safe_dl = html.escape(str(a.get("name", "")), quote=True)
+            dl_btn = (
+                f'<a class="gh-dl" href="{a.get("download")}" target="_blank" rel="noopener" '
+                f'aria-label="下载 {safe_dl}" title="下载 {safe_dl}">'
+                f'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" '
+                f'stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+                f'<path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg></a>'
+            )
         return (
+            f'<div class="gh-item">'
             f' <a class="gh-card" href="{a.get("doc", "")}">'
             f'<span class="gh-icon-well"><img src="{a.get("icon", "")}" alt="{safe_name}"></span>'
             f'<span class="gh-card-main">'
             f'<span class="gh-card-name">{safe_name}{badge}</span>'
             f'<span class="gh-card-desc">{safe_desc}</span>'
             f"</span>"
-            f"</a>"
+            f"</a>{dl_btn}"
+            f"</div>"
         )
 
     sections = []

@@ -200,9 +200,19 @@
 }
 
 /* --- 卡片（宽松） --- */
+.gh-item {
+  display: block;
+}
+
+/* 下载快捷入口: 仅紧凑模式显示 */
+.gh-dl {
+  display: none;
+}
+
 .gh-card {
   display: flex;
   flex-direction: column;
+  height: 100%;
   background: #fff;
   border: 1px solid #e7e5e4;
   border-radius: 16px;
@@ -276,12 +286,38 @@
   gap: 10px;
 }
 
+.gh-compact .gh-item {
+  display: flex;
+  align-items: stretch;
+  gap: 6px;
+}
+
 .gh-compact .gh-card {
   flex-direction: row;
   align-items: center;
   gap: 12px;
   padding: 12px 14px;
   border-radius: 12px;
+  min-width: 0;
+}
+
+.gh-compact .gh-dl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 38px;
+  border: 1px solid #e7e5e4;
+  border-radius: 12px;
+  background: #fff;
+  color: #78716c;
+  transition: color .15s ease, border-color .15s ease, background .15s ease;
+}
+
+.gh-compact .gh-dl:hover {
+  color: #fff;
+  border-color: #1c1917;
+  background: #1c1917;
 }
 
 .gh-compact .gh-icon-well {
