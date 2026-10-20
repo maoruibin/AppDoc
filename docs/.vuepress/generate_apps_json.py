@@ -181,7 +181,7 @@ def gen_home_grid(apps):
     block = "\n".join(sections)
     grid_block = (
         f'<header class="gh-hero">\n'
-        f'<div class="gh-mark">咕</div>\n'
+        f'<div class="gh-mark"><img src="https://gudong.s3.bitiful.net/asset/avatar.jpg" alt="咕咚"></div>\n'
         f'<div class="gh-eyebrow">独立开发 · MY LITTLE UNIVERSE</div>\n'
         f"<h1>咕咚的小宇宙</h1>\n"
         f'<p class="gh-sub">先为自己做，再交给你。这里的每一款应用，我都在每天使用：没有广告、没有后台，你的数据只留在你的设备上——需要同步时，用的也是你自己的网盘。</p>\n'

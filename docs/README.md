@@ -7,7 +7,7 @@ sidebar: false
 <!-- 首页 hero + 分类卡片区由 .vuepress/generate_apps_json.py 从 apps.yml 生成：显隐由 visible 控制、分类看 category、排序按 sort，勿手动编辑；App 上/下架只改 apps.yml -->
 <!-- APPS_GRID_START -->
 <header class="gh-hero">
-<div class="gh-mark">咕</div>
+<div class="gh-mark"><img src="https://gudong.s3.bitiful.net/asset/avatar.jpg" alt="咕咚"></div>
 <div class="gh-eyebrow">独立开发 · MY LITTLE UNIVERSE</div>
 <h1>咕咚的小宇宙</h1>
 <p class="gh-sub">先为自己做，再交给你。这里的每一款应用，我都在每天使用：没有广告、没有后台，你的数据只留在你的设备上——需要同步时，用的也是你自己的网盘。</p>
