@@ -13,6 +13,7 @@
   desc: 记录灵感、想法的本地化笔记软件
   download: https://www.pgyer.com/inbox
   doc: /inbox/
+  category: write
   visible: true
   sort: 1
 
@@ -22,6 +23,7 @@
   desc: 简单好用的录音工具，支持 AI 智能转写
   download: https://www.pgyer.com/invoiceyuji
   doc: /voice/
+  category: audio
   visible: true
   sort: 2
 
@@ -31,6 +33,7 @@
   desc: 成为更好的自己，极致简单的习惯打卡软件
   download: https://www.pgyer.com/dianliang
   doc: /light/
+  category: life
   visible: true
   sort: 3
 
@@ -40,6 +43,7 @@
   desc: 让资产一目了然，简单易用的资产管理软件
   download: https://www.pgyer.com/cangdongdong
   doc: /cang/
+  category: tools
   visible: true
   sort: 4
 
@@ -49,6 +53,7 @@
   desc: 图床上传 APP，生成 Markdown 链接，兼容主流图床与 GitHub/码云
   download: https://www.pgyer.com/picplus-android
   doc: /picplus/
+  category: image
   visible: true
   sort: 6
 
@@ -58,6 +63,7 @@
   desc: 极简离线密码管理器，本地存储不联网
   download: https://www.pgyer.com/passbox-android
   doc: /passbox/
+  category: tools
   visible: true
   sort: 7
 
@@ -85,6 +91,7 @@
   desc: 简单易用、高颜值的全能本地图片处理工具箱
   download: https://www.pgyer.com/picdong-android
   doc: /tudongdong/
+  category: image
   visible: true
   sort: 10
 
@@ -94,6 +101,7 @@
   desc: 本地优先的稍后阅读与文章精读工具——好文章存进手机，删文了也还在
   download: https://www.pgyer.com/content
   doc: /content/
+  category: write
   visible: true
   sort: 11
 
@@ -103,6 +111,7 @@
   desc: 为宝宝记录每一个珍贵时刻的成长记录软件
   download: https://www.pgyer.com/dongshiguang
   doc: /time/
+  category: life
   visible: true
   sort: 12
 
@@ -112,6 +121,7 @@
   desc: 简洁优雅的本地音乐播放器，歌单、歌词、资料库一应俱全
   download: https://www.pgyer.com/tingdongdong-android
   doc: /music/
+  category: audio
   visible: true
   sort: 13
 
@@ -121,7 +131,9 @@
   desc: 尺子、水平仪、指南针、量角器、分贝仪、取色器，一App全搞定
   download: https://www.pgyer.com/liangdongdong
   doc: /measure/
+  category: tools
   visible: true
+  badge: NEW
   sort: 14
 
 - name: 麻雀 MD
@@ -130,6 +142,7 @@
   desc: 轻量 Markdown 阅读器，秒开、无账号、无联网权限，桌面版 Sparrow 同步开源
   download: https://blog.gudong.site/sparrow/
   doc: https://blog.gudong.site/sparrow/
+  category: write
   visible: true
   sort: 15
 
@@ -148,7 +161,9 @@
   desc: 本地随机相册，随机重温你的照片与视频
   download: https://www.pgyer.com/suijixiangce
   doc: /dongalbum/
+  category: image
   visible: true
+  badge: NEW
   sort: 16
 
 - name: 打码咚
@@ -157,6 +172,7 @@
   desc: 拖框即打码的截图隐私工具，免费无广告
   download: https://www.pgyer.com/damadong
   doc: /mosaic/
+  category: image
   visible: true
   sort: 17
 
@@ -177,6 +193,7 @@
   desc: 本地优先、一天一页的私人日记，打开就是今天，写下就有过去
   download: https://www.pgyer.com/xiexia-android-w
   doc: /xiexia/
+  category: write
   visible: true
   sort: 102
 

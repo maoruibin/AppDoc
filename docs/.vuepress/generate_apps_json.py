@@ -105,8 +105,18 @@ def gen_download_table(apps):
         OUT_DOWNLOAD.write_text(new_content, encoding="utf-8")
 
 
+# 首页分类分区: key 与 apps.yml 的 category 字段对应, 按此顺序输出
+HOME_CATEGORIES = [
+    ("write", "写与读", "#2563eb"),
+    ("image", "图片与影像", "#d97706"),
+    ("audio", "声音", "#059669"),
+    ("life", "家庭与健康", "#e11d48"),
+    ("tools", "效率与安全", "#7c3aed"),
+]
+
+
 def gen_home_grid(apps):
-    """生成 README.md 首页 .app-grid 卡片区并替换到 <!-- APPS_GRID_START/END --> 标记之间。"""
+    """生成 README.md 首页 hero + 分类分区并替换到 <!-- APPS_GRID_START/END --> 标记之间。"""
     import html
 
     visible = sorted(
@@ -114,20 +124,74 @@ def gen_home_grid(apps):
         key=lambda a: a.get("sort", 999),
     )
 
-    lines = ['<div class="app-grid">']
-    for a in visible:
+    def card(a):
         safe_name = html.escape(str(a.get("name", "")))
         safe_desc = html.escape(str(a.get("desc", "")))
-        lines.append(
-            f' <a class="app-card" href="{a.get("doc", "")}">'
-            f'<img src="{a.get("icon", "")}" alt="{safe_name}">'
-            f'<div class="app-name">{safe_name}</div>'
-            f'<div class="app-desc">{safe_desc}</div>'
+        badge = f'<span class="gh-badge">{html.escape(str(a["badge"]))}</span>' if a.get("badge") else ""
+        return (
+            f' <a class="gh-card" href="{a.get("doc", "")}">'
+            f'<span class="gh-icon-well"><img src="{a.get("icon", "")}" alt="{safe_name}"></span>'
+            f'<span class="gh-card-main">'
+            f'<span class="gh-card-name">{safe_name}{badge}</span>'
+            f'<span class="gh-card-desc">{safe_desc}</span>'
+            f"</span>"
             f"</a>"
         )
-    lines.append("</div>")
 
-    grid_block = "\n".join(lines)
+    sections = []
+    grouped = set()
+    for key, label, color in HOME_CATEGORIES:
+        members = [a for a in visible if a.get("category") == key]
+        if not members:
+            continue
+        grouped.update(a.get("name") for a in members)
+        cards = "\n".join(card(a) for a in members)
+        sections.append(
+            f'<section class="gh-section">\n'
+            f'<div class="gh-cat-head"><span class="gh-cat-dot" style="--gh-cat:{color}"></span>'
+            f"<h2>{label}</h2><span class=\"gh-cat-count\">{len(members)} 款</span></div>\n"
+            f'<div class="gh-grid">\n{cards}\n</div>\n'
+            f"</section>"
+        )
+    others = [a for a in visible if a.get("name") not in grouped]
+    if others:
+        cards = "\n".join(card(a) for a in others)
+        sections.append(
+            f'<section class="gh-section">\n'
+            f'<div class="gh-cat-head"><span class="gh-cat-dot" style="--gh-cat:#78716c"></span>'
+            f"<h2>更多工具</h2><span class=\"gh-cat-count\">{len(others)} 款</span></div>\n"
+            f'<div class="gh-grid">\n{cards}\n</div>\n'
+            f"</section>"
+        )
+
+    count = len(visible)
+    block = "\n".join(sections)
+    grid_block = (
+        f'<header class="gh-hero">\n'
+        f'<div class="gh-mark">咕</div>\n'
+        f'<div class="gh-eyebrow">独立开发 · MY LITTLE UNIVERSE</div>\n'
+        f"<h1>咕咚的小宇宙</h1>\n"
+        f'<p class="gh-sub">先为自己做，再交给你。这里的每一款应用，我都在每天使用：没有广告、没有后台，你的数据只留在你的设备上——需要同步时，用的也是你自己的网盘。</p>\n'
+        f'<div class="gh-stats">\n'
+        f'<span class="gh-stat"><b>{count}</b> 款应用</span>\n'
+        f'<span class="gh-stat"><b>0</b> 广告</span>\n'
+        f'<span class="gh-stat"><b>0</b> 后台</span>\n'
+        f'<span class="gh-stat"><b>100%</b> 本地优先</span>\n'
+        f"</div>\n"
+        f'<div class="gh-cta">\n'
+        f'<a class="gh-btn gh-btn-primary" href="#gh-sections">浏览全部应用</a>\n'
+        f'<a class="gh-btn" href="/download.html">下载地址</a>\n'
+        f"</div>\n"
+        f"</header>\n"
+        f'<div class="gh-viewbar">\n'
+        f'<span class="gh-viewbar-label">视图</span>\n'
+        f'<div class="gh-seg" id="gh-density-seg">\n'
+        f'<button type="button" data-gh-d="cozy" class="gh-on">宽松</button>\n'
+        f'<button type="button" data-gh-d="compact">紧凑</button>\n'
+        f"</div>\n"
+        f"</div>\n"
+        f'<div id="gh-sections">\n{block}\n</div>'
+    )
 
     content = OUT_HOME.read_text(encoding="utf-8")
     pattern = r"<!-- APPS_GRID_START -->.*?<!-- APPS_GRID_END -->"

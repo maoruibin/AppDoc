@@ -12,70 +12,352 @@
   margin-right: 10px;
 }
 
-.app-grid {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
-  margin-top: 24px;
+/* ===== 首页「咕咚的小宇宙」改版（.gh-* 前缀；结构由 generate_apps_json.py 生成） ===== */
+
+/* 放宽首页内容宽度（默认主题 740px 太窄） */
+.theme-default-content:has(.gh-wrap),
+.home .theme-default-content {
+  max-width: 1080px !important;
 }
 
-.app-card {
+.gh-wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+/* --- hero --- */
+.gh-hero {
+  text-align: center;
+  padding: 56px 0 24px;
+}
+
+.gh-mark {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  margin: 0 auto 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 16px;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  box-shadow: 0 8px 24px rgba(234, 88, 12, .25);
+}
+
+.gh-eyebrow {
+  font-size: 13px;
+  color: #78716c;
+  letter-spacing: .12em;
+  margin-bottom: 10px;
+}
+
+.gh-hero h1 {
+  font-size: 34px;
+  font-weight: 600;
+  margin: 0 0 12px;
+  letter-spacing: .01em;
+  border-bottom: none;
+  color: #1c1917;
+}
+
+.gh-sub {
+  font-size: 15px;
+  color: #78716c;
+  margin: 0 auto 22px;
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.gh-stats {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 26px;
+}
+
+.gh-stat {
+  font-size: 13px;
+  color: #78716c;
   background: #fff;
-  text-decoration: none;
+  border: 1px solid #e7e5e4;
+  border-radius: 999px;
+  padding: 6px 14px;
+}
+
+.gh-stat b {
+  color: #1c1917;
+  font-weight: 600;
+}
+
+.gh-cta {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.gh-btn {
+  font-size: 14px;
+  padding: 10px 22px;
+  border-radius: 10px;
+  border: 1px solid #e7e5e4;
+  background: #fff;
+  color: #1c1917;
+  font-weight: 500;
+  text-decoration: none !important;
   transition: transform .15s ease, box-shadow .15s ease;
 }
 
-.app-card,
-.app-card:link,
-.app-card:visited,
-.app-card:hover,
-.app-card:active {
-  text-decoration: none !important;
-  border-bottom: none !important;
+.gh-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(28, 25, 23, .1);
 }
 
-.app-name,
-.app-desc {
-  text-decoration: none !important;
-  border-bottom: none !important;
+.gh-btn-primary {
+  background: #1c1917;
+  color: #fff !important;
+  border-color: #1c1917;
 }
 
-.app-card:hover {
+/* --- 视图切换 --- */
+.gh-viewbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+  margin: 4px 0 22px;
+}
+
+.gh-viewbar-label {
+  font-size: 12px;
+  color: #78716c;
+}
+
+.gh-seg {
+  display: flex;
+  background: #fff;
+  border: 1px solid #e7e5e4;
+  border-radius: 9px;
+  padding: 3px;
+  gap: 2px;
+}
+
+.gh-seg button {
+  font-size: 12px;
+  padding: 5px 12px;
+  border: none;
+  background: transparent;
+  color: #78716c;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.gh-seg button.gh-on {
+  background: #1c1917;
+  color: #fff;
+}
+
+/* --- 分类分区 --- */
+.gh-section {
+  margin-bottom: 36px;
+}
+
+.gh-cat-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 14px;
+}
+
+.gh-cat-head h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0;
+  border-bottom: none;
+  color: #1c1917;
+}
+
+.gh-cat-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--gh-cat, #78716c);
+}
+
+.gh-cat-count {
+  font-size: 12px;
+  color: #78716c;
+}
+
+.gh-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+/* --- 卡片（宽松） --- */
+.gh-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #e7e5e4;
+  border-radius: 16px;
+  padding: 20px;
+  text-decoration: none !important;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.gh-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
-  text-decoration: none;
+  box-shadow: 0 10px 28px rgba(28, 25, 23, .08);
+  text-decoration: none !important;
 }
 
-.app-card img {
+.gh-icon-well {
   width: 56px;
   height: 56px;
+  border-radius: 14px;
+  background: #f4f4f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  flex-shrink: 0;
+}
+
+.gh-icon-well img {
+  width: 44px;
+  height: 44px;
   object-fit: contain;
-  margin-bottom: 8px;
+  border-radius: 10px;
+  margin: 0;
+  padding: 0;
 }
 
-.app-name {
-  font-size: 14px;
-  color: #111827;
+.gh-card-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
 }
 
-.app-desc {
-  margin-top: 4px;
+.gh-card-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1c1917;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gh-badge {
+  font-size: 10px;
+  font-weight: 500;
+  color: #059669;
+  background: rgba(5, 150, 105, .1);
+  border-radius: 999px;
+  padding: 2px 8px;
+  letter-spacing: .05em;
+}
+
+.gh-card-desc {
+  font-size: 13px;
+  color: #78716c;
+  line-height: 1.6;
+}
+
+/* --- 紧凑模式 --- */
+.gh-compact .gh-grid {
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 10px;
+}
+
+.gh-compact .gh-card {
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 12px;
+}
+
+.gh-compact .gh-icon-well {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  margin-bottom: 0;
+}
+
+.gh-compact .gh-icon-well img {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+}
+
+.gh-compact .gh-card-name {
+  font-size: 13.5px;
+  margin-bottom: 2px;
+}
+
+.gh-compact .gh-badge {
+  font-size: 9px;
+  padding: 1px 6px;
+}
+
+.gh-compact .gh-card-desc {
   font-size: 12px;
-  color: #6b7280;
+  line-height: 1.45;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* --- 页脚（README 静态区） --- */
+.gh-footer {
+  border-top: 1px solid #e7e5e4;
+  margin-top: 24px;
+  padding: 28px 0 12px;
   text-align: center;
 }
 
-@media (max-width: 1024px) {
-  .app-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.gh-footer-slogan {
+  font-size: 14px;
+  color: #1c1917;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.gh-footer-links {
+  font-size: 13px;
+  color: #78716c;
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gh-footer-links a {
+  color: #78716c;
+  text-decoration: none !important;
+}
+
+.gh-footer-links a:hover {
+  color: #1c1917;
 }
 
 @media (max-width: 640px) {
-  .app-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .gh-hero {
+    padding: 40px 0 20px;
+  }
+
+  .gh-hero h1 {
+    font-size: 26px;
+  }
+
+  .gh-viewbar {
+    justify-content: center;
+  }
 }
