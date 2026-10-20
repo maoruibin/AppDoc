@@ -204,10 +204,14 @@ def gen_home_grid(apps):
         f'<div class="gh-viewbar">\n'
         f'<div class="gh-seg" id="gh-density-seg">\n'
         f'<button type="button" data-gh-d="cozy" class="gh-on" aria-label="宽松视图">'
-        f'<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>'
+        f'<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" stroke="none" aria-hidden="true">'
+        f'<rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/>'
+        f'<rect x="3" y="13" width="8" height="8" rx="2"/><rect x="13" y="13" width="8" height="8" rx="2"/></svg>'
         f"宽松</button>\n"
         f'<button type="button" data-gh-d="compact" aria-label="紧凑视图">'
-        f'<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 5h16"/><path d="M4 10h16"/><path d="M4 15h16"/><path d="M4 20h16"/></svg>'
+        f'<svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" stroke="none" aria-hidden="true">'
+        f'<rect x="3" y="4" width="18" height="3.5" rx="1.75"/><rect x="3" y="10.25" width="18" height="3.5" rx="1.75"/>'
+        f'<rect x="3" y="16.5" width="18" height="3.5" rx="1.75"/></svg>'
         f"紧凑</button>\n"
         f"</div>\n"
         f"</div>\n"
