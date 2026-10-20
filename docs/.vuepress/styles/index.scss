@@ -104,6 +104,56 @@
   font-weight: 600;
 }
 
+/* 公众号入口: 悬停/聚焦弹出二维码 */
+.gh-stat-wechat {
+  position: relative;
+  cursor: pointer;
+}
+
+.gh-qr-pop {
+  position: absolute;
+  bottom: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%) translateY(4px);
+  width: 170px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #e7e5e4;
+  border-radius: 12px;
+  box-shadow: 0 12px 32px rgba(28, 25, 23, .14);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity .18s ease, transform .18s ease, visibility .18s ease;
+  z-index: 30;
+  text-align: center;
+}
+
+.gh-qr-pop img {
+  width: 146px;
+  height: 146px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.gh-qr-pop span {
+  display: block;
+  font-size: 12px;
+  color: #78716c;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.gh-stat-wechat:hover .gh-qr-pop,
+.gh-stat-wechat:focus-within .gh-qr-pop {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
 .gh-cta {
   display: flex;
   gap: 12px;

@@ -190,6 +190,12 @@ def gen_home_grid(apps):
         f'<span class="gh-stat"><b>0</b> 广告</span>\n'
         f'<span class="gh-stat"><b>0</b> 后台</span>\n'
         f'<span class="gh-stat"><b>100%</b> 本地优先</span>\n'
+        f'<span class="gh-stat gh-stat-wechat" tabindex="0" title="关注公众号">公众号 · 咕咚同学\n'
+        f'<span class="gh-qr-pop">\n'
+        f'<img src="https://gudong.s3.bitiful.net/asset/gongzhonghao.jpg" alt="咕咚同学公众号二维码">\n'
+        f"<span>扫码关注，获取更新通知</span>\n"
+        f"</span>\n"
+        f"</span>\n"
         f"</div>\n"
         f'<div class="gh-cta">\n'
         f'<a class="gh-btn gh-btn-primary" href="#gh-sections">浏览全部应用</a>\n'

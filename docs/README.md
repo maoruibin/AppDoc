@@ -16,6 +16,12 @@ sidebar: false
 <span class="gh-stat"><b>0</b> 广告</span>
 <span class="gh-stat"><b>0</b> 后台</span>
 <span class="gh-stat"><b>100%</b> 本地优先</span>
+<span class="gh-stat gh-stat-wechat" tabindex="0" title="关注公众号">公众号 · 咕咚同学
+<span class="gh-qr-pop">
+<img src="https://gudong.s3.bitiful.net/asset/gongzhonghao.jpg" alt="咕咚同学公众号二维码">
+<span>扫码关注，获取更新通知</span>
+</span>
+</span>
 </div>
 <div class="gh-cta">
 <a class="gh-btn gh-btn-primary" href="#gh-sections">浏览全部应用</a>
