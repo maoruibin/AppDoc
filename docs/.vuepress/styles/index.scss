@@ -20,6 +20,12 @@
   max-width: 1080px !important;
 }
 
+/* 隐藏默认主题的 home hero（站点标题+描述，与自定义 hero 重复） */
+.home .hero,
+.vp-project-home .hero {
+  display: none !important;
+}
+
 .gh-wrap {
   max-width: 1080px;
   margin: 0 auto;
@@ -282,14 +288,13 @@
 
 /* --- 紧凑模式 --- */
 .gh-compact .gh-grid {
-  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 10px;
 }
 
 .gh-compact .gh-item {
   display: flex;
   align-items: stretch;
-  gap: 6px;
 }
 
 .gh-compact .gh-card {
@@ -297,27 +302,48 @@
   align-items: center;
   gap: 12px;
   padding: 12px 14px;
-  border-radius: 12px;
+  border-radius: 12px 0 0 12px;
   min-width: 0;
 }
 
+/* 下载快捷按钮: 与卡片拼成一行, hover 卡片行时浮现 */
 .gh-compact .gh-dl {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 38px;
+  width: 40px;
   border: 1px solid #e7e5e4;
-  border-radius: 12px;
+  border-left: none;
+  border-radius: 0 12px 12px 0;
   background: #fff;
   color: #78716c;
-  transition: color .15s ease, border-color .15s ease, background .15s ease;
+  opacity: 0;
+  transition: color .15s ease, border-color .15s ease, background .15s ease, opacity .15s ease;
+}
+
+.gh-compact .gh-item:hover .gh-dl,
+.gh-compact .gh-item:focus-within .gh-dl {
+  opacity: 1;
 }
 
 .gh-compact .gh-dl:hover {
   color: #fff;
   border-color: #1c1917;
   background: #1c1917;
+}
+
+/* 触屏设备无 hover, 常显 */
+@media (hover: none) {
+  .gh-compact .gh-dl {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 640px) {
+  .gh-compact .gh-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .gh-compact .gh-icon-well {
