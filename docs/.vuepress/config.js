@@ -16,7 +16,7 @@ export default defineUserConfig({
     }
   },
   theme: defaultTheme({
-    logo: '/img/gudong-doc-logo.svg',
+    logo: 'https://gudong.s3.bitiful.net/asset/avatar.jpg',
     navbar: [
       { text: '首页', link: '/' },
       { text: '知识卡片', link: 'https://card.gudong.site/' },

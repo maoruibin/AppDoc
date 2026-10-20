@@ -10,7 +10,7 @@ const logoMap = {
   '/picplus/': 'https://gudong.s3.bitiful.net/icon/pic_ic_launcher.png',
 }
 
-const defaultLogo = '/img/gudong-doc-logo.svg'
+const defaultLogo = 'https://gudong.s3.bitiful.net/asset/avatar.jpg'
 
 function updateLogo(path) {
   // SSR 阶段没有 document,直接跳过,等客户端 hydration 后再执行

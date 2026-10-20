@@ -3,6 +3,14 @@
   max-height: 120px !important;
 }
 
+/* 导航栏 logo: 头像圆形化 */
+.navbar .logo {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .image-container {
   display: flex;
 }
