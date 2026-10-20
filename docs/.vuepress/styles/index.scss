@@ -20,6 +20,30 @@
   margin-right: 10px;
 }
 
+
+/* ===== 首页 gh-* 主题变量（夜间模式适配） ===== */
+:root {
+  --gh-surface: #fff;
+  --gh-well: #f4f4f3;
+  --gh-border: #e7e5e4;
+  --gh-text: #1c1917;
+  --gh-sub: #78716c;
+  --gh-strong: #1c1917;
+  --gh-strong-text: #fff;
+  --gh-ring: #fff;
+}
+
+.dark {
+  --gh-surface: #26262b;
+  --gh-well: #303036;
+  --gh-border: #3c3c43;
+  --gh-text: #e6e4e1;
+  --gh-sub: #a29c96;
+  --gh-strong: #e6e4e1;
+  --gh-strong-text: #1c1917;
+  --gh-ring: #26262b;
+}
+
 /* ===== 首页「咕咚的小宇宙」改版（.gh-* 前缀；结构由 generate_apps_json.py 生成） ===== */
 
 /* 放宽首页内容宽度（默认主题 740px 太窄） */
@@ -57,7 +81,7 @@
   border-radius: 50%;
   margin: 0 auto 20px;
   overflow: hidden;
-  box-shadow: 0 0 0 1px #e7e5e4, 0 0 0 4px #fff, 0 10px 28px rgba(28, 25, 23, .12);
+  box-shadow: 0 0 0 1px var(--gh-border), 0 0 0 4px var(--gh-ring), 0 10px 28px rgba(28, 25, 23, .12);
 }
 
 .gh-mark img {
@@ -70,7 +94,7 @@
 
 .gh-eyebrow {
   font-size: 13px;
-  color: #78716c;
+  color: var(--gh-sub);
   letter-spacing: .12em;
   margin-bottom: 10px;
 }
@@ -81,12 +105,12 @@
   margin: 0 0 12px;
   letter-spacing: .01em;
   border-bottom: none;
-  color: #1c1917;
+  color: var(--gh-text);
 }
 
 .gh-sub {
   font-size: 15px;
-  color: #78716c;
+  color: var(--gh-sub);
   margin: 0 auto 22px;
   max-width: 600px;
   line-height: 1.7;
@@ -102,15 +126,15 @@
 
 .gh-stat {
   font-size: 13px;
-  color: #78716c;
-  background: #fff;
-  border: 1px solid #e7e5e4;
+  color: var(--gh-sub);
+  background: var(--gh-surface);
+  border: 1px solid var(--gh-border);
   border-radius: 999px;
   padding: 6px 14px;
 }
 
 .gh-stat b {
-  color: #1c1917;
+  color: var(--gh-text);
   font-weight: 600;
 }
 
@@ -123,8 +147,8 @@
   transform: translateX(-50%) translateY(4px);
   width: 170px;
   padding: 10px;
-  background: #fff;
-  border: 1px solid #e7e5e4;
+  background: var(--gh-surface);
+  border: 1px solid var(--gh-border);
   border-radius: 12px;
   box-shadow: 0 12px 32px rgba(28, 25, 23, .14);
   opacity: 0;
@@ -147,7 +171,7 @@
 .gh-qr-pop span {
   display: block;
   font-size: 12px;
-  color: #78716c;
+  color: var(--gh-sub);
   margin-top: 6px;
   line-height: 1.4;
 }
@@ -172,9 +196,9 @@
   font-size: 14px;
   padding: 10px 22px;
   border-radius: 10px;
-  border: 1px solid #e7e5e4;
-  background: #fff;
-  color: #1c1917;
+  border: 1px solid var(--gh-border);
+  background: var(--gh-surface);
+  color: var(--gh-text);
   font-weight: 500;
   text-decoration: none !important;
   transition: transform .15s ease, box-shadow .15s ease;
@@ -186,9 +210,9 @@
 }
 
 .gh-btn-primary {
-  background: #1c1917;
-  color: #fff !important;
-  border-color: #1c1917;
+  background: var(--gh-strong);
+  color: var(--gh-strong-text) !important;
+  border-color: var(--gh-text);
 }
 
 /* 公众号主 CTA: 悬停/聚焦/点击弹出二维码 */
@@ -211,8 +235,8 @@
 
 .gh-seg {
   display: flex;
-  background: #fff;
-  border: 1px solid #d6d3d1;
+  background: var(--gh-surface);
+  border: 1px solid var(--gh-border);
   border-radius: 10px;
   padding: 4px;
   gap: 4px;
@@ -228,7 +252,7 @@
   padding: 7px 16px;
   border: none;
   background: transparent;
-  color: #78716c;
+  color: var(--gh-sub);
   border-radius: 7px;
   cursor: pointer;
   font-family: inherit;
@@ -236,12 +260,12 @@
 }
 
 .gh-seg button:hover {
-  color: #1c1917;
+  color: var(--gh-text);
 }
 
 .gh-seg button.gh-on {
-  background: #1c1917;
-  color: #fff;
+  background: var(--gh-strong);
+  color: var(--gh-strong-text);
 }
 
 /* --- 分类分区 --- */
@@ -262,7 +286,7 @@
   margin: 0;
   padding: 0;
   border-bottom: none;
-  color: #1c1917;
+  color: var(--gh-text);
 }
 
 .gh-cat-dot {
@@ -274,7 +298,7 @@
 
 .gh-cat-count {
   font-size: 12px;
-  color: #78716c;
+  color: var(--gh-sub);
 }
 
 .gh-grid {
@@ -304,10 +328,10 @@
   right: 10px;
   width: 34px;
   height: 34px;
-  border: 1px solid #e7e5e4;
+  border: 1px solid var(--gh-border);
   border-radius: 10px;
-  background: #fff;
-  color: #78716c;
+  background: var(--gh-surface);
+  color: var(--gh-sub);
   opacity: 0;
   z-index: 2;
   transition: color .15s ease, border-color .15s ease, background .15s ease, opacity .15s ease;
@@ -319,9 +343,9 @@
 }
 
 .gh-dl:hover {
-  color: #fff;
-  border-color: #1c1917;
-  background: #1c1917;
+  color: var(--gh-strong-text);
+  border-color: var(--gh-text);
+  background: var(--gh-strong);
 }
 
 @media (hover: none) {
@@ -333,8 +357,8 @@
 .gh-card {
   display: flex;
   flex-direction: column;
-  background: #fff;
-  border: 1px solid #e7e5e4;
+  background: var(--gh-surface);
+  border: 1px solid var(--gh-border);
   border-radius: 16px;
   padding: 20px;
   text-decoration: none !important;
@@ -351,7 +375,7 @@
   width: 56px;
   height: 56px;
   border-radius: 14px;
-  background: #f4f4f3;
+  background: var(--gh-well);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -377,7 +401,7 @@
 .gh-card-name {
   font-size: 15px;
   font-weight: 600;
-  color: #1c1917;
+  color: var(--gh-text);
   margin-bottom: 6px;
   display: flex;
   align-items: center;
@@ -396,7 +420,7 @@
 
 .gh-card-desc {
   font-size: 13px;
-  color: #78716c;
+  color: var(--gh-sub);
   line-height: 1.6;
 }
 
@@ -461,7 +485,7 @@
 
 /* --- 页脚（README 静态区） --- */
 .gh-footer {
-  border-top: 1px solid #e7e5e4;
+  border-top: 1px solid var(--gh-border);
   margin-top: 24px;
   padding: 28px 0 12px;
   text-align: center;
@@ -469,14 +493,14 @@
 
 .gh-footer-slogan {
   font-size: 14px;
-  color: #1c1917;
+  color: var(--gh-text);
   font-weight: 500;
   margin-bottom: 8px;
 }
 
 .gh-footer-links {
   font-size: 13px;
-  color: #78716c;
+  color: var(--gh-sub);
   display: flex;
   gap: 18px;
   justify-content: center;
@@ -484,12 +508,12 @@
 }
 
 .gh-footer-links a {
-  color: #78716c;
+  color: var(--gh-sub);
   text-decoration: none !important;
 }
 
 .gh-footer-links a:hover {
-  color: #1c1917;
+  color: var(--gh-text);
 }
 
 @media (max-width: 640px) {
