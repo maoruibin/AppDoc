@@ -155,32 +155,7 @@
 }
 
 .gh-cta {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-}
-
-.gh-btn {
-  font-size: 14px;
-  padding: 10px 22px;
-  border-radius: 10px;
-  border: 1px solid #e7e5e4;
-  background: #fff;
-  color: #1c1917;
-  font-weight: 500;
-  text-decoration: none !important;
-  transition: transform .15s ease, box-shadow .15s ease;
-}
-
-.gh-btn:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(28, 25, 23, .1);
-}
-
-.gh-btn-primary {
-  background: #1c1917;
-  color: #fff !important;
-  border-color: #1c1917;
+  display: none;
 }
 
 /* --- 视图切换 --- */

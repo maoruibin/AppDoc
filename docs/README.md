@@ -23,9 +23,6 @@ sidebar: false
 </span>
 </span>
 </div>
-<div class="gh-cta">
-<a class="gh-btn gh-btn-primary" href="#gh-sections">浏览全部应用</a>
-</div>
 </header>
 <div class="gh-viewbar">
 <div class="gh-seg" id="gh-density-seg">
