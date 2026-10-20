@@ -102,7 +102,7 @@
   {
     "name": "咚时光",
     "package": "name.gudong.time",
-    "icon": "https://gudong.s3.bitiful.net/icon/dong-time.png",
+    "icon": "https://gudong.s3.bitiful.net/icon/dong-time.png?v=2",
     "desc": "为宝宝记录每一个珍贵时刻的成长记录软件",
     "download": "https://www.pgyer.com/dongshiguang",
     "doc": "/time/",
@@ -132,7 +132,7 @@
   {
     "name": "麻雀 MD",
     "package": "com.gudong.sparrow",
-    "icon": "https://gudong.s3.bitiful.net/icon/maquemd_icon.png?no-wait=on",
+    "icon": "https://gudong.s3.bitiful.net/icon/maquemd_icon.png?no-wait=on&v=2",
     "desc": "轻量 Markdown 阅读器，秒开、无账号、无联网权限，桌面版 Sparrow 同步开源",
     "download": "https://blog.gudong.site/sparrow/",
     "doc": "https://blog.gudong.site/sparrow/",
@@ -162,7 +162,7 @@
   {
     "name": "打码咚",
     "package": "name.gudong.mosaic",
-    "icon": "https://gudong.s3.bitiful.net/icon/damadong_icon.png",
+    "icon": "https://gudong.s3.bitiful.net/icon/damadong_icon.png?v=2",
     "desc": "拖框即打码的截图隐私工具，免费无广告",
     "download": "https://www.pgyer.com/damadong",
     "doc": "/mosaic/",
