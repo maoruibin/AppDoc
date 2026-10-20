@@ -338,14 +338,16 @@
   flex-direction: row;
   align-items: center;
   gap: 12px;
-  padding: 12px 14px;
+  padding: 12px 52px 12px 14px;
   border-radius: 12px;
   min-width: 0;
 }
 
-/* 紧凑模式不放下载入口 */
+/* 紧凑模式下载入口: 右侧预留窄边, hover 卡片时按钮垂直居中浮现 */
 .gh-compact .gh-dl {
-  display: none;
+  top: 50%;
+  right: 9px;
+  transform: translateY(-50%);
 }
 
 @media (max-width: 640px) {

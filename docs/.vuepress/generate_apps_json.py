@@ -193,7 +193,6 @@ def gen_home_grid(apps):
         f"</div>\n"
         f'<div class="gh-cta">\n'
         f'<a class="gh-btn gh-btn-primary" href="#gh-sections">浏览全部应用</a>\n'
-        f'<a class="gh-btn" href="/download.html">下载地址</a>\n'
         f"</div>\n"
         f"</header>\n"
         f'<div class="gh-viewbar">\n'
