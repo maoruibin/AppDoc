@@ -46,6 +46,8 @@ export default defineUserConfig({
           { text: '写下', link: '/xiexia/' },
           { text: '书咚咚', link: '/reader/' },
           { text: '打码咚', link: '/mosaic/' },
+          { text: 'SlideNote', link: 'https://github.com/maoruibin/SlideNote' },
+          { text: '咕咚封面', link: 'https://cover.gudong.site/' },
         ]
      },
       {

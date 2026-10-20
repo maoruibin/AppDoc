@@ -186,6 +186,40 @@
     "sort": 17
   },
   {
+    "name": "SlideNote",
+    "package": "name.gudong.slidenote",
+    "icon": "https://gudong.s3.bitiful.net/icon/slidenote_icon.png",
+    "desc": "Chrome 侧边栏笔记插件，网页摘录、Markdown、跨设备自动同步",
+    "download": "https://chromewebstore.google.com/detail/appaojacakbjbbellfehlgjophpdpjom",
+    "doc": "https://github.com/maoruibin/SlideNote",
+    "category": "web",
+    "visible": true,
+    "badge": "NEW",
+    "sort": 20
+  },
+  {
+    "name": "知识卡片",
+    "package": "name.gudong.cardhub",
+    "icon": "https://gudong.s3.bitiful.net/icon/inbox.svg",
+    "desc": "开源的卡片笔记中心，精选时间戳笔记一键导入 inBox 笔记",
+    "download": "https://card.gudong.site/",
+    "doc": "https://card.gudong.site/",
+    "category": "web",
+    "visible": true,
+    "sort": 21
+  },
+  {
+    "name": "咕咚封面",
+    "package": "name.gudong.cover",
+    "icon": "https://gudong.s3.bitiful.net/icon/gudongcover_icon.png",
+    "desc": "公众号 & 小红书双平台 AI 封面生成器，Gemini 驱动",
+    "download": "https://cover.gudong.site/",
+    "doc": "https://github.com/maoruibin/GudongCover",
+    "category": "web",
+    "visible": true,
+    "sort": 22
+  },
+  {
     "name": "inBox 笔记（桌面版）",
     "package": "name.gudong.think",
     "icon": "https://gudong.s3.bitiful.net/icon/inbox_ic_launcher.png",
