@@ -196,10 +196,13 @@ def gen_home_grid(apps):
         f"</div>\n"
         f"</header>\n"
         f'<div class="gh-viewbar">\n'
-        f'<span class="gh-viewbar-label">视图</span>\n'
         f'<div class="gh-seg" id="gh-density-seg">\n'
-        f'<button type="button" data-gh-d="cozy" class="gh-on">宽松</button>\n'
-        f'<button type="button" data-gh-d="compact">紧凑</button>\n'
+        f'<button type="button" data-gh-d="cozy" class="gh-on" aria-label="宽松视图">'
+        f'<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>'
+        f"宽松</button>\n"
+        f'<button type="button" data-gh-d="compact" aria-label="紧凑视图">'
+        f'<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 5h16"/><path d="M4 10h16"/><path d="M4 15h16"/><path d="M4 20h16"/></svg>'
+        f"紧凑</button>\n"
         f"</div>\n"
         f"</div>\n"
         f'<div id="gh-sections">\n{block}\n</div>'

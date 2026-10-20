@@ -22,10 +22,9 @@ sidebar: false
 </div>
 </header>
 <div class="gh-viewbar">
-<span class="gh-viewbar-label">视图</span>
 <div class="gh-seg" id="gh-density-seg">
-<button type="button" data-gh-d="cozy" class="gh-on">宽松</button>
-<button type="button" data-gh-d="compact">紧凑</button>
+<button type="button" data-gh-d="cozy" class="gh-on" aria-label="宽松视图"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 6h16"/><path d="M4 12h16"/><path d="M4 18h16"/></svg>宽松</button>
+<button type="button" data-gh-d="compact" aria-label="紧凑视图"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 5h16"/><path d="M4 10h16"/><path d="M4 15h16"/><path d="M4 20h16"/></svg>紧凑</button>
 </div>
 </div>
 <div id="gh-sections">
