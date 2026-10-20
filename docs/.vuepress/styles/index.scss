@@ -106,11 +106,7 @@
   font-weight: 600;
 }
 
-/* 公众号入口: 悬停/聚焦弹出二维码 */
-.gh-stat-wechat {
-  position: relative;
-  cursor: pointer;
-}
+/* 公众号二维码弹层 (宽松/紧凑 CTA 通用) */
 
 .gh-qr-pop {
   position: absolute;
@@ -148,8 +144,8 @@
   line-height: 1.4;
 }
 
-.gh-stat-wechat:hover .gh-qr-pop,
-.gh-stat-wechat:focus-within .gh-qr-pop {
+.gh-wechat-btn:hover .gh-qr-pop,
+.gh-wechat-btn:focus-within .gh-qr-pop {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);
@@ -157,7 +153,42 @@
 }
 
 .gh-cta {
-  display: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4px;
+}
+
+.gh-btn {
+  font-size: 14px;
+  padding: 10px 22px;
+  border-radius: 10px;
+  border: 1px solid #e7e5e4;
+  background: #fff;
+  color: #1c1917;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.gh-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 18px rgba(28, 25, 23, .1);
+}
+
+.gh-btn-primary {
+  background: #1c1917;
+  color: #fff !important;
+  border-color: #1c1917;
+}
+
+/* 公众号主 CTA: 悬停/聚焦/点击弹出二维码 */
+.gh-wechat-btn {
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  user-select: none;
 }
 
 /* --- 视图切换 --- */

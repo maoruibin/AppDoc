@@ -190,10 +190,16 @@ def gen_home_grid(apps):
         f'<span class="gh-stat"><b>0</b> 广告</span>\n'
         f'<span class="gh-stat"><b>0</b> 后台</span>\n'
         f'<span class="gh-stat"><b>100%</b> 本地优先</span>\n'
-        f'<span class="gh-stat gh-stat-wechat" tabindex="0" title="关注公众号">公众号 · 咕咚同学\n'
+        f"</div>\n"
+        f'<div class="gh-cta">\n'
+        f'<span class="gh-btn gh-btn-primary gh-wechat-btn" tabindex="0" title="关注公众号">\n'
+        f'<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true">'
+        f'<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/>'
+        f'<rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3z"/><path d="M20 14v.01"/><path d="M14 20v.01"/><path d="M20 20v.01"/></svg>\n'
+        f"关注公众号 · 咕咚同学\n"
         f'<span class="gh-qr-pop">\n'
         f'<img src="https://gudong.s3.bitiful.net/asset/gongzhonghao.jpg" alt="咕咚同学公众号二维码">\n'
-        f"<span>扫码关注，获取更新通知</span>\n"
+        f"<span>微信扫码关注，获取更新与上新通知</span>\n"
         f"</span>\n"
         f"</span>\n"
         f"</div>\n"

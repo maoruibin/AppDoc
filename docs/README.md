@@ -16,10 +16,14 @@ sidebar: false
 <span class="gh-stat"><b>0</b> 广告</span>
 <span class="gh-stat"><b>0</b> 后台</span>
 <span class="gh-stat"><b>100%</b> 本地优先</span>
-<span class="gh-stat gh-stat-wechat" tabindex="0" title="关注公众号">公众号 · 咕咚同学
+</div>
+<div class="gh-cta">
+<span class="gh-btn gh-btn-primary gh-wechat-btn" tabindex="0" title="关注公众号">
+<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><path d="M14 14h3v3h-3z"/><path d="M20 14v.01"/><path d="M14 20v.01"/><path d="M20 20v.01"/></svg>
+关注公众号 · 咕咚同学
 <span class="gh-qr-pop">
 <img src="https://gudong.s3.bitiful.net/asset/gongzhonghao.jpg" alt="咕咚同学公众号二维码">
-<span>扫码关注，获取更新通知</span>
+<span>微信扫码关注，获取更新与上新通知</span>
 </span>
 </span>
 </div>
