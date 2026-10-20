@@ -19,7 +19,6 @@ export default defineUserConfig({
     logo: 'https://gudong.s3.bitiful.net/asset/avatar.jpg',
     navbar: [
       { text: '首页', link: '/' },
-      { text: '知识卡片', link: 'https://card.gudong.site/' },
       { text: '下载地址', link: '/download' },
       {
         text: '作品集合',

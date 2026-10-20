@@ -162,8 +162,10 @@
 
 .gh-cta {
   display: flex;
+  gap: 12px;
   justify-content: center;
   margin-bottom: 4px;
+  flex-wrap: wrap;
 }
 
 .gh-btn {

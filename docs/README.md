@@ -26,6 +26,9 @@ sidebar: false
 <span>微信扫码关注，获取更新与上新通知</span>
 </span>
 </span>
+<a class="gh-btn" href="https://blog.gudong.site/" target="_blank" rel="noopener" title="我的博客">
+<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
+我的博客</a>
 </div>
 </header>
 <div class="gh-viewbar">
@@ -91,7 +94,10 @@ sidebar: false
   <div class="gh-footer-links">
     <a href="/download.html">下载地址</a>
     <span>微信：mw08032231</span>
-    <span>公众号：咕咚同学</span>
+    <a href="https://gudong.s3.bitiful.net/asset/gongzhonghao.jpg" target="_blank" rel="noopener">公众号：咕咚同学</a>
+    <a href="https://www.xiaohongshu.com/user/profile/6690863b000000001e00e6a4" target="_blank" rel="noopener">小红书</a>
+    <a href="https://okjk.co/PkiCea" target="_blank" rel="noopener">即刻</a>
+    <a href="https://x.com/dxgudong" target="_blank" rel="noopener">X</a>
     <span>© 咕咚</span>
   </div>
 </div>
