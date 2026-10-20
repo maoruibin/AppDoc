@@ -1,6 +1,6 @@
 ---
 home: true
-title: 咕咚的小宇宙
+title: 我的产品小宇宙
 sidebar: false
 ---
 
@@ -9,7 +9,7 @@ sidebar: false
 <header class="gh-hero">
 <div class="gh-mark"><img src="https://gudong.s3.bitiful.net/asset/avatar.jpg" alt="咕咚"></div>
 <div class="gh-eyebrow">独立开发 · MY LITTLE UNIVERSE</div>
-<h1>咕咚的小宇宙</h1>
+<h1>我的产品小宇宙</h1>
 <p class="gh-sub">先为自己做，再交给你。这里的每一款应用，我都在每天使用：没有广告、没有后台，你的数据只留在你的设备上——需要同步时，用的也是你自己的网盘。</p>
 <div class="gh-stats">
 <span class="gh-stat"><b>18</b> 款应用</span>
