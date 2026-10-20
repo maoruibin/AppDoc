@@ -26,6 +26,12 @@
   display: none !important;
 }
 
+/* 首页隐藏默认主题的「回到顶部」悬浮按钮（会压在卡片上） */
+.home .vp-back-to-top-button,
+.vp-project-home .vp-back-to-top-button {
+  display: none !important;
+}
+
 .gh-wrap {
   max-width: 1080px;
   margin: 0 auto;
@@ -208,7 +214,12 @@
 /* --- 卡片（宽松） --- */
 .gh-item {
   position: relative;
-  display: block;
+  display: flex;
+}
+
+/* 用 flex 撑满格子, 禁用百分比高度(在自动行高网格里会解析错误导致卡片溢出重叠) */
+.gh-card {
+  flex: 1;
 }
 
 /* 下载快捷入口: 宽松模式 hover 卡片时在右上角浮现; 紧凑模式隐藏 */
@@ -250,7 +261,6 @@
 .gh-card {
   display: flex;
   flex-direction: column;
-  height: 100%;
   background: #fff;
   border: 1px solid #e7e5e4;
   border-radius: 16px;

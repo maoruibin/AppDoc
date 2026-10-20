@@ -109,10 +109,13 @@ if (typeof document !== 'undefined') (function() {
       }
     }
   }
-  // 回到首页时恢复已保存的视图
+  // 回到首页时恢复已保存的视图, 并隐藏默认主题的「回到顶部」按钮(会压在卡片上)
   setInterval(function() {
     var sections = document.getElementById('gh-sections');
-    if (sections && !sections.__ghApplied) {
+    if (!sections) return;
+    var btt = document.querySelector('.vp-back-to-top-button');
+    if (btt && btt.style.display !== 'none') btt.style.display = 'none';
+    if (!sections.__ghApplied) {
       sections.__ghApplied = true;
       applyDensity(getSaved());
     }
