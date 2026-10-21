@@ -93,12 +93,47 @@ sidebar: false
   <div class="gh-footer-slogan">用代码塑造生活</div>
   <div class="gh-footer-links">
     <a href="/download.html">下载地址</a>
-    <span>微信：mw08032231</span>
+    <a href="#contact" data-gh-contact-open>联系我</a>
     <a href="https://gudong.s3.bitiful.net/asset/gongzhonghao.jpg" target="_blank" rel="noopener">公众号：咕咚同学</a>
     <a href="https://www.xiaohongshu.com/user/profile/6690863b000000001e00e6a4" target="_blank" rel="noopener">小红书</a>
     <a href="https://okjk.co/PkiCea" target="_blank" rel="noopener">即刻</a>
     <a href="https://x.com/dxgudong" target="_blank" rel="noopener">X</a>
     <span>© 咕咚</span>
+  </div>
+</div>
+
+<!-- 联系我弹窗（页脚「联系我」触发） -->
+<div class="gh-modal" id="gh-contact-modal" hidden>
+  <div class="gh-modal-mask" data-gh-contact-close></div>
+  <div class="gh-modal-card" role="dialog" aria-modal="true" aria-labelledby="gh-contact-title">
+    <button type="button" class="gh-modal-close" data-gh-contact-close aria-label="关闭">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <div class="gh-modal-title" id="gh-contact-title">联系我</div>
+    <div class="gh-modal-sub">加微信、发邮件，或者请我喝杯咖啡</div>
+    <div class="gh-modal-grid">
+      <div class="gh-modal-item">
+        <img class="gh-modal-qr" src="https://gudong.s3.bitiful.net/asset/gudong_wechat_qr.jpg" alt="咕咚微信二维码">
+        <b>微信</b>
+        <span>扫码加我，备注来意<br>mw08032231</span>
+      </div>
+      <div class="gh-modal-item">
+        <div class="gh-modal-mail">
+          <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m2 7 10 7 10-7"/></svg>
+          <a class="gh-btn gh-btn-primary" href="mailto:1397516172@qq.com?subject=%E6%9D%A5%E8%87%AA%E6%96%87%E6%A1%A3%E7%AB%99%E7%9A%84%E8%81%94%E7%B3%BB">发邮件</a>
+        </div>
+        <b>邮件</b>
+        <span>1397516172@qq.com<br>备注来意，我会尽快回复</span>
+      </div>
+      <div class="gh-modal-item">
+        <div class="gh-modal-donate">
+          <img src="https://gudong.s3.bitiful.net/asset/alipay-donate.jpg" alt="支付宝赞赏码">
+          <img src="https://gudong.s3.bitiful.net/asset/wechat-donate.jpg" alt="微信赞赏码">
+        </div>
+        <b>请我喝杯咖啡</b>
+        <span>支付宝 / 微信 赞赏<br>每一份支持都是继续做下去的动力</span>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -109,8 +144,22 @@ if (typeof document !== 'undefined') (function() {
     try { return localStorage.getItem(KEY) || 'cozy'; } catch (err) { return 'cozy'; }
   }
   // 事件委托: 首页 DOM 随 SPA 路由重建, 委托到 document 只需绑一次
+  function setContact(open) {
+    var modal = document.getElementById('gh-contact-modal');
+    if (!modal) return;
+    modal.hidden = !open;
+    document.documentElement.classList.toggle('gh-modal-open', open);
+  }
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') setContact(false);
+  });
   document.addEventListener('click', function(e) {
-    var b = e.target && e.target.closest && e.target.closest('[data-gh-d]');
+    var t = e.target;
+    if (t && t.closest) {
+      if (t.closest('[data-gh-contact-open]')) { e.preventDefault(); setContact(true); return; }
+      if (t.closest('[data-gh-contact-close]')) { setContact(false); return; }
+    }
+    var b = t && t.closest && t.closest('[data-gh-d]');
     if (!b) return;
     var d = b.getAttribute('data-gh-d');
     try { localStorage.setItem(KEY, d); } catch (err) {}

@@ -536,3 +536,162 @@
     justify-content: center;
   }
 }
+
+/* --- 联系我弹窗 --- */
+.gh-modal[hidden] {
+  display: none !important;
+}
+
+.gh-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.gh-modal-mask {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 14, 13, .55);
+  backdrop-filter: blur(4px);
+}
+
+.gh-modal-card {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  background: var(--gh-surface);
+  border: 1px solid var(--gh-border);
+  border-radius: 20px;
+  padding: 32px 32px 28px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, .25);
+  animation: gh-modal-in .18s ease;
+}
+
+@keyframes gh-modal-in {
+  from { opacity: 0; transform: translateY(8px) scale(.98); }
+  to { opacity: 1; transform: none; }
+}
+
+.gh-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--gh-sub);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gh-modal-close:hover {
+  background: var(--gh-well);
+  color: var(--gh-text);
+}
+
+.gh-modal-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--gh-text);
+  text-align: center;
+}
+
+.gh-modal-sub {
+  font-size: 13px;
+  color: var(--gh-sub);
+  text-align: center;
+  margin: 6px 0 24px;
+}
+
+.gh-modal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.gh-modal-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 18px 14px;
+  border-radius: 14px;
+  background: var(--gh-well);
+}
+
+.gh-modal-item b {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--gh-text);
+  margin-top: 12px;
+}
+
+.gh-modal-item span {
+  font-size: 12px;
+  color: var(--gh-sub);
+  line-height: 1.6;
+  margin-top: 4px;
+}
+
+.gh-modal-qr {
+  width: 132px;
+  height: 132px;
+  object-fit: cover;
+  border-radius: 10px;
+  background: #fff;
+  display: block;
+}
+
+.gh-modal-mail {
+  width: 132px;
+  height: 132px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--gh-sub);
+}
+
+.gh-modal-mail .gh-btn {
+  padding: 8px 18px;
+  font-size: 13px;
+}
+
+.gh-modal-donate {
+  width: 132px;
+  height: 132px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.gh-modal-donate img {
+  width: 63px;
+  height: 63px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #fff;
+}
+
+html.gh-modal-open {
+  overflow: hidden;
+}
+
+@media (max-width: 640px) {
+  .gh-modal-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gh-modal-card {
+    padding: 28px 18px 22px;
+  }
+}
