@@ -193,15 +193,22 @@
 }
 
 .gh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 14px;
   padding: 10px 22px;
   border-radius: 10px;
   border: 1px solid var(--gh-border);
-  background: var(--gh-surface);
+  background: var(--gh-well);
   color: var(--gh-text);
   font-weight: 500;
   text-decoration: none !important;
   transition: transform .15s ease, box-shadow .15s ease;
+}
+
+.gh-btn svg {
+  flex-shrink: 0;
 }
 
 .gh-btn:hover {
