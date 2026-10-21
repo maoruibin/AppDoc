@@ -94,6 +94,7 @@ sidebar: false
   <div class="gh-footer-links">
     <a href="/download.html">下载地址</a>
     <a href="#contact" data-gh-contact-open>联系我</a>
+    <a href="/donate/">赞赏</a>
     <a href="https://gudong.s3.bitiful.net/asset/gongzhonghao.jpg" target="_blank" rel="noopener">公众号：咕咚同学</a>
     <a href="https://www.xiaohongshu.com/user/profile/6690863b000000001e00e6a4" target="_blank" rel="noopener">小红书</a>
     <a href="https://okjk.co/PkiCea" target="_blank" rel="noopener">即刻</a>
