@@ -37,5 +37,6 @@
 - [常见问题](/content/qa)
 - [更新日志](/content/changelog)
 - [为什么做好内容](/content/why)
+- [Scheme 开放链接](/content/scheme)
 - [用户协议](/content/agreement)
 - [隐私政策](/content/private)

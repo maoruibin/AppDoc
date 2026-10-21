@@ -458,6 +458,9 @@ export default defineUserConfig({
         { text: '功能', collapsible: false, children: [
           { text: '功能详解', link: '/content/features', children: [] }
         ]},
+        { text: '开放', collapsible: false, children: [
+          { text: 'Scheme', link: '/content/scheme', children: [] }
+        ]},
         { text: '服务协议', collapsible: false, children: [
           { text: '用户协议', link: '/content/agreement', children: [] },
           { text: '隐私政策', link: '/content/private', children: [] }
