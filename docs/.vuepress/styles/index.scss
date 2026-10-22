@@ -140,6 +140,11 @@
 
 /* 公众号二维码弹层 (宽松/紧凑 CTA 通用) */
 
+.gh-footer-wechat {
+  position: relative;
+  cursor: pointer;
+}
+
 .gh-qr-pop {
   position: absolute;
   bottom: calc(100% + 12px);
@@ -177,7 +182,9 @@
 }
 
 .gh-wechat-btn:hover .gh-qr-pop,
-.gh-wechat-btn:focus-within .gh-qr-pop {
+.gh-wechat-btn:focus-within .gh-qr-pop,
+.gh-footer-wechat:hover .gh-qr-pop,
+.gh-footer-wechat:focus-within .gh-qr-pop {
   opacity: 1;
   visibility: visible;
   transform: translateX(-50%) translateY(0);

@@ -95,7 +95,7 @@ sidebar: false
     <a href="/download.html">下载地址</a>
     <a href="#contact" data-gh-contact-open>联系我</a>
     <a href="/donate/">赞赏</a>
-    <a href="https://gudong.s3.bitiful.net/asset/gongzhonghao.jpg" target="_blank" rel="noopener">公众号：咕咚同学</a>
+    <span class="gh-footer-wechat" tabindex="0" title="关注公众号">公众号：咕咚同学<span class="gh-qr-pop"><img src="https://gudong.s3.bitiful.net/asset/gongzhonghao.jpg" alt="咕咚同学公众号二维码"><span>微信扫码关注，获取更新与上新通知</span></span></span>
     <a href="https://www.xiaohongshu.com/user/profile/6690863b000000001e00e6a4" target="_blank" rel="noopener">小红书</a>
     <a href="https://okjk.co/PkiCea" target="_blank" rel="noopener">即刻</a>
     <a href="https://x.com/dxgudong" target="_blank" rel="noopener">X</a>
