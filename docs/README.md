@@ -128,8 +128,8 @@ sidebar: false
       </div>
       <div class="gh-modal-item">
         <div class="gh-modal-donate">
-          <img src="https://gudong.s3.bitiful.net/asset/alipay-donate.jpg" alt="支付宝赞赏码">
-          <img src="https://gudong.s3.bitiful.net/asset/wechat-donate.jpg" alt="微信赞赏码">
+          <img src="https://gudong.s3.bitiful.net/asset/alipay-donate.jpg?v=2" alt="支付宝赞赏码">
+          <img src="https://gudong.s3.bitiful.net/asset/wechat-donate.jpg?v=2" alt="微信赞赏码">
         </div>
         <b>请我喝杯咖啡</b>
         <span>支付宝 / 微信 赞赏<br>每一份支持都是继续做下去的动力</span>

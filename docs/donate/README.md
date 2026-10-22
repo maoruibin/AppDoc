@@ -12,12 +12,12 @@ sidebar: false
   </p>
   <div class="gd-donate-grid">
     <div class="gd-donate-card">
-      <img src="https://gudong.s3.bitiful.net/asset/alipay-donate.jpg" alt="支付宝赞赏码">
+      <img src="https://gudong.s3.bitiful.net/asset/alipay-donate.jpg?v=2" alt="支付宝赞赏码">
       <b>支付宝</b>
       <span>扫一扫赞赏</span>
     </div>
     <div class="gd-donate-card">
-      <img src="https://gudong.s3.bitiful.net/asset/wechat-donate.jpg" alt="微信赞赏码">
+      <img src="https://gudong.s3.bitiful.net/asset/wechat-donate.jpg?v=2" alt="微信赞赏码">
       <b>微信</b>
       <span>扫一扫赞赏</span>
     </div>
