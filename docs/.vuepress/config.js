@@ -403,7 +403,8 @@ export default defineUserConfig({
         ]},
         { text: '服务协议', collapsible: false, children: [
           { text: '用户协议', link: '/dongalbum/agreement', children: [] },
-          { text: '隐私政策', link: '/dongalbum/private', children: [] }
+          { text: '隐私政策（iOS）', link: '/dongalbum/private', children: [] },
+          { text: '隐私政策（Android）', link: '/dongalbum/private-android', children: [] }
         ]},
         { text: '关于', collapsible: false, children: [
           { text: '为什么', link: '/dongalbum/why', children: [] },
