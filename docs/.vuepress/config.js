@@ -199,6 +199,9 @@ export default defineUserConfig({
           { text: '七牛云教程', link: '/picplus/lesson_qiniu', children: [] },
           { text: '腾讯云教程', link: '/picplus/lesson_tenxun', children: [] },
           { text: '阿里云教程', link: '/picplus/lesson-oss', children: [] },
+          { text: 'S3 教程', link: '/picplus/lesson-s3', children: [] },
+          { text: 'SM.MS 教程', link: '/picplus/lesson-smms', children: [] },
+          { text: '又拍云教程', link: '/picplus/lesson-upyun', children: [] },
           { text: 'Lsky 教程', link: '/picplus/lesson-lsky', children: [] }
         ]},
         { text: '使用', collapsible: false, children: [
