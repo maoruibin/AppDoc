@@ -198,6 +198,7 @@ export default defineUserConfig({
           { text: 'GitHub 教程', link: '/picplus/lesson_github', children: [] },
           { text: '七牛云教程', link: '/picplus/lesson_qiniu', children: [] },
           { text: '腾讯云教程', link: '/picplus/lesson_tenxun', children: [] },
+          { text: '阿里云教程', link: '/picplus/lesson-oss', children: [] },
           { text: 'Lsky 教程', link: '/picplus/lesson-lsky', children: [] }
         ]},
         { text: '使用', collapsible: false, children: [
