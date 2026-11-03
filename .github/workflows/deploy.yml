@@ -1,0 +1,43 @@
+name: Deploy Doc Site
+
+# push 到 main 自动部署到阿里云服务器（doc.gudong.site）；也可在 Actions 页手动触发
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-docs
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 安装依赖
+        run: npm install --legacy-peer-deps
+
+      - name: 构建
+        run: npm run docs:build
+
+      # 服务器无 rsync，用 tar-over-ssh 全量同步；
+      # 保留宝塔的 .user.ini / .htaccess / .well-known（证书验证目录）
+      - name: 部署到阿里云服务器
+        env:
+          SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -H 39.97.189.55 >> ~/.ssh/known_hosts 2>/dev/null
+          tar -C docs/.vuepress/dist -cf - . | ssh -i ~/.ssh/deploy_key root@39.97.189.55 \
+            "cd /www/wwwroot/doc.gudong.site \
+             && find . -mindepth 1 -maxdepth 1 ! -name '.user.ini' ! -name '.htaccess' ! -name '.well-known' -exec rm -rf {} + \
+             && tar -xf - \
+             && find . -mindepth 1 -name .user.ini -prune -o -print0 | xargs -0 chown www:www"
