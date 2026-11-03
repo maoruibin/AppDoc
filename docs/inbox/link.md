@@ -30,6 +30,6 @@ tip:如何插入？
 
 可以新建一个笔记置顶，然后在笔记中引用不用笔记链接，这样就可以在 inBox 中建立一个笔记目录，方便自己去管理自己的笔记，如下所示：
 
-![](https://doc.gudong.site/assets/img/link-3.b293c7af.jpeg)
+![](https://app.gudong.site/assets/img/link-3.b293c7af.jpeg)
 
 <img src="../public/img/link-3.jpeg" width="60%" alt="">

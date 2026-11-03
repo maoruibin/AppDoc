@@ -1,7 +1,7 @@
 # AGENTS.md（AppDoc 文档站）
 
 > 本文件是每次会话的常驻上下文：**项目快照 + 目录地图 + 开发规矩**。易变信息用指针（"以 X 为准"），不抄数值。
-> **最后核实：2026-10-20（首页改版为「咕咚的小宇宙」：hero + 分类分区 gh-* 结构，category/badge 字段、宽松/紧凑视图切换）**
+> **最后核实：2026-11-03（迁离 Cloudflare Pages → 阿里云服务器 + GitHub Actions 自动部署；app.gudong.site 主入口、doc.gudong.site 保留兜底；首页 gh-* 结构不变）**
 
 上级规范必读，本文只写 AppDoc 特化，不重复其内容：
 
@@ -10,13 +10,13 @@
 
 ## 0. 项目快照
 
-**一句话**：咕咚全系 App 的使用文档站（doc.gudong.site），纯内容仓库——Markdown + VuePress 配置，无业务代码；每个 App 一个目录，改完 push 即自动上线。
+**一句话**：咕咚全系 App 的使用文档站（app.gudong.site），纯内容仓库——Markdown + VuePress 配置，无业务代码；每个 App 一个目录，改完 push 即自动上线。
 
 | 维度 | 值 |
 |---|---|
 | 技术栈 | VuePress 2（rc 版，以 `package.json` 为准）+ webpack bundler + 默认主题 + sass，配置集中在 `docs/.vuepress/config.js` |
-| 仓库 / 线上 | `github.com/maoruibin/AppDoc` / https://doc.gudong.site |
-| 部署 | Cloudflare Pages Git 集成：push 到 main 自动构建部署；**无 CI、无 wrangler** |
+| 仓库 / 线上 | `github.com/maoruibin/AppDoc` / https://app.gudong.site |
+| 部署 | GitHub Actions → 阿里云服务器（push main 自动构建部署）；app.gudong.site 主入口，doc.gudong.site 保留兜底 |
 | 环境 | Node >= 18（建议 20）；`npm install` 必须加 `--legacy-peer-deps` |
 | 测试 / lint | 无测试框架、无 lint，验证 = 本地 `docs:dev` 预览 + 构建通过 |
 | 语言 | 所有内容简体中文 |
@@ -121,8 +121,9 @@ npm run docs:build                    # 自动先跑生成脚本再构建，产�
 
 ## 4. 部署（无发版概念）
 
-- 流程：本地改 md / 配置 → commit → **push 到 main** → Cloudflare Pages 自动构建（`npm run docs:build`）并部署到 doc.gudong.site
-- 无 `.github/workflows`、无 wrangler、无服务器运维；本地一般不需要手动 build，预览用 `docs:dev`
+- 流程：本地改 md / 配置 → commit → **push 到 main** → GitHub Actions 自动构建（`npm run docs:build`）并 tar 同步到阿里云服务器（北京 39.97.189.55，2026-11-03 起；已迁离 Cloudflare Pages）
+- 域名：**app.gudong.site 为主入口**；doc.gudong.site 保留不下线（老 App 深链/商店隐私政策兜底），两域名指向同一 webroot，部署一次双域同时更新
+- workflow：`.github/workflows/deploy.yml`（Node 20 构建 + tar-over-ssh，SSH 私钥在仓库 Secret `DEPLOY_SSH_KEY`）；服务器侧 Nginx/证书由 acme.sh 自动管理，本地零服务器运维
 - 按上级规范默认只本地 commit 不 push；文档何时上线由咕咚决定
 
 ## 5. 维护本文

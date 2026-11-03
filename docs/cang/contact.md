@@ -47,7 +47,7 @@
 
 ## 关注我们
 
-- 官方网站：[https://doc.gudong.site/cang](https://doc.gudong.site/cang)
+- 官方网站：[https://app.gudong.site/cang](https://app.gudong.site/cang)
 
 - 即刻[咕咚同学](https://m.okjike.com/users/3f000c6d-bd82-4695-a404-f184652e622e)
 

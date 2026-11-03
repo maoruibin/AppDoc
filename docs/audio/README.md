@@ -31,7 +31,7 @@
 
 ## 一些其他链接
 
-- [使用指南](https://doc.gudong.site/audio/guide.html)
-- [常见问题](https://doc.gudong.site/audio/qa.html)
-- [缘起](https://doc.gudong.site/audio/why.html)
-- [联系我们](https://doc.gudong.site/audio/contact.html)
+- [使用指南](https://app.gudong.site/audio/guide.html)
+- [常见问题](https://app.gudong.site/audio/qa.html)
+- [缘起](https://app.gudong.site/audio/why.html)
+- [联系我们](https://app.gudong.site/audio/contact.html)

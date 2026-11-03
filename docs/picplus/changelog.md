@@ -180,7 +180,7 @@
 -   界面：最近图片数量改为6张
 -   优化：本地备份支持导出图床配置
 -   优化：备份列表详情对话框支持复制文件路径
--   修复：修复 [@latest](https://doc.gudong.site/latest) 位置异常
+-   修复：修复 [@latest](https://app.gudong.site/latest) 位置异常
 
 ##  2.7.21
 

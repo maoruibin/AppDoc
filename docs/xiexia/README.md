@@ -27,9 +27,9 @@
 
 ## 一些其他链接
 
-- [快速上手](https://doc.gudong.site/xiexia/guide.html)
-- [功能详解](https://doc.gudong.site/xiexia/features.html)
-- [云同步配置](https://doc.gudong.site/xiexia/sync-guide.html)
-- [常见问题](https://doc.gudong.site/xiexia/qa.html)
-- [为什么做写下](https://doc.gudong.site/xiexia/why.html)
-- [联系我们](https://doc.gudong.site/xiexia/contact.html)
+- [快速上手](https://app.gudong.site/xiexia/guide.html)
+- [功能详解](https://app.gudong.site/xiexia/features.html)
+- [云同步配置](https://app.gudong.site/xiexia/sync-guide.html)
+- [常见问题](https://app.gudong.site/xiexia/qa.html)
+- [为什么做写下](https://app.gudong.site/xiexia/why.html)
+- [联系我们](https://app.gudong.site/xiexia/contact.html)

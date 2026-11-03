@@ -23,8 +23,8 @@
 
 ## 一些其他链接
 
-- [使用指南](https://doc.gudong.site/dream/guide.html)
-- [功能详解](https://doc.gudong.site/dream/features.html)
-- [常见问题](https://doc.gudong.site/dream/qa.html)
-- [缘起](https://doc.gudong.site/dream/why.html)
-- [联系我们](https://doc.gudong.site/dream/contact.html)
+- [使用指南](https://app.gudong.site/dream/guide.html)
+- [功能详解](https://app.gudong.site/dream/features.html)
+- [常见问题](https://app.gudong.site/dream/qa.html)
+- [缘起](https://app.gudong.site/dream/why.html)
+- [联系我们](https://app.gudong.site/dream/contact.html)

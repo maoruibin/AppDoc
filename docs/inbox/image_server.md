@@ -18,7 +18,7 @@
 
 网络图片的路径为一个网络 url，比如上图的 url 就是这样:
 
-> https://doc.gudong.site/assets/img/md-switch.cb105765.jpg
+> https://app.gudong.site/assets/img/md-switch.cb105765.jpg
 
 这样，当把本地图片转为网络图片，也就是一个 url 后，把 url 插入文章，那么阅读文章的人就可以正常看到这张图片，不论手机、电脑，国内、国外都可以访问。
 

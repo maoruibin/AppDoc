@@ -20,7 +20,7 @@
 
 ## 一些其他链接
 
-- [使用指南](https://doc.gudong.site/niushuo/guide.html)
-- [常见问题](https://doc.gudong.site/niushuo/qa.html)
-- [缘起](https://doc.gudong.site/niushuo/why.html)
-- [联系我们](https://doc.gudong.site/niushuo/contact.html)
+- [使用指南](https://app.gudong.site/niushuo/guide.html)
+- [常见问题](https://app.gudong.site/niushuo/qa.html)
+- [缘起](https://app.gudong.site/niushuo/why.html)
+- [联系我们](https://app.gudong.site/niushuo/contact.html)

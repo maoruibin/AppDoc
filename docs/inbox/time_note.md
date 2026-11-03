@@ -39,6 +39,6 @@
 
 ---
 
-如果你有相应的脚本、转换教程，[联系我](https://doc.gudong.site/inbox/contact.html)，我会把它更新在这里。
+如果你有相应的脚本、转换教程，[联系我](https://app.gudong.site/inbox/contact.html)，我会把它更新在这里。
 
 也欢迎大家在 GitHub 上通过 issue 提交，地址：[https://github.com/maoruibin/FreeNoteData](https://github.com/maoruibin/FreeNoteData/issues)

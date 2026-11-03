@@ -17,9 +17,9 @@
 
 ## 一些其他链接
 
-- [缘起](https://doc.gudong.site/light/why.html)
-- [常见问题](https://doc.gudong.site/light/qa.html)
-- [联系我们](https://doc.gudong.site/light/contact.html)
+- [缘起](https://app.gudong.site/light/why.html)
+- [常见问题](https://app.gudong.site/light/qa.html)
+- [联系我们](https://app.gudong.site/light/contact.html)
 
 ## 下载地址
 

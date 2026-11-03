@@ -18,7 +18,7 @@
 
 ## 一些其他链接
 
-- [使用指南](https://doc.gudong.site/music/guide.html)
-- [常见问题](https://doc.gudong.site/music/qa.html)
-- [缘起](https://doc.gudong.site/music/why.html)
-- [联系我们](https://doc.gudong.site/music/contact.html)
+- [使用指南](https://app.gudong.site/music/guide.html)
+- [常见问题](https://app.gudong.site/music/qa.html)
+- [缘起](https://app.gudong.site/music/why.html)
+- [联系我们](https://app.gudong.site/music/contact.html)

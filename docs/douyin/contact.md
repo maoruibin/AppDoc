@@ -26,7 +26,7 @@
 
 - 微信公众号：咕咚同学
 - 博客：[blog.gudong.site](https://blog.gudong.site)
-- 文档站：[doc.gudong.site](https://doc.gudong.site)
+- 文档站：[app.gudong.site](https://app.gudong.site)
 
 ---
 

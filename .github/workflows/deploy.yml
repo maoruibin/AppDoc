@@ -1,6 +1,6 @@
 name: Deploy Doc Site
 
-# push 到 main 自动部署到阿里云服务器（doc.gudong.site）；也可在 Actions 页手动触发
+# push 到 main 自动部署到阿里云服务器（app.gudong.site）；也可在 Actions 页手动触发
 on:
   push:
     branches: [main]
@@ -37,7 +37,7 @@ jobs:
           chmod 600 ~/.ssh/deploy_key
           ssh-keyscan -H 39.97.189.55 >> ~/.ssh/known_hosts 2>/dev/null
           tar -C docs/.vuepress/dist -cf - . | ssh -i ~/.ssh/deploy_key root@39.97.189.55 \
-            "cd /www/wwwroot/doc.gudong.site \
+            "cd /www/wwwroot/app.gudong.site \
              && find . -mindepth 1 -maxdepth 1 ! -name '.user.ini' ! -name '.htaccess' ! -name '.well-known' -exec rm -rf {} + \
              && tar -xf - \
              && find . -mindepth 1 -name .user.ini -prune -o -print0 | xargs -0 chown www:www"

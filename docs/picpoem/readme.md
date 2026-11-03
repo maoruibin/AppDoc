@@ -23,8 +23,8 @@
 
 ## 一些其他链接
 
-- [使用指南](https://doc.gudong.site/picpoem/guide.html)
-- [功能详解](https://doc.gudong.site/picpoem/features.html)
-- [常见问题](https://doc.gudong.site/picpoem/qa.html)
-- [缘起](https://doc.gudong.site/picpoem/why.html)
-- [联系我们](https://doc.gudong.site/picpoem/contact.html)
+- [使用指南](https://app.gudong.site/picpoem/guide.html)
+- [功能详解](https://app.gudong.site/picpoem/features.html)
+- [常见问题](https://app.gudong.site/picpoem/qa.html)
+- [缘起](https://app.gudong.site/picpoem/why.html)
+- [联系我们](https://app.gudong.site/picpoem/contact.html)

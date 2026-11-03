@@ -135,4 +135,4 @@
 
 ### 怎么反馈问题或建议？
 
-通过 [联系我们](https://doc.gudong.site/inbox/contact.html) 联系咕咚。
+通过 [联系我们](https://app.gudong.site/inbox/contact.html) 联系咕咚。

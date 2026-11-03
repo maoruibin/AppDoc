@@ -27,6 +27,6 @@
 - **方式**: GitHub Push → Cloudflare Pages 自动构建部署
 - **Build 命令**: `npm run docs:build`
 - **Output 目录**: `docs/.vuepress/dist`
-- **域名**: doc.gudong.site
+- **域名**: app.gudong.site
 - **流程**: 本地修改 md → git push → Cloudflare 自动完成剩余工作
 
