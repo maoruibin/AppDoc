@@ -362,9 +362,14 @@
   background: var(--gh-strong);
 }
 
-@media (hover: none) {
+/* 触屏/窄屏常显：部分移动浏览器与 WebView 会误报 hover: hover，
+   只靠 (hover: none) 检测会让下载按钮在手机上永远隐藏（触屏没有 hover 可触发） */
+@media (hover: none), (pointer: coarse), (max-width: 640px) {
   .gh-dl {
     opacity: 1;
+    /* 触屏没有 hover 提示, 顺手放大到更稳的点击目标(紧凑模式右侧预留 52px, 9+38 仍在预留区内) */
+    width: 38px;
+    height: 38px;
   }
 }
 
@@ -462,7 +467,9 @@
 
 @media (max-width: 640px) {
   .gh-compact .gh-grid {
-    grid-template-columns: 1fr;
+    /* 必须锁 0 最小值: 裸 1fr 的隐式最小尺寸是 auto, 会被 nowrap 的描述撑出视口,
+       卡片横向溢出后右上/右侧的下载按钮就被顶出屏幕外 */
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
@@ -554,9 +561,10 @@
   inset: 0;
   z-index: 200;
   display: flex;
-  align-items: center;
   justify-content: center;
   padding: 20px;
+  /* 弹窗内容高于视口(手机端单列三卡片)时整体可滚动 */
+  overflow-y: auto;
 }
 
 .gh-modal-mask {
@@ -570,6 +578,9 @@
   position: relative;
   width: 100%;
   max-width: 720px;
+  /* margin:auto 代替父级 align-items:center: 高度富余时居中,
+     超高时顶端贴住可视区, 配合父级 overflow-y 滚动到底部 */
+  margin: auto;
   background: var(--gh-surface);
   border: 1px solid var(--gh-border);
   border-radius: 20px;
