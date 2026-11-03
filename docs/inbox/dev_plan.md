@@ -8,7 +8,7 @@
 - [x] #功能 同步到 Obsidian ⭐️⭐️⭐️
 - [x] #功能 同步到 思源笔记 ⭐️⭐️⭐️
 - [x] #优化 搜索优化 ⭐️⭐️⭐️
-- [x] #功能 [网页版本](./web.md) 2024 年 ⭐️⭐️⭐️
+- [x] #功能 [网页版本](https://inbox.gudong.site/#/web) 2024 年 ⭐️⭐️⭐️
 - [x] #功能 [PC 版本 (inBoxOne)](./download.md) — 基于 Flutter，支持 Windows/macOS/Linux (Beta) ⭐️⭐️⭐️
 - [x] #功能 录音 ⭐️⭐️
 - [x] #功能 桌面组件优化 ⭐️⭐️

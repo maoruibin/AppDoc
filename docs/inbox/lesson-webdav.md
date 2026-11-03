@@ -86,7 +86,7 @@ inBox 支持配置 WebDAV 云盘作为个人笔记云，该功能为免费功能
 <img src="../public/img/jianguoyun6.png" width="80%" alt="">
 
 ### 5.1 inBox 网页版
-开启个人云盘后，建议选择启用网页版本，这样就可以在网页端，访问 inBox 笔记，网页版介绍可查看：[inBox 网页版](./web.md)。
+开启个人云盘后，建议选择启用网页版本，这样就可以在网页端，访问 inBox 笔记，网页版介绍可查看：[inBox 网页版](https://inbox.gudong.site/#/web)。
 
 启用网页版时，会把坚果云配置信息同步至 inBox 后端，以便 inBox 网页端使用坚果云进行笔记拉取上传操作。
 
