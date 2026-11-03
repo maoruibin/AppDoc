@@ -21,5 +21,7 @@
 - [常见问题](https://doc.gudong.site/light/qa.html)
 - [联系我们](https://doc.gudong.site/light/contact.html)
 
-##  下载地址
-[去下载](/download)
+## 下载地址
+
+- 应用市场：[应用宝 · 点亮习惯](https://sj.qq.com/appdetail/name.gudong.habit)
+- 蒲公英：[pgyer.com/dianliang](https://www.pgyer.com/dianliang)——版本更新最快，应用市场版本可能滞后几天

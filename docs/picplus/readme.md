@@ -36,6 +36,7 @@
 - [常见问题](https://doc.gudong.site/picplus/qa.html)
 - [联系我们](https://doc.gudong.site/picplus/contact.html)
 
-##  下载地址
+## 下载地址
 
-[去下载](/download)
+- 应用市场：[应用宝 · 咕咚云图](https://sj.qq.com/appdetail/name.gudong.pic)
+- 蒲公英：[pgyer.com/picplus-android](https://www.pgyer.com/picplus-android)——版本更新最快，应用市场版本可能滞后几天

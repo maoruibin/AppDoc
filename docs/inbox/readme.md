@@ -17,7 +17,9 @@ inBox笔记是一个本地优先，记录灵感、想法的笔记软件。
 ![](https://gudong.s3.bitiful.net/img/b2bbcb94.png)
 
 ## App 下载地址
-[去下载](/download)
+
+- 应用市场：[应用宝 · inBox笔记](https://sj.qq.com/appdetail/name.gudong.think)
+- 蒲公英：[pgyer.com/inbox](https://www.pgyer.com/inbox)——版本更新最快，应用市场版本可能滞后几天
 
 ## 一些其他链接
 - [快速上手](guide.md)

@@ -85,7 +85,7 @@ sm.ms 很早就提供了 Android 客户端，但是速度慢，不支持自定�
 +   支持自动复制链接
 +   等等
 
-目前 PicPlus 只上传到了酷安市场，如果对此感兴趣，[点击访问 PicPlus 主页 ](https://www.coolapk.com/apk/name.gudong.pic)。
+PicPlus（现名咕咚云图）目前可在[应用宝](https://sj.qq.com/appdetail/name.gudong.pic)下载，最新版本也可通过[蒲公英](https://www.pgyer.com/picplus-android)获取。
 
 ##  关于我
 
