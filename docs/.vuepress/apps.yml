@@ -236,3 +236,13 @@
   doc: /reader/
   visible: false
   sort: 17
+
+- name: 存咚咚
+  package: site.gudong.dong_download
+  icon: https://gudong.s3.bitiful.net/icon/dongdownload_icon_1030.png
+  desc: 把看到的好视频存进自己手机里的媒体存档工具
+  download: https://app.gudong.site/download/
+  doc: /download/
+  category: tools
+  visible: false
+  sort: 103
