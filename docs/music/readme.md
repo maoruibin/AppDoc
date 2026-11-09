@@ -14,7 +14,7 @@
 
 ## 下载地址
 
-[去下载](/download)
+[蒲公英下载](https://www.pgyer.com/tingdongdong-android)
 
 ## 一些其他链接
 

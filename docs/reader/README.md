@@ -33,7 +33,7 @@
 
 ## 下载地址
 
-[去下载](/download)
+[蒲公英下载](https://www.pgyer.com/dudongdong)
 
 ## 反馈
 

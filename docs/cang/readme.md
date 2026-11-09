@@ -19,7 +19,7 @@
 
 ## 相关链接
 - [快速上手](guide.md)
-- [去下载](/download)
+- [蒲公英下载](https://www.pgyer.com/cangdongdong)
 - [更新日志](changelog.md)
 - [常见问题](qa.md)
 - [数据安全说明](data_security.md)
@@ -27,4 +27,4 @@
 - [PRO版本特权](pro_version.md) 
 
 ## 下载
-[去下载](/download)
+[蒲公英下载](https://www.pgyer.com/cangdongdong)

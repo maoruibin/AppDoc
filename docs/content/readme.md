@@ -28,7 +28,7 @@
 
 ## 下载
 
-前往 [下载主页](/download) 获取最新版本。
+前往 [蒲公英下载主页](https://www.pgyer.com/content) 获取最新版本。
 
 ## 更多
 

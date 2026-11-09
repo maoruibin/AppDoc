@@ -23,7 +23,7 @@
 
 写下已正式发布，Android 版通过蒲公英下载主页安装（macOS 版下载入口随后开放）。
 
-[蒲公英下载](https://www.pgyer.com/xiexia-android-w) · [去下载页](/download)
+[蒲公英下载](https://www.pgyer.com/xiexia-android-w)
 
 ## 一些其他链接
 
