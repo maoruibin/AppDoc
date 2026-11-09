@@ -66,26 +66,6 @@
     "sort": 7
   },
   {
-    "name": "小牛说",
-    "package": "name.gudong.inputvc",
-    "icon": "https://gudong.s3.bitiful.net/icon/niushuo_icon.png?no-wait=on",
-    "desc": "AI 驱动的语音输入法，打字不用敲，就用小牛说",
-    "download": "https://www.pgyer.com/xiaoniushuo",
-    "doc": "/niushuo/",
-    "visible": false,
-    "sort": 8
-  },
-  {
-    "name": "声咚咚",
-    "package": "name.gudong.audio",
-    "icon": "https://gudong.s3.bitiful.net/icon/shengdongdong_icon.png?no-wait=on",
-    "desc": "让声音随心所欲，简单易用的全能音频工具箱",
-    "download": "https://www.pgyer.com/shengdongdong",
-    "doc": "/audio/",
-    "visible": false,
-    "sort": 9
-  },
-  {
     "name": "图咚咚",
     "package": "name.gudong.pictoon",
     "icon": "https://gudong.s3.bitiful.net/icon/tudongdong_icon.png?no-wait=on",
@@ -148,19 +128,10 @@
     "desc": "轻量 Markdown 阅读器，秒开、无账号、无联网权限，桌面版 Sparrow 同步开源",
     "download": "https://blog.gudong.site/sparrow/",
     "doc": "https://blog.gudong.site/sparrow/",
+    "nav_link": "/sparrow/",
     "category": "write",
     "visible": true,
     "sort": 15
-  },
-  {
-    "name": "脉咚咚",
-    "package": "name.gudong.mai",
-    "icon": "https://gudong.s3.bitiful.net/icon/mai-icon.png",
-    "desc": "3 秒记一个人的人脉记忆管家，别让你的人脉变凉",
-    "download": "https://www.pgyer.com/maidongdong",
-    "doc": "/mai/",
-    "visible": false,
-    "sort": 16
   },
   {
     "name": "随机相册",
@@ -204,6 +175,7 @@
     "desc": "开源的卡片笔记中心，精选时间戳笔记一键导入 inBox 笔记",
     "download": "https://card.gudong.site/",
     "doc": "https://card.gudong.site/",
+    "nav": false,
     "category": "web",
     "visible": true,
     "sort": 21
@@ -215,19 +187,10 @@
     "desc": "公众号 & 小红书双平台 AI 封面生成器，Gemini 驱动",
     "download": "https://cover.gudong.site/",
     "doc": "https://github.com/maoruibin/GudongCover",
+    "nav_link": "https://cover.gudong.site/",
     "category": "web",
     "visible": true,
     "sort": 22
-  },
-  {
-    "name": "inBox 笔记（桌面版）",
-    "package": "name.gudong.think",
-    "icon": "https://gudong.s3.bitiful.net/icon/inbox_ic_launcher.png",
-    "desc": "Windows / macOS / Linux 桌面端，含网页版",
-    "download": "https://inbox.gudong.site/#/",
-    "doc": "/inbox/",
-    "visible": false,
-    "sort": 101
   },
   {
     "name": "写下",
@@ -238,27 +201,6 @@
     "doc": "/xiexia/",
     "category": "write",
     "visible": true,
-    "sort": 102
-  },
-  {
-    "name": "书咚咚",
-    "package": "name.gudong.reader",
-    "icon": "https://gudong.s3.bitiful.net/icon/reader_icon_1024.png",
-    "desc": "本地优先的 EPUB 阅读器，划线笔记与书摘分享，安静读书",
-    "download": "https://www.pgyer.com/dudongdong",
-    "doc": "/reader/",
-    "visible": false,
-    "sort": 17
-  },
-  {
-    "name": "存咚咚",
-    "package": "site.gudong.dong_download",
-    "icon": "https://gudong.s3.bitiful.net/icon/dongdownload_icon_1030.png",
-    "desc": "把看到的好视频存进自己手机里的媒体存档工具",
-    "download": "https://app.gudong.site/download/",
-    "doc": "/download/",
-    "category": "tools",
-    "visible": false,
-    "sort": 103
+    "sort": 18
   }
 ]

@@ -46,8 +46,9 @@
 
 /* ===== 首页「咕咚的小宇宙」改版（.gh-* 前缀；结构由 generate_apps_json.py 生成） ===== */
 
-/* 放宽首页内容宽度（默认主题 740px 太窄） */
+/* 放宽首页/下载页内容宽度（默认主题 740px 太窄；两页的分区容器都叫 #gh-sections） */
 .theme-default-content:has(.gh-wrap),
+.theme-default-content:has(#gh-sections),
 .home .theme-default-content {
   max-width: 1080px !important;
 }
@@ -58,9 +59,10 @@
   display: none !important;
 }
 
-/* 首页隐藏默认主题的「回到顶部」悬浮按钮（会压在卡片上） */
+/* 首页/下载页隐藏默认主题的「回到顶部」悬浮按钮（会压在卡片上） */
 .home .vp-back-to-top-button,
-.vp-project-home .vp-back-to-top-button {
+.vp-project-home .vp-back-to-top-button,
+.theme-default-content:has(#gh-sections) .vp-back-to-top-button {
   display: none !important;
 }
 
@@ -332,8 +334,10 @@
   flex: 1;
 }
 
-/* 下载快捷入口: 宽松模式 hover 卡片时在右上角浮现; 紧凑模式隐藏 */
-.gh-dl {
+/* 角落快捷入口（.gh-dl 首页下载 / .gh-doc 下载页文档，一主一辅互为镜像）:
+   宽松模式 hover 卡片时浮现; 紧凑模式隐藏 */
+.gh-dl,
+.gh-doc {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -352,11 +356,14 @@
 }
 
 .gh-item:hover .gh-dl,
-.gh-item:focus-within .gh-dl {
+.gh-item:focus-within .gh-dl,
+.gh-item:hover .gh-doc,
+.gh-item:focus-within .gh-doc {
   opacity: 1;
 }
 
-.gh-dl:hover {
+.gh-dl:hover,
+.gh-doc:hover {
   color: var(--gh-strong-text);
   border-color: var(--gh-text);
   background: var(--gh-strong);
@@ -365,7 +372,8 @@
 /* 触屏/窄屏常显：部分移动浏览器与 WebView 会误报 hover: hover，
    只靠 (hover: none) 检测会让下载按钮在手机上永远隐藏（触屏没有 hover 可触发） */
 @media (hover: none), (pointer: coarse), (max-width: 640px) {
-  .gh-dl {
+  .gh-dl,
+  .gh-doc {
     opacity: 1;
     /* 触屏没有 hover 提示, 顺手放大到更稳的点击目标(紧凑模式右侧预留 52px, 9+38 仍在预留区内) */
     width: 38px;
@@ -458,8 +466,9 @@
   min-width: 0;
 }
 
-/* 紧凑模式下载入口: 右侧预留窄边, hover 卡片时按钮垂直居中浮现 */
-.gh-compact .gh-dl {
+/* 紧凑模式角落入口(下载页静态紧凑; 首页切紧凑时同款): 右侧预留窄边, hover 卡片时按钮垂直居中浮现 */
+.gh-compact .gh-dl,
+.gh-compact .gh-doc {
   top: 50%;
   right: 9px;
   transform: translateY(-50%);
@@ -815,3 +824,44 @@ html.gh-modal-open {
 .gd-donate-back a:hover {
   color: var(--gh-text);
 }
+
+/* ===== 导航栏「作品集合」下拉：左 icon 右文字 =====
+   基础样式手写；每条 App 的 icon 规则在 NAV_ICONS 标记区内，
+   由 .vuepress/generate_apps_json.py 从 apps.yml 生成，勿手动编辑。
+   选择器带 .navbar-dropdown-wrapper 以压过主题的 display: block */
+.navbar-dropdown-wrapper .navbar-dropdown .navbar-dropdown-item > a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navbar-dropdown-wrapper .navbar-dropdown .navbar-dropdown-item > a::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  background: center / contain no-repeat;
+}
+
+// NAV_ICONS_START
+.navbar-dropdown .navbar-dropdown-item > a[href="/inbox/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/inbox_ic_launcher.png"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="/voice/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/voice_icon_1024.png?no-wait=on"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="/light/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/ic_launcher_light.png"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="/cang/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/cang_launcher_icon.png?no-wait=on"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="/rssplus/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/rss_ic_launcher.png"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="/picplus/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/pic_ic_launcher.png"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="/passbox/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/passbox_icon.png?no-wait=on"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="/tudongdong/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/tudongdong_icon.png?no-wait=on"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="/content/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/content_icon_1011.png"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="/time/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/dong-time.png?v=2"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="/music/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/tingdongdong-icon.png?no-wait=on"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="/measure/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/measure_icon_1019.png?no-wait=on"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="/sparrow/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/maquemd_icon.png?no-wait=on&v=2"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="/dongalbum/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/album_icon_1017.png?no-wait=on"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="/mosaic/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/damadong_icon.png?v=2"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="/xiexia/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/xiexia_icon.png"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="https://github.com/maoruibin/SlideNote"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/slidenote_icon.png"); }
+.navbar-dropdown .navbar-dropdown-item > a[href="https://cover.gudong.site/"]::before { background-image: url("https://gudong.s3.bitiful.net/icon/gudongcover_icon.png"); }
+// NAV_ICONS_END

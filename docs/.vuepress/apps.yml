@@ -1,10 +1,14 @@
-# 咕咚全应用元数据 — 下载页/首页的唯一数据源
+# 咕咚全应用元数据 — 首页/下载页/导航栏「作品集合」的唯一数据源
 # 维护规则:
 #   1. download 字段用蒲公英下载主页(pgyer.com/{shortcut}),永久不变,发版后无需更新
 #      (不用 install 直链 pgyer.com/app/install/{buildKey},那个每次上传都变)
 #   2. 新增 app 加一条,设 visible/sort
 #   3. 修改后运行:cd AppDoc/docs/.vuepress && python3 generate_apps_json.py
-#   4. visible=false 的不在下载页展示(未上线/隐藏)
+#   4. visible=false 的不在首页/下载页/apps.json 展示(未上线/隐藏)
+#   5. nav 字段单独控制导航栏「作品集合」下拉:
+#      不写 nav → 跟随 visible;nav: true + visible: false → 仅导航栏展示(已发布但不上下载页);
+#      nav: false → 导航栏也不展示。nav_link 可单独覆盖导航栏链接(不改动首页/下载页用的 doc)
+#   6. 新增 App 文档目录后必须回来登记,导航栏由脚本生成,config.js 不手改
 
 # ===== 已上线(visible: true) =====
 - name: inBox 笔记
@@ -46,6 +50,16 @@
   category: tools
   visible: true
   sort: 4
+
+- name: 咕咚订阅
+  package: name.gudong.rss
+  icon: https://gudong.s3.bitiful.net/icon/rss_ic_launcher.png
+  desc: 简洁实用的 RSS 订阅软件，聚合阅读、支持 WebDAV 备份
+  download: https://www.pgyer.com/rssplus-android
+  doc: /rssplus/
+  nav: true
+  visible: false
+  sort: 5
 
 - name: 咕咚云图
   package: name.gudong.pic
@@ -142,6 +156,7 @@
   desc: 轻量 Markdown 阅读器，秒开、无账号、无联网权限，桌面版 Sparrow 同步开源
   download: https://blog.gudong.site/sparrow/
   doc: https://blog.gudong.site/sparrow/
+  nav_link: /sparrow/
   category: write
   visible: true
   sort: 15
@@ -193,6 +208,7 @@
   desc: 开源的卡片笔记中心，精选时间戳笔记一键导入 inBox 笔记
   download: https://card.gudong.site/
   doc: https://card.gudong.site/
+  nav: false
   category: web
   visible: true
   sort: 21
@@ -203,9 +219,28 @@
   desc: 公众号 & 小红书双平台 AI 封面生成器，Gemini 驱动
   download: https://cover.gudong.site/
   doc: https://github.com/maoruibin/GudongCover
+  nav_link: https://cover.gudong.site/
   category: web
   visible: true
   sort: 22
+
+- name: 梦咚咚
+  package: name.gudong.dream
+  icon: https://gudong.s3.bitiful.net/icon/dream_icon_1024.png
+  desc: AI 伴睡叙事应用，把你的念头编成一段助眠内容，人声朗读伴你入睡
+  doc: /dream/
+  visible: false
+  sort: 19
+
+- name: 诗图
+  package: name.gudong.picpoem
+  icon: https://gudong.s3.bitiful.net/icon/picpoem_icon.png
+  desc: 取一景，成一句诗——AI 看图配诗，落成东方美学诗图卡片
+  doc: /picpoem/
+  visible: false
+  sort: 21
+
+# ===== 未上线/隐藏(visible: false) =====
 
 # ===== 未上线/隐藏(visible: false) =====
 - name: inBox 笔记（桌面版）
@@ -226,7 +261,7 @@
   doc: /xiexia/
   category: write
   visible: true
-  sort: 102
+  sort: 18
 
 - name: 书咚咚
   package: name.gudong.reader
@@ -235,7 +270,7 @@
   download: https://www.pgyer.com/dudongdong
   doc: /reader/
   visible: false
-  sort: 17
+  sort: 104
 
 - name: 存咚咚
   package: site.gudong.dong_download

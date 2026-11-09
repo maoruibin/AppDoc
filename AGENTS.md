@@ -85,7 +85,8 @@ docs/
 |---|---|---|
 | 下载页卡片 | `apps.yml` | 脚本生成，别手改 `download.md` 生成区 |
 | 首页卡片 | `docs/README.md` | hero+分类分区由 `generate_apps_json.py` 从 apps.yml 生成（APPS_GRID 标记内）：显隐看 visible、分类看 category、徽标看 badge、排序看 sort；宽松/紧凑视图切换存 localStorage |
-| 导航 + 侧边栏 | `docs/.vuepress/config.js` | navbar「作品集合」下拉 + sidebar 按路径前缀分 App 配置 |
+| 导航「作品集合」下拉 | `apps.yml` → `config.js` | 由 `generate_apps_json.py` 生成（APPS_NAV 标记内，勿手改）：不写 nav 跟随 visible；`nav: true`+`visible: false` 仅导航栏展示（咕咚订阅）；`nav: false` 导航栏隐藏（知识卡片）；`nav_link` 单独覆盖导航链接；`apps.json` 只输出 visible |
+| sidebar 侧边栏 | `docs/.vuepress/config.js` | 按路径前缀分 App 手写配置，不参与生成 |
 
 - **隐藏/恢复统一用注释**（HTML 注释 `<!-- 已隐藏 ... -->` 或 JS 注释），不删内容；搜「已隐藏」可定位所有隐藏点
 - 当前临时状态（易变，以 config.js 注释为准）：iOS 审核期间 navbar 的「下载地址」「购买 PRO」被临时注释，过审后恢复

@@ -8,7 +8,8 @@ export default defineUserConfig({
   title: '咕咚',
   description: '软件使用说明文档',
   head: [
-    ['link', { rel: 'icon', href: '/img/favicon-32.png' }]
+    ['link', { rel: 'icon', href: '/img/favicon-32.png' }],
+    ['link', { rel: 'apple-touch-icon', href: '/img/favicon-192.png' }]
   ],
   markdown: {
     extendsMarkdown: (md) => {
@@ -22,32 +23,30 @@ export default defineUserConfig({
       { text: '下载地址', link: '/download' },
       {
         text: '作品集合',
+        // 「作品集合」下拉由 .vuepress/generate_apps_json.py 从 apps.yml 生成（显隐看 visible/nav、排序看 sort）
+        // APPS_NAV 标记之间请勿手动编辑，改动请回到 apps.yml
         children: [
-          { text: 'inBox 笔记', link: '/inbox/' },
-          { text: 'inVoice 语记', link: '/voice/' },
-          { text: '点亮', link: '/light/' },
-          { text: '仓咚咚', link: '/cang/' },
-          { text: '咕咚订阅', link: '/rssplus/' },
-          { text: '咕咚云图', link: '/picplus/' },
-          { text: 'PassBox', link: '/passbox/' },
-          { text: '听咚咚', link: '/music/' },
-          { text: '小牛说', link: '/niushuo/' },
-          { text: '图咚咚', link: '/tudongdong/' },
-          { text: '声咚咚', link: '/audio/' },
-          { text: '好内容', link: '/content/' },
-          { text: '梦咚咚', link: '/dream/' },
-          { text: '图诗', link: '/picpoem/' },
-          { text: '脉咚咚', link: '/mai/' },
-          { text: '咚时光', link: '/time/' },
-          { text: '量咚咚', link: '/measure/' },
-          { text: '麻雀 MD', link: '/sparrow/' },
-          { text: '随机相册', link: '/dongalbum/' },
-          { text: '写下', link: '/xiexia/' },
-          { text: '书咚咚', link: '/reader/' },
-          { text: '存咚咚', link: '/download/' },
-          { text: '打码咚', link: '/mosaic/' },
-          { text: 'SlideNote', link: 'https://github.com/maoruibin/SlideNote' },
-          { text: '咕咚封面', link: 'https://cover.gudong.site/' },
+          // <!-- APPS_NAV_START -->
+// 此下拉由 generate_apps_json.py 从 apps.yml 生成，请勿手动编辑
+      { text: 'inBox 笔记', link: '/inbox/' },
+      { text: 'inVoice 语记', link: '/voice/' },
+      { text: '点亮习惯', link: '/light/' },
+      { text: '仓咚咚', link: '/cang/' },
+      { text: '咕咚订阅', link: '/rssplus/' },
+      { text: '咕咚云图', link: '/picplus/' },
+      { text: 'PassBox', link: '/passbox/' },
+      { text: '图咚咚', link: '/tudongdong/' },
+      { text: '好内容', link: '/content/' },
+      { text: '咚时光', link: '/time/' },
+      { text: '听咚咚', link: '/music/' },
+      { text: '量咚咚', link: '/measure/' },
+      { text: '麻雀 MD', link: '/sparrow/' },
+      { text: '随机相册', link: '/dongalbum/' },
+      { text: '打码咚', link: '/mosaic/' },
+      { text: '写下', link: '/xiexia/' },
+      { text: 'SlideNote', link: 'https://github.com/maoruibin/SlideNote' },
+      { text: '咕咚封面', link: 'https://cover.gudong.site/' },
+// <!-- APPS_NAV_END -->
         ]
      },
       {
@@ -240,8 +239,18 @@ export default defineUserConfig({
       ],
       '/measure/': [
         { text: '你好', collapsible: false, children: [
-          { text: '更新日志', link: '/measure/changelog', children: [] },
-          { text: '隐私政策', link: '/measure/private', children: [] }
+          { text: '介绍', link: '/measure/', children: [] },
+          { text: '快速上手', link: '/measure/guide', children: [] },
+          { text: '常见问题', link: '/measure/qa', children: [] },
+          { text: '更新日志', link: '/measure/changelog', children: [] }
+        ]},
+        { text: '功能', collapsible: false, children: [
+          { text: '功能详解', link: '/measure/features', children: [] }
+        ]},
+        { text: '服务协议', collapsible: false, children: [
+          { text: '用户协议', link: '/measure/agreement', children: [] },
+          { text: '隐私政策', link: '/measure/private', children: [] },
+          { text: '联系我们', link: '/measure/contact', children: [] }
         ]}
       ],
       '/reader/': [
